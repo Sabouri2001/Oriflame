@@ -1,0 +1,61 @@
+
+* {
+  box-sizing: border-box;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    width: 100%;
+    height: 500px;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+  }
+
+  /* @font-face {
+    font-family: OriFont;
+    src: url('../fonts/Urbanist-Regular.eot');
+    src: url('../fonts/Urbanist-Regular.woff');
+    src: url('../fonts/Urbanist-Regular.woff2');
+    src: url('../fonts/Urbanist-Regular.ttf');
+  } */
+
+  .centerActive {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+
+  .firstActive {
+    transform: rotateZ(-45deg) translateY(13px);
+   
+  }
+
+  .lastActive {
+    transform: rotateZ(45deg) translateY(-13px);
+  }
+
+  .active {
+    padding-right: 15px;
+  }
+
+  .menu-visible {
+    display: block; 
+}
+
+
+

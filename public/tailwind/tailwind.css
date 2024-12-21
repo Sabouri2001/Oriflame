@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.variety {
+    @apply w-full  py-[10px] px-[15px] bg-white flex justify-between items-center border-r-[2px] border-solid border-[#f5f5f5] ;
+}
+
+.line {
+    @apply  absolute w-[5px] h-[45.5px] rounded top-0 left-0
+}
+
+.varietySec {
+    @apply w-full relative py-[10px] px-[15px] bg-[#f5f5f5] flex justify-between items-center hover:bg-white
+}
