@@ -27,13 +27,13 @@
     
   }
 
-  /* @font-face {
+  @font-face {
     font-family: OriFont;
     src: url('../fonts/Urbanist-Regular.eot');
     src: url('../fonts/Urbanist-Regular.woff');
     src: url('../fonts/Urbanist-Regular.woff2');
     src: url('../fonts/Urbanist-Regular.ttf');
-  } */
+  }
 
   .centerActive {
     transform: translateX(100px);
@@ -64,6 +64,27 @@
   height: 100%;
 }
 
+.swiper-slide1 {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+ 
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Menu Swiper */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
 .swiper-slide {
   text-align: center;
   font-size: 18px;
@@ -80,10 +101,34 @@
   object-fit: cover;
 }
 
-/* .SubMenu {
-  display: block;
+.mySwiperMenu>.swiper-wrapper>.swiper-slide {
+  width: auto;
+  height: 51px;
+  background-color: #fafafa;
+  font-size: 12px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.mySwiperMenu>.swiper-wrapper {
+  height: 51px;
+  width: 100%;
+  background-color: #fafafa;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #e5e5e5;
+
+
 }
 
-.variety:hover ~ .SubMenu{
-  display: none;
-} */
+@media (min-width: 1377px) {
+  .mySwiperMenu > .swiper-button-next {
+    display: none;
+  }
+  .mySwiperMenu > .swiper-button-prev {
+    display: none;
+  }
+}
+
+body {
+  font-family: OriFont;
+}
