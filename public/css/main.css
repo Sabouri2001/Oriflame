@@ -624,6 +624,10 @@ video {
   position: relative;
 }
 
+.sticky {
+  position: sticky;
+}
+
 .inset-0 {
   inset: 0px;
 }
@@ -849,6 +853,18 @@ video {
   z-index: 50;
 }
 
+.z-\[49\] {
+  z-index: 49;
+}
+
+.z-\[70\] {
+  z-index: 70;
+}
+
+.z-\[80\] {
+  z-index: 80;
+}
+
 .col-auto {
   grid-column: auto;
 }
@@ -885,6 +901,10 @@ video {
   margin: auto;
 }
 
+.m-0 {
+  margin: 0px;
+}
+
 .mx-0 {
   margin-left: 0px;
   margin-right: 0px;
@@ -903,6 +923,21 @@ video {
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.mx-\[\] {
+  margin-left: ;
+  margin-right: ;
+}
+
+.mx-\[15px\] {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.mx-\[40px\] {
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 .mb-2 {
@@ -975,6 +1010,14 @@ video {
 
 .mt-auto {
   margin-top: auto;
+}
+
+.mb-\[\] {
+  margin-bottom: ;
+}
+
+.mb-\[15px\] {
+  margin-bottom: 15px;
 }
 
 .block {
@@ -1170,12 +1213,32 @@ video {
   height: 160px;
 }
 
+.h-screen {
+  height: 100vh;
+}
+
+.h-\[59px\] {
+  height: 59px;
+}
+
+.h-\[50vw\] {
+  height: 50vw;
+}
+
 .max-h-\[200px\] {
   max-height: 200px;
 }
 
 .max-h-\[160px\] {
   max-height: 160px;
+}
+
+.max-h-\[\] {
+  max-height: ;
+}
+
+.max-h-\[250px\] {
+  max-height: 250px;
 }
 
 .w-0 {
@@ -1399,6 +1462,10 @@ video {
   width: 16;
 }
 
+.w-\[50vw\] {
+  width: 50vw;
+}
+
 .max-w-0 {
   max-width: 0px;
 }
@@ -1441,6 +1508,10 @@ video {
 
 .max-w-\[1346px\] {
   max-width: 1346px;
+}
+
+.max-w-\[250px\] {
+  max-width: 250px;
 }
 
 .flex-1 {
@@ -2068,6 +2139,11 @@ video {
   background-color: rgb(113 63 18 / var(--tw-bg-opacity, 1));
 }
 
+.bg-gray-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(55 65 81 / var(--tw-bg-opacity, 1));
+}
+
 .bg-opacity-50 {
   --tw-bg-opacity: 0.5;
 }
@@ -2122,6 +2198,10 @@ video {
 
 .p-\[30px\] {
   padding: 30px;
+}
+
+.p-\[15px\] {
+  padding: 15px;
 }
 
 .px-2 {
@@ -2887,6 +2967,10 @@ video {
     height: 150px;
   }
 
+  .sm\:h-\[250px\] {
+    height: 250px;
+  }
+
   .sm\:max-h-\[200px\] {
     max-height: 200px;
   }
@@ -2913,6 +2997,10 @@ video {
 
   .sm\:w-\[150px\] {
     width: 150px;
+  }
+
+  .sm\:w-\[250px\] {
+    width: 250px;
   }
 
   .sm\:max-w-\[200px\] {
@@ -3017,6 +3105,10 @@ video {
     display: flex;
   }
 
+  .md\:hidden {
+    display: none;
+  }
+
   .md\:h-full {
     height: 100%;
   }
@@ -3051,6 +3143,10 @@ video {
 
   .md\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .md\:border-b-\[2px\] {
+    border-bottom-width: 2px;
   }
 
   .md\:p-\[30px\] {
