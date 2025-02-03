@@ -132,3 +132,27 @@
 body {
   font-family: OriFont;
 }
+
+@media (max-width: 980px) {
+  .MyDiv {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  .MyPic {
+    width: 100%;
+    height: 500px;
+    order: 1;
+  }
+  .MyText {
+    width: 100%;
+    height: auto;
+    order: -1;
+  }
+}
+
+@media (max-width: 1200px) {
+  .mySwiperSecond>.swiper-wrapper>.swiper-slide {
+height: 280px;
+  }
+}

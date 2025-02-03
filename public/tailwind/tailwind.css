@@ -13,3 +13,7 @@
 .varietySec {
     @apply w-full relative py-[10px] px-[15px] bg-[#f5f5f5] flex justify-between items-center hover:bg-white
 }
+
+.varietyThird {
+    @apply w-full relative py-[10px] px-[15px] bg-white flex justify-between items-center hover:text-gray-500
+}

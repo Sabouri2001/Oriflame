@@ -24,7 +24,7 @@
 
     <!-- bottom header start -->
     <div class="bottomHeader flex justify-between items-center bg-white w-full h-[64px] ps-[30px] pe-[30px] md:border-b-[2px] border-solid border-[#f5f5f5]">
-    <div class=" flex items-center">
+    <div class=" flex items-center gap-[40px]">
       <div class="SideMenu flex flex-col justify-center items-center gap-[8px] cursor-pointer w-[50px] overflow-hidden">
         <div class="more w-[20px] h-[1px] rounded bg-[#666666]"></div>
         <div class="more w-[20px] h-[1px] rounded bg-[#666666] transition duration-300"></div>
@@ -35,7 +35,7 @@
             
 
          <!-- changed color -->
-            <div class="category bg-white w-[280px] h-full py-[10px] overflow-auto ">
+            <div class="category bg-white w-[280px] h-full py-[10px] overflow-auto md:block hidden">
 
             <div class="variety group hover:bg-[#E8F5F1] ">
               
@@ -86,7 +86,7 @@
         style="width: 24px; height:24px;" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="ArrowRightThinIcon"><path d="M9.146 5.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L14.793 12 9.146 6.354a.5.5 0 0 1 0-.708"></path></svg>
 
          <!-- second submenu start-->
-         <div class="SubMenu absolute opacity-0 group-hover:opacity-100 group-hover:z-20 transition-opacity duration-150 bg-white w-[calc(100%-280px)] h-full right-0 top-0 ">
+         <div class=" h-full hidden bg-white absolute w-[calc(100%-280px)] top-0 left-[280px]  group-hover:block py-[30px] px-[60px] cursor-auto">
           <div class="flex ml-[60px] gap-[30px] mt-[30px]">
             <!-- Picture 1 -->
             <div class="photo flex flex-col items-center relative  ">
@@ -150,15 +150,13 @@
             style="width: 24px; height:24px;" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="ArrowRightThinIcon"><path d="M9.146 5.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L14.793 12 9.146 6.354a.5.5 0 0 1 0-.708"></path></svg>
         
            <!-- third submenu start-->
-           <div class="SubMenu absolute opacity-0 group-hover:opacity-100 group-hover:z-20 transition-opacity duration-150 bg-white w-[calc(100%-280px)] h-full right-0 top-0 ">
+           <div class=" h-full hidden bg-white absolute w-[calc(100%-280px)] top-0 left-[280px]  group-hover:block py-[30px] px-[60px] cursor-auto">
             <div class="flex ml-[60px] gap-[30px] mt-[30px]">
               <!-- Picture 1 -->
               <div class="photo flex flex-col items-center relative  ">
                 
                 <img src="./public/images/menu1.webp" alt="Image 1" class="w-[160px] h-[226px] object-cover rounded-xl ">
-                <!-- <button class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-[17px] opacity-0 group2-hover:opacity-100 transition duration-300">
-    ANZEIGEN
-                </button> -->
+              
                 <p class="text-[17px] text-[#333333] mt-2">Caption 1</p>
               </div>
               <!-- Picture 2 -->
@@ -440,7 +438,7 @@ style="width: 24px; height:24px;" focusable="false" aria-hidden="true" viewBox="
 
 
 
-<div class="variety hover:bg-[#F0FBFB] group">
+<div class="variety hover:bg-[#F4F3F2] group">
 <div class="flex items-center gap-2">
 <span class="line bg-[#B6ADA5]"></span>
 <span class="font text-[20px] font-bold truncate">Düfte</span>
@@ -875,7 +873,1349 @@ style="width: 24px; height:24px;" focusable="false" aria-hidden="true" viewBox="
 <div class="varietySec "><span class="text-[16px] text-[#555555]">Outlet</span></div>
 
             </div>
+          <!-- Menu for under MD -->
+            <div class="category bg-white w-[315px] h-full py-[10px] overflow-auto md:hidden">
+              <div class="w-[270px] h-[103px] bg-white mx-auto drop-shadow-[2.4px_2.4px_3.2px_rgba(0,0,0,0.15)] rounded-xl flex items-center pr-[15px] cursor-pointer">
+               <div class="flex items-center gap-[15px]">
+                <div class="h-[103px] rounded-l-xl overflow-hidden ">
+                  <img src="./public/images/smallPic.jpg" alt="" class="object-cover h-full">
+                </div>
+                <div class="flex flex-col justify-center">
+                  <span>
+                    26/01 - 15/02
+                  </span>
+                  <p class="font-bold">Katalog 02</p>
+                </div>
+               </div>
+              </div>
+
+  
+
+              <div class="w-full max-w-md bg-white rounded-lg overflow-hidden">
+                <!-- Item Menu 1 -->
+                <div>
+                    <button class="accordion-header w-full flex justify-between items-center py-4 px-2 text-left font-semibold text-gray-800">
+                      <div class="textGroup flex gap-2 items-center pl-2">
+                        <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium frontpage-wr8ge5" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="ProductsIcon" height="24px" width="24px">
+                          <path d="M13.133 4a1.5 1.5 0 0 0-1.489 1.686L13 16.531V18.5a1.5 1.5 0 0 0 1.5 1.5h2a1.5 1.5 0 0 0 1.5-1.5v-1.969l1.356-10.845A1.5 1.5 0 0 0 17.867 4zM14 18.5V17h3v1.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5m4.363-12.938L17.06 16h-3.12L12.637 5.562A.5.5 0 0 1 13.133 5h4.734a.5.5 0 0 1 .496.562M6 18.5a1.5 1.5 0 0 0 3 0V8.651l1.315-1.972c.478-.718.268-1.732-.52-2.156a4 4 0 0 0-.978-.39C8.448 4.041 8.032 4 7.5 4c-.527 0-.938.045-1.302.137a4 4 0 0 0-.96.385c-.793.423-1.026 1.448-.537 2.18L6 8.652zM5.709 5.405c.258-.137.475-.234.734-.299C6.704 5.04 7.029 5 7.5 5c.482 0 .812.038 1.078.103.263.065.483.16.744.3.24.13.33.467.161.72L8.233 8H6.767L5.533 6.148a.52.52 0 0 1 .176-.743M7 9h1v9.5a.5.5 0 0 1-1 0z"></path>
+                        </svg>
+                        
+                        <span class="font text-[17px] font-bold">Lokale Inspiration</span></div> 
+                         
+                     
+                        <span class="arrow transition-transform"> <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium frontpage-wr8ge5"
+                          style="width: 24px; height: 24px; transform: rotate(90deg);" 
+                          focusable="false" aria-hidden="true" viewBox="0 0 24 24" 
+                          data-testid="ArrowRightThinIcon">
+                       <path d="M9.146 5.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L14.793 12 9.146 6.354a.5.5 0 0 1 0-.708"></path>
+                     </svg>
+                        </span>
+                    </button>
+                    <div class="accordion-content hidden p-4 text-gray-600">
+                        <ul class="space-y-2">
+                            <li class="pl-[32px] pb-[10px]"><a href="" class="block hover:text-[#007681] text-[17px] cursor-pointer">Beauty Hub</a></li>
+                            <li class="pl-[32px] pb-[10px]"><a href="" class="block hover:text-[#007681] text-[17px] cursor-pointer">Inhaltsstoff-Bibliothek
+                            </a></li>
+                            <li class="pl-[32px] pb-[10px]"><a href="" class="block hover:text-[#007681] text-[17px] cursor-pointer">Novage+</a></li>
+                            <li class="pl-[32px] pb-[10px]"><a href="" class="block hover:text-[#007681] text-[17px] cursor-pointer">Ikonen</a></li>
+                            <li class="pl-[32px] pb-[10px]"><a href="" class="block hover:text-[#007681] text-[17px] cursor-pointer">Foundation Finder</a></li>
+                            <li class="pl-[32px] pb-[10px]"><a href="" class="block hover:text-[#007681] text-[17px] cursor-pointer">#OriflameTalks</a></li>
+                        </ul>
+                    </div>
+                </div>
+        
+                <!-- Item Menu 2 -->
+                <div class="mb-[20px]">
+                  <button class="accordion-header w-full flex justify-between items-center py-4 px-2 text-left font-semibold text-gray-800">
+                    <div class="textGroup flex gap-2 items-center pl-2">
+                      <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium frontpage-wr8ge5" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="DiscountTagIcon" height="24px" width="24px">
+                        <path d="M15.5 10a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3M15 8.5a.5.5 0 1 1 1 0 .5.5 0 0 1-1 0"></path>
+                        <path d="M13.328 5a2.5 2.5 0 0 0-1.767.732l-6.5 6.5a2.5 2.5 0 0 0 0 3.536l3.171 3.171a2.5 2.5 0 0 0 3.536 0l6.5-6.5A2.5 2.5 0 0 0 19 10.672V6.5A1.5 1.5 0 0 0 17.5 5zm-1.06 1.44a1.5 1.5 0 0 1 1.06-.44H17.5a.5.5 0 0 1 .5.5v4.172a1.5 1.5 0 0 1-.44 1.06l-6.5 6.5a1.5 1.5 0 0 1-2.12 0l-3.172-3.171a1.5 1.5 0 0 1 0-2.122z"></path>
+                      </svg>
+                      
+                      <span class="font text-[17px] font-bold">Beste Angebote</span></div> 
+                       
+                   
+                    
+                  </button>
+                 
+              </div>
+
+
+              <!-- colorful Menu start -->
+        
+                <!-- Item Menu 2.1 -->
+                <div class="mb-1">
+                  <button class="accordion-header w-full flex justify-between items-center    font-semibold text-gray-800">
+                    <div class="textGroup flex  items-center hover:bg-[#E8E7F7] justify-between w-full px-[15px] py-[15px]  border-l-4 border-l-[#685BC7] ">
+                      
+                        <div class="flex items-center  truncate gap-2">
+                         
+                          <span class=" font text-[17px] font-bold truncate">Nahrungsergänzungsmittel</span>
+                        </div>
+
+                        
+                   
+                      <span class="arrow transition-transform"> <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium frontpage-wr8ge5"
+                        style="width: 24px; height: 24px; transform: rotate(90deg);" 
+                        focusable="false" aria-hidden="true" viewBox="0 0 24 24" 
+                        data-testid="ArrowRightThinIcon">
+                     <path d="M9.146 5.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L14.793 12 9.146 6.354a.5.5 0 0 1 0-.708"></path>
+                   </svg>
+                      </span>
+                      </div>
+                  </button>
+                  <div class="accordion-content hidden p-4 ">
+                      <ul class="space-y-2">
+                          <li class="pl-[32px] pb-[15px]"><a href="" class="block hover:text-[#007681] text-[17px] cursor-pointer text-gray-600">Alle Nahrungsergänzungsmittel</a></li>
+                          <li class="pl-[32px] pb-[15px]"><a href="" class="block hover:text-[#007681] text-[17px] cursor-pointer font-semibold">Accessoires
+                          </a></li>
+                          <li class="pl-[32px] pb-[15px]"><a href="" class="block hover:text-[#007681] text-[17px] cursor-pointer font-semibold">Beauty</a></li>
+                          <li class="pl-[32px] pb-[15px]"><a href="" class="block hover:text-[#007681] text-[17px] cursor-pointer font-semibold">Wohlbefinden</a></li>
+                          <li class="pl-[32px] pb-[15px]"><a href="" class="block hover:text-[#007681] text-[17px] cursor-pointer font-semibold">Darmgesundheit</a></li>
+                          <li class="pl-[32px] pb-[15px]"><a href="" class="block hover:text-[#007681] text-[17px] cursor-pointer font-semibold">Gesundes Altern</a></li>
+                          <li class="pl-[32px] pb-[15px]"><a href="" class="block hover:text-[#007681] text-[17px] cursor-pointer font-semibold">Immunität</a></li>
+                          <li class="pl-[32px] pb-[15px]"><a href="" class="block hover:text-[#007681] text-[17px] cursor-pointer font-semibold">Gewichtsmanagement</a></li>
+                          <li class="pl-[32px] pb-[15px]"><a href="" class="block hover:text-[#007681] text-[17px] cursor-pointer font-semibold">Wellosophy-Routinen</a></li>
+                          <li class="pl-[32px] pb-[15px]"><a href="" class="block hover:text-[#007681] text-[17px] cursor-pointer font-semibold">Marken</a></li>
+                      </ul>
+                  </div>
+              </div>
+
+             
+                <!-- Item Menu 2.2 -->
+                <div class="mb-1">
+                  <button class="accordion-header w-full flex justify-between items-center    font-semibold text-gray-800 cursor-pointer">
+                    <div class="textGroup flex  items-center hover:bg-[#F0FBFB] justify-between w-full px-[15px] py-[15px]  border-l-4 border-l-[#91E7E3] ">
+                      
+                        <div class="flex items-center  truncate gap-2">
+                         
+                          <span class=" font text-[17px] font-bold truncate">Hautpflege</span>
+                        </div>
+
+                        
+                   
+                      <span class="arrow transition-transform"> <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium frontpage-wr8ge5"
+                        style="width: 24px; height: 24px; transform: rotate(90deg);" 
+                        focusable="false" aria-hidden="true" viewBox="0 0 24 24" 
+                        data-testid="ArrowRightThinIcon">
+                     <path d="M9.146 5.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L14.793 12 9.146 6.354a.5.5 0 0 1 0-.708"></path>
+                   </svg>
+                      </span>
+                      </div>
+                  </button>
+                  <div class="accordion-content hidden p-4 ">
+                      <ul class="space-y-2">
+                          <li class="pl-[32px] pb-[15px]"><a href="" class="block hover:text-[#007681] text-[17px] cursor-pointer text-gray-600">Aktuelle Infos</a></li>
+                          <li class="pl-[32px] pb-[15px]"><a href="" class="block hover:text-[#007681] text-[17px] cursor-pointer text-gray-600">Alle Hautpflege</a></li>
+
+                          <!-- accordion menu item start -->
+                          <li class="pl-[32px] pb-[15px] block hover:text-[#007681] text-[17px] cursor-pointer font-semibold">
+                            <!-- start -->
+                            <button class="accordion-header w-full flex justify-between items-center    font-semibold text-gray-800 cursor-pointer hover:text-[#007681]">
+                            <div class="textGroup flex  items-center  justify-between w-full   ">
+                              
+                                <div class="flex items-center  truncate gap-2">
+                                 
+                                  <span class=" font text-[17px] font-bold truncate">Feuchtigkeitscremes</span>
+                                </div>
+        
+                                
+                           
+                              <span class="arrow transition-transform"> <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium frontpage-wr8ge5"
+                                style="width: 17px; height: 17px; transform: rotate(90deg);" 
+                                focusable="false" aria-hidden="true" viewBox="0 0 24 24" 
+                                data-testid="ArrowRightThinIcon">
+                             <path d="M9.146 5.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L14.793 12 9.146 6.354a.5.5 0 0 1 0-.708"></path>
+                           </svg>
+                              </span>
+                              </div>
+                          </button>
+                          <div class="accordion-content hidden p-4 ">
+                              <ul class="space-y-2">
+                                <li class="pl-[25px] pb-[8px] pt-[8px]"><a href="" class="block text-[16px] cursor-pointer text-gray-600 font-thin hover:text-gray-400">Tagescremes
+                                </a></li>
+                                <li class="pl-[25px] pb-[8px] pt-[8px]"><a href="" class="block text-[16px] cursor-pointer text-gray-600 font-thin hover:text-gray-400">Nachtcreme
+                                </a></li>
+                                <li class="pl-[25px] pb-[8px] pt-[8px]"><a href="" class="block text-[16px] cursor-pointer text-gray-600 font-thin hover:text-gray-400">BB- und CC-Creme
+                                </a></li>
+                                  </ul>
+                                  <!-- end -->
+                          </li>
+                          <!-- accordion menu item end -->
+                          
+                           <!-- accordion menu item start -->
+                           <li class="pl-[32px] pb-[15px] block hover:text-[#007681] text-[17px] cursor-pointer font-semibold">
+                            <!-- start -->
+                            <button class="accordion-header w-full flex justify-between items-center    font-semibold text-gray-800 cursor-pointer hover:text-[#007681]">
+                            <div class="textGroup flex  items-center  justify-between w-full   ">
+                              
+                                <div class="flex items-center  truncate gap-2">
+                                 
+                                  <span class=" font text-[17px] font-bold truncate">Serum und Behandlung</span>
+                                </div>
+        
+                                
+                           
+                              <span class="arrow transition-transform"> <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium frontpage-wr8ge5"
+                                style="width: 17px; height: 17px; transform: rotate(90deg);" 
+                                focusable="false" aria-hidden="true" viewBox="0 0 24 24" 
+                                data-testid="ArrowRightThinIcon">
+                             <path d="M9.146 5.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L14.793 12 9.146 6.354a.5.5 0 0 1 0-.708"></path>
+                           </svg>
+                              </span>
+                              </div>
+                          </button>
+                          <div class="accordion-content hidden p-4 ">
+                              <ul class="space-y-2">
+                                <li class="pl-[25px] pb-[8px] pt-[8px]"><a href="" class="block text-[16px] cursor-pointer text-gray-600 font-thin hover:text-gray-400">Serum und Booster
+                                </a></li>
+                                <li class="pl-[25px] pb-[8px] pt-[8px]"><a href="" class="block text-[16px] cursor-pointer text-gray-600 font-thin hover:text-gray-400">Gesichtsöl
+                                </a></li>
+                                <li class="pl-[25px] pb-[8px] pt-[8px]"><a href="" class="block text-[16px] cursor-pointer text-gray-600 font-thin hover:text-gray-400">Peeling-Effekt
+                                </a></li>
+                                <li class="pl-[25px] pb-[8px] pt-[8px]"><a href="" class="block text-[16px] cursor-pointer text-gray-600 font-thin hover:text-gray-400">Akne und Hautunreinheiten
+                                </a></li>
+                                <li class="pl-[25px] pb-[8px] pt-[8px]"><a href="" class="block text-[16px] cursor-pointer text-gray-600 font-thin hover:text-gray-400">Hals und Dekolleté
+                                </a></li>
+                                  </ul>
+                                  <!-- end -->
+                          </li>
+                          <!-- accordion menu item end -->
+
+
+                           <!-- accordion menu item start -->
+                           <li class="pl-[32px] pb-[15px] block hover:text-[#007681] text-[17px] cursor-pointer font-semibold">
+                            <!-- start -->
+                            <button class="accordion-header w-full flex justify-between items-center    font-semibold text-gray-800 cursor-pointer hover:text-[#007681]">
+                            <div class="textGroup flex  items-center  justify-between w-full  ">
+                              
+                                <div class="flex items-center  truncate gap-2">
+                                 
+                                  <span class=" font text-[17px] font-bold truncate">Augen- und Lippenpflege</span>
+                                </div>
+        
+                                
+                           
+                              <span class="arrow transition-transform"> <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium frontpage-wr8ge5"
+                                style="width: 17px; height: 17px; transform: rotate(90deg);" 
+                                focusable="false" aria-hidden="true" viewBox="0 0 24 24" 
+                                data-testid="ArrowRightThinIcon">
+                             <path d="M9.146 5.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L14.793 12 9.146 6.354a.5.5 0 0 1 0-.708"></path>
+                           </svg>
+                              </span>
+                              </div>
+                          </button>
+                          <div class="accordion-content hidden p-4 ">
+                              <ul class="space-y-2">
+                                <li class="pl-[25px] pb-[8px] pt-[8px]"><a href="" class="block text-[16px] cursor-pointer text-gray-600 font-thin hover:text-gray-400">Augencremes
+                                </a></li>
+                                <li class="pl-[25px] pb-[8px] pt-[8px]"><a href="" class="block text-[16px] cursor-pointer text-gray-600 font-thin hover:text-gray-400">Lippenpflege
+                                </a></li>
+                                  </ul>
+                                  <!-- end -->
+                          </li>
+                          <!-- accordion menu item end -->
+
+
+                           <!-- accordion menu item start -->
+                           <li class="pl-[32px] pb-[15px] block hover:text-[#007681] text-[17px] cursor-pointer font-semibold">
+                            <!-- start -->
+                            <button class="accordion-header w-full flex justify-between items-center    font-semibold text-gray-800 cursor-pointer hover:text-[#007681]">
+                            <div class="textGroup flex  items-center  justify-between w-full   ">
+                              
+                                <div class="flex items-center  truncate gap-2">
+                                 
+                                  <span class=" font text-[17px] font-bold truncate">Gesichtsreiniger</span>
+                                </div>
+        
+                                
+                           
+                              <span class="arrow transition-transform"> <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium frontpage-wr8ge5"
+                                style="width: 17px; height: 17px; transform: rotate(90deg);" 
+                                focusable="false" aria-hidden="true" viewBox="0 0 24 24" 
+                                data-testid="ArrowRightThinIcon">
+                             <path d="M9.146 5.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L14.793 12 9.146 6.354a.5.5 0 0 1 0-.708"></path>
+                           </svg>
+                              </span>
+                              </div>
+                          </button>
+                          <div class="accordion-content hidden p-4 ">
+                              <ul class="space-y-2">
+                                <li class="pl-[25px] pb-[8px] pt-[8px]"><a href="" class="block text-[16px] cursor-pointer text-gray-600 font-thin hover:text-gray-400">Gesichtsreiniger
+                                </a></li>
+                                <li class="pl-[25px] pb-[8px] pt-[8px]"><a href="" class="block text-[16px] cursor-pointer text-gray-600 font-thin hover:text-gray-400">Make-up-Entferner
+                                </a></li>
+                                  </ul>
+                                  <!-- end -->
+                          </li>
+                          <!-- accordion menu item end -->
+
+
+                          <!-- accordion menu item start -->
+                           <li class="pl-[32px] pb-[15px] block hover:text-[#007681] text-[17px] cursor-pointer font-semibold">
+                            <!-- start -->
+                            <button class="accordion-header w-full flex justify-between items-center    font-semibold text-gray-800 cursor-pointer hover:text-[#007681]">
+                            <div class="textGroup flex  items-center  justify-between w-full   ">
+                              
+                                <div class="flex items-center  truncate gap-2">
+                                 
+                                  <span class=" font text-[17px] font-bold truncate">Masken</span>
+                                </div>
+        
+                                
+                           
+                              <span class="arrow transition-transform"> <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium frontpage-wr8ge5"
+                                style="width: 17px; height: 17px; transform: rotate(90deg);" 
+                                focusable="false" aria-hidden="true" viewBox="0 0 24 24" 
+                                data-testid="ArrowRightThinIcon">
+                             <path d="M9.146 5.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L14.793 12 9.146 6.354a.5.5 0 0 1 0-.708"></path>
+                           </svg>
+                              </span>
+                              </div>
+                          </button>
+                          <div class="accordion-content hidden p-4 ">
+                              <ul class="space-y-2">
+                                <li class="pl-[25px] pb-[8px] pt-[8px]"><a href="" class="block text-[16px] cursor-pointer text-gray-600 font-thin hover:text-gray-400">Tuchmasken
+                                </a></li>
+                                <li class="pl-[25px] pb-[8px] pt-[8px]"><a href="" class="block text-[16px] cursor-pointer text-gray-600 font-thin hover:text-gray-400">Andere Masken
+                                </a></li>
+                                  </ul>
+                                  <!-- end -->
+                          </li>
+                          <!-- accordion menu item end -->
+
+                          
+                          <!-- accordion menu item start -->
+                          <li class="pl-[32px] pb-[15px] block hover:text-[#007681] text-[17px] cursor-pointer font-semibold">
+                            <!-- start -->
+                            <button class="accordion-header w-full flex justify-between items-center    font-semibold text-gray-800 cursor-pointer hover:text-[#007681]">
+                            <div class="textGroup flex  items-center  justify-between w-full   ">
+                              
+                                <div class="flex items-center  truncate gap-2">
+                                 
+                                  <span class=" font text-[17px] font-bold truncate">Sonnenschutzpflege</span>
+                                </div>
+        
+                                
+                           
+                              <span class="arrow transition-transform"> <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium frontpage-wr8ge5"
+                                style="width: 17px; height: 17px; transform: rotate(90deg);" 
+                                focusable="false" aria-hidden="true" viewBox="0 0 24 24" 
+                                data-testid="ArrowRightThinIcon">
+                             <path d="M9.146 5.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L14.793 12 9.146 6.354a.5.5 0 0 1 0-.708"></path>
+                           </svg>
+                              </span>
+                              </div>
+                          </button>
+                          <div class="accordion-content hidden p-4 ">
+                              <ul class="space-y-2">
+                                <li class="pl-[25px] pb-[8px] pt-[8px]"><a href="" class="block text-[16px] cursor-pointer text-gray-600 font-thin hover:text-gray-400">Sonnencreme für das Gesicht
+                                </a></li>
+                                <li class="pl-[25px] pb-[8px] pt-[8px]"><a href="" class="block text-[16px] cursor-pointer text-gray-600 font-thin hover:text-gray-400">Sonnenschutz
+                                </a></li>
+                                <li class="pl-[25px] pb-[8px] pt-[8px]"><a href="" class="block text-[16px] cursor-pointer text-gray-600 font-thin hover:text-gray-400">After sun & Selbstbräuner
+                                </a></li>
+                                  </ul>
+                                  <!-- end -->
+                          </li>
+                          <!-- accordion menu item end -->
+
+
+                          <li class="pl-[32px] pb-[15px]"><a href="" class="block hover:text-[#007681] text-[17px] cursor-pointer font-semibold">Hautpflege-Zubehör</a></li>
+                          <li class="pl-[32px] pb-[15px]"><a href="" class="block hover:text-[#007681] text-[17px] cursor-pointer font-semibold">Hautpflege-Sets</a></li>
+                          <li class="pl-[32px] pb-[15px]"><a href="" class="block hover:text-[#007681] text-[17px] cursor-pointer font-semibold">Gesichtswasser-Essenz und </a></li>
+                          <li class="pl-[32px] pb-[15px]"><a href="" class="block hover:text-[#007681] text-[17px] cursor-pointer font-semibold">Marken</a></li>
+                      </ul>
+                  </div>
+              </div>
+
+
+               <!-- Item Menu 2.3 -->
+               <div class="mb-1">
+                <button class="accordion-header w-full flex justify-between items-center    font-semibold text-gray-800 cursor-pointer">
+                  <div class="textGroup flex  items-center hover:bg-[#FCEEF4] justify-between w-full px-[15px] py-[15px]  border-l-4 border-l-[#E793B7] ">
+                    
+                      <div class="flex items-center  truncate gap-2">
+                       
+                        <span class=" font text-[17px] font-bold truncate">Make-up</span>
+                      </div>
+
+                      
+                 
+                    <span class="arrow transition-transform"> <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium frontpage-wr8ge5"
+                      style="width: 24px; height: 24px; transform: rotate(90deg);" 
+                      focusable="false" aria-hidden="true" viewBox="0 0 24 24" 
+                      data-testid="ArrowRightThinIcon">
+                   <path d="M9.146 5.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L14.793 12 9.146 6.354a.5.5 0 0 1 0-.708"></path>
+                 </svg>
+                    </span>
+                    </div>
+                </button>
+                <div class="accordion-content hidden p-4 ">
+                    <ul class="space-y-2">
+                        <li class="pl-[32px] pb-[15px]"><a href="" class="block hover:text-[#007681] text-[17px] cursor-pointer text-gray-600">Aktuelle Infos</a></li>
+                        <li class="pl-[32px] pb-[15px]"><a href="" class="block hover:text-[#007681] text-[17px] cursor-pointer text-gray-600"> Alle Make-up</a></li>
+
+                        <!-- accordion menu item start -->
+                        <li class="pl-[32px] pb-[15px] block hover:text-[#007681] text-[17px] cursor-pointer font-semibold">
+                          <!-- start -->
+                          <button class="accordion-header w-full flex justify-between items-center    font-semibold text-gray-800 cursor-pointer hover:text-[#007681]">
+                          <div class="textGroup flex  items-center  justify-between w-full   ">
+                            
+                              <div class="flex items-center  truncate gap-2">
+                               
+                                <span class=" font text-[17px] font-bold truncate">Gesicht</span>
+                              </div>
+      
+                              
+                         
+                            <span class="arrow transition-transform"> <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium frontpage-wr8ge5"
+                              style="width: 17px; height: 17px; transform: rotate(90deg);" 
+                              focusable="false" aria-hidden="true" viewBox="0 0 24 24" 
+                              data-testid="ArrowRightThinIcon">
+                           <path d="M9.146 5.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L14.793 12 9.146 6.354a.5.5 0 0 1 0-.708"></path>
+                         </svg>
+                            </span>
+                            </div>
+                        </button>
+                        <div class="accordion-content hidden p-4 ">
+                            <ul class="space-y-2">
+                              <li class="pl-[25px] pb-[8px] pt-[8px]"><a href="" class="block text-[16px] cursor-pointer text-gray-600 font-thin hover:text-gray-400">Foundation
+                              </a></li>
+                              <li class="pl-[25px] pb-[8px] pt-[8px]"><a href="" class="block text-[16px] cursor-pointer text-gray-600 font-thin hover:text-gray-400">Concealer und Korrektor
+
+                              </a></li>
+                              <li class="pl-[25px] pb-[8px] pt-[8px]"><a href="" class="block text-[16px] cursor-pointer text-gray-600 font-thin hover:text-gray-400">Puder
+                              </a></li>
+                              <li class="pl-[25px] pb-[8px] pt-[8px]"><a href="" class="block text-[16px] cursor-pointer text-gray-600 font-thin hover:text-gray-400">Konturstift und Highlighter
+                              </a></li>
+                              <li class="pl-[25px] pb-[8px] pt-[8px]"><a href="" class="block text-[16px] cursor-pointer text-gray-600 font-thin hover:text-gray-400">Rouge und Bronzer
+                              </a></li>
+                              <li class="pl-[25px] pb-[8px] pt-[8px]"><a href="" class="block text-[16px] cursor-pointer text-gray-600 font-thin hover:text-gray-400">BB- und CC-Creme
+                              </a></li>
+                              <li class="pl-[25px] pb-[8px] pt-[8px]"><a href="" class="block text-[16px] cursor-pointer text-gray-600 font-thin hover:text-gray-400">Grundierung und Sprühnebel
+                              </a></li>
+                              <li class="pl-[25px] pb-[8px] pt-[8px]"><a href="" class="block text-[16px] cursor-pointer text-gray-600 font-thin hover:text-gray-400">Make-up-Entferner
+                              </a></li>
+                                </ul>
+                                <!-- end -->
+                        </li>
+                        <!-- accordion menu item end -->
+                        
+                         <!-- accordion menu item start -->
+                         <li class="pl-[32px] pb-[15px] block hover:text-[#007681] text-[17px] cursor-pointer font-semibold">
+                          <!-- start -->
+                          <button class="accordion-header w-full flex justify-between items-center    font-semibold text-gray-800 cursor-pointer hover:text-[#007681]">
+                          <div class="textGroup flex  items-center  justify-between w-full   ">
+                            
+                              <div class="flex items-center  truncate gap-2">
+                               
+                                <span class=" font text-[17px] font-bold truncate">Augen</span>
+                              </div>
+      
+                              
+                         
+                            <span class="arrow transition-transform"> <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium frontpage-wr8ge5"
+                              style="width: 17px; height: 17px; transform: rotate(90deg);" 
+                              focusable="false" aria-hidden="true" viewBox="0 0 24 24" 
+                              data-testid="ArrowRightThinIcon">
+                           <path d="M9.146 5.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L14.793 12 9.146 6.354a.5.5 0 0 1 0-.708"></path>
+                         </svg>
+                            </span>
+                            </div>
+                        </button>
+                        <div class="accordion-content hidden p-4 ">
+                            <ul class="space-y-2">
+                              <li class="pl-[25px] pb-[8px] pt-[8px]"><a href="" class="block text-[16px] cursor-pointer text-gray-600 font-thin hover:text-gray-400">Mascara
+                              </a></li>
+                              <li class="pl-[25px] pb-[8px] pt-[8px]"><a href="" class="block text-[16px] cursor-pointer text-gray-600 font-thin hover:text-gray-400">Eyeliner
+                              </a></li>
+                              <li class="pl-[25px] pb-[8px] pt-[8px]"><a href="" class="block text-[16px] cursor-pointer text-gray-600 font-thin hover:text-gray-400">Lidschatten
+                              </a></li>
+                              <li class="pl-[25px] pb-[8px] pt-[8px]"><a href="" class="block text-[16px] cursor-pointer text-gray-600 font-thin hover:text-gray-400">Augenbrauen
+                              </a></li>
+                              <li class="pl-[25px] pb-[8px] pt-[8px]"><a href="" class="block text-[16px] cursor-pointer text-gray-600 font-thin hover:text-gray-400">Augen-Make-up-Entferner
+                              </a></li>
+                                </ul>
+                                <!-- end -->
+                        </li>
+                        <!-- accordion menu item end -->
+
+
+                         <!-- accordion menu item start -->
+                         <li class="pl-[32px] pb-[15px] block hover:text-[#007681] text-[17px] cursor-pointer font-semibold">
+                          <!-- start -->
+                          <button class="accordion-header w-full flex justify-between items-center    font-semibold text-gray-800 cursor-pointer hover:text-[#007681]">
+                          <div class="textGroup flex  items-center  justify-between w-full   ">
+                            
+                              <div class="flex items-center  truncate gap-2">
+                               
+                                <span class=" font text-[17px] font-bold truncate">Lippen</span>
+                              </div>
+      
+                              
+                         
+                            <span class="arrow transition-transform"> <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium frontpage-wr8ge5"
+                              style="width: 17px; height: 17px; transform: rotate(90deg);" 
+                              focusable="false" aria-hidden="true" viewBox="0 0 24 24" 
+                              data-testid="ArrowRightThinIcon">
+                           <path d="M9.146 5.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L14.793 12 9.146 6.354a.5.5 0 0 1 0-.708"></path>
+                         </svg>
+                            </span>
+                            </div>
+                        </button>
+                        <div class="accordion-content hidden p-4 ">
+                            <ul class="space-y-2">
+                              <li class="pl-[25px] pb-[8px] pt-[8px]"><a href="" class="block text-[16px] cursor-pointer text-gray-600 font-thin hover:text-gray-400">Lippenstift
+                              </a></li>
+                              <li class="pl-[25px] pb-[8px] pt-[8px]"><a href="" class="block text-[16px] cursor-pointer text-gray-600 font-thin hover:text-gray-400">Lipgloss
+                              </a></li>
+                              <li class="pl-[25px] pb-[8px] pt-[8px]"><a href="" class="block text-[16px] cursor-pointer text-gray-600 font-thin hover:text-gray-400">Lippenkonturenstift
+                              </a></li>
+                              <li class="pl-[25px] pb-[8px] pt-[8px]"><a href="" class="block text-[16px] cursor-pointer text-gray-600 font-thin hover:text-gray-400">Lippenpflege
+                              </a></li>
+                                </ul>
+                                <!-- end -->
+                        </li>
+                        <!-- accordion menu item end -->
+
+
+                         <!-- accordion menu item start -->
+                         <li class="pl-[32px] pb-[15px] block hover:text-[#007681] text-[17px] cursor-pointer font-semibold">
+                          <!-- start -->
+                          <button class="accordion-header w-full flex justify-between items-center    font-semibold text-gray-800 cursor-pointer hover:text-[#007681]">
+                          <div class="textGroup flex  items-center  justify-between w-full   ">
+                            
+                              <div class="flex items-center  truncate gap-2">
+                               
+                                <span class=" font text-[17px] font-bold truncate">Nägel</span>
+                              </div>
+      
+                              
+                         
+                            <span class="arrow transition-transform"> <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium frontpage-wr8ge5"
+                              style="width: 17px; height: 17px; transform: rotate(90deg);" 
+                              focusable="false" aria-hidden="true" viewBox="0 0 24 24" 
+                              data-testid="ArrowRightThinIcon">
+                           <path d="M9.146 5.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L14.793 12 9.146 6.354a.5.5 0 0 1 0-.708"></path>
+                         </svg>
+                            </span>
+                            </div>
+                        </button>
+                        <div class="accordion-content hidden p-4 ">
+                            <ul class="space-y-2">
+                              <li class="pl-[25px] pb-[8px] pt-[8px]"><a href="" class="block text-[16px] cursor-pointer text-gray-600 font-thin hover:text-gray-400">Nagellack
+                              </a></li>
+                              <li class="pl-[25px] pb-[8px] pt-[8px]"><a href="" class="block text-[16px] cursor-pointer text-gray-600 font-thin hover:text-gray-400">Base & Topcoat
+                              </a></li>
+                              <li class="pl-[25px] pb-[8px] pt-[8px]"><a href="" class="block text-[16px] cursor-pointer text-gray-600 font-thin hover:text-gray-400">Nagelpflege
+                              </a></li>
+                              <li class="pl-[25px] pb-[8px] pt-[8px]"><a href="" class="block text-[16px] cursor-pointer text-gray-600 font-thin hover:text-gray-400">Nagellackentferner
+                              </a></li>
+                                </ul>
+                                <!-- end -->
+                        </li>
+                        <!-- accordion menu item end -->
+
+
+                        <!-- accordion menu item start -->
+                         <li class="pl-[32px] pb-[15px] block hover:text-[#007681] text-[17px] cursor-pointer font-semibold">
+                          <!-- start -->
+                          <button class="accordion-header w-full flex justify-between items-center    font-semibold text-gray-800 cursor-pointer hover:text-[#007681]">
+                          <div class="textGroup flex  items-center  justify-between w-full   ">
+                            
+                              <div class="flex items-center  truncate gap-2">
+                               
+                                <span class=" font text-[17px] font-bold truncate">Schminkutensilien
+                                </span>
+                              </div>
+      
+                              
+                         
+                            <span class="arrow transition-transform"> <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium frontpage-wr8ge5"
+                              style="width: 17px; height: 17px; transform: rotate(90deg);" 
+                              focusable="false" aria-hidden="true" viewBox="0 0 24 24" 
+                              data-testid="ArrowRightThinIcon">
+                           <path d="M9.146 5.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L14.793 12 9.146 6.354a.5.5 0 0 1 0-.708"></path>
+                         </svg>
+                            </span>
+                            </div>
+                        </button>
+                        <div class="accordion-content hidden p-4 ">
+                            <ul class="space-y-2">
+                              <li class="pl-[25px] pb-[8px] pt-[8px]"><a href="" class="block text-[16px] cursor-pointer text-gray-600 font-thin hover:text-gray-400">Pinsel und Applikatoren
+                              </a></li>
+                              <li class="pl-[25px] pb-[8px] pt-[8px]"><a href="" class="block text-[16px] cursor-pointer text-gray-600 font-thin hover:text-gray-400">Andere Schminkutensilien
+                              </a></li>
+                                </ul>
+                                <!-- end -->
+                        </li>
+                        <!-- accordion menu item end -->
+
+                        <li class="pl-[32px] pb-[15px]"><a href="" class="block hover:text-[#007681] text-[17px] cursor-pointer font-semibold">Marken</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+            <!-- Item Menu 2.4 -->
+            <div class="mb-1">
+              <button class="accordion-header w-full flex justify-between items-center    font-semibold text-gray-800 cursor-pointer">
+                <div class="textGroup flex  items-center hover:bg-[#F4F3F2] justify-between w-full px-[15px] py-[15px]  border-l-4 border-l-[#B6ADA5] ">
+                  
+                    <div class="flex items-center  truncate gap-2">
+                     
+                      <span class=" font text-[17px] font-bold truncate">Düfte</span>
+                    </div>
+
+                    
+               
+                  <span class="arrow transition-transform"> <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium frontpage-wr8ge5"
+                    style="width: 24px; height: 24px; transform: rotate(90deg);" 
+                    focusable="false" aria-hidden="true" viewBox="0 0 24 24" 
+                    data-testid="ArrowRightThinIcon">
+                 <path d="M9.146 5.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L14.793 12 9.146 6.354a.5.5 0 0 1 0-.708"></path>
+               </svg>
+                  </span>
+                  </div>
+              </button>
+              <div class="accordion-content hidden p-4 ">
+                  <ul class="space-y-2">
+                      <li class="pl-[32px] pb-[15px]"><a href="" class="block hover:text-[#007681] text-[17px] cursor-pointer text-gray-600">Aktuelle Infos</a></li>
+                      <li class="pl-[32px] pb-[15px]"><a href="" class="block hover:text-[#007681] text-[17px] cursor-pointer text-gray-600"> Alle Düfte</a></li>
+
+                      <!-- accordion menu item start -->
+                      <li class="pl-[32px] pb-[15px] block hover:text-[#007681] text-[17px] cursor-pointer font-semibold">
+                        <!-- start -->
+                        <button class="accordion-header w-full flex justify-between items-center    font-semibold text-gray-800 cursor-pointer hover:text-[#007681]">
+                        <div class="textGroup flex  items-center  justify-between w-full   ">
+                          
+                            <div class="flex items-center  truncate gap-2">
+                             
+                              <span class=" font text-[17px] font-bold truncate">Damen</span>
+                            </div>
+    
+                            
+                       
+                          <span class="arrow transition-transform"> <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium frontpage-wr8ge5"
+                            style="width: 17px; height: 17px; transform: rotate(90deg);" 
+                            focusable="false" aria-hidden="true" viewBox="0 0 24 24" 
+                            data-testid="ArrowRightThinIcon">
+                         <path d="M9.146 5.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L14.793 12 9.146 6.354a.5.5 0 0 1 0-.708"></path>
+                       </svg>
+                          </span>
+                          </div>
+                      </button>
+                      <div class="accordion-content hidden p-4 ">
+                          <ul class="space-y-2">
+                            <li class="pl-[25px] pb-[8px] pt-[8px]"><a href="" class="block text-[16px] cursor-pointer text-gray-600 font-thin hover:text-gray-400">Düfte
+                            </a></li>
+                            <li class="pl-[25px] pb-[8px] pt-[8px]"><a href="" class="block text-[16px] cursor-pointer text-gray-600 font-thin hover:text-gray-400">Körperspray und Deodorant
+
+                            </a></li>
+                            <li class="pl-[25px] pb-[8px] pt-[8px]"><a href="" class="block text-[16px] cursor-pointer text-gray-600 font-thin hover:text-gray-400">Geschenkset und Reisespray
+                            </a></li>
+                              </ul>
+                              <!-- end -->
+                      </li>
+                      <!-- accordion menu item end -->
+                      
+                      <!-- accordion menu item start -->
+                      <li class="pl-[32px] pb-[15px] block hover:text-[#007681] text-[17px] cursor-pointer font-semibold">
+                        <!-- start -->
+                        <button class="accordion-header w-full flex justify-between items-center    font-semibold text-gray-800 cursor-pointer hover:text-[#007681]">
+                        <div class="textGroup flex  items-center  justify-between w-full   ">
+                          
+                            <div class="flex items-center  truncate gap-2">
+                             
+                              <span class=" font text-[17px] font-bold truncate">Damen</span>
+                            </div>
+    
+                            
+                       
+                          <span class="arrow transition-transform"> <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium frontpage-wr8ge5"
+                            style="width: 17px; height: 17px; transform: rotate(90deg);" 
+                            focusable="false" aria-hidden="true" viewBox="0 0 24 24" 
+                            data-testid="ArrowRightThinIcon">
+                         <path d="M9.146 5.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L14.793 12 9.146 6.354a.5.5 0 0 1 0-.708"></path>
+                       </svg>
+                          </span>
+                          </div>
+                      </button>
+                      <div class="accordion-content hidden p-4 ">
+                          <ul class="space-y-2">
+                            <li class="pl-[25px] pb-[8px] pt-[8px]"><a href="" class="block text-[16px] cursor-pointer text-gray-600 font-thin hover:text-gray-400">Düfte
+                            </a></li>
+                            <li class="pl-[25px] pb-[8px] pt-[8px]"><a href="" class="block text-[16px] cursor-pointer text-gray-600 font-thin hover:text-gray-400">Körperspray und Deodorant
+
+                            </a></li>
+                            <li class="pl-[25px] pb-[8px] pt-[8px]"><a href="" class="block text-[16px] cursor-pointer text-gray-600 font-thin hover:text-gray-400">Geschenkset und Reisespray
+                            </a></li>
+                              </ul>
+                              <!-- end -->
+                      </li>
+                      <!-- accordion menu item end -->
+
+
+                      <li class="pl-[32px] pb-[15px]"><a href="" class="block hover:text-[#007681] text-[17px] cursor-pointer font-semibold">Marken</a></li>
+                  </ul>
+              </div>
+          </div>
+
+
+
+          <!-- Item Menu 2.5 -->
+          <div class="mb-1">
+            <button class="accordion-header w-full flex justify-between items-center    font-semibold text-gray-800 cursor-pointer">
+              <div class="textGroup flex  items-center hover:bg-[#E0EAF3] justify-between w-full px-[15px] py-[15px]  border-l-4 border-l-[#2774AE] ">
+
+                  <div class="flex items-center  truncate gap-2">
+                   
+                    <span class=" font text-[17px] font-bold truncate">Bad & Körper</span>
+                  </div>
+
+                  
+             
+                <span class="arrow transition-transform"> <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium frontpage-wr8ge5"
+                  style="width: 24px; height: 24px; transform: rotate(90deg);" 
+                  focusable="false" aria-hidden="true" viewBox="0 0 24 24" 
+                  data-testid="ArrowRightThinIcon">
+               <path d="M9.146 5.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L14.793 12 9.146 6.354a.5.5 0 0 1 0-.708"></path>
+             </svg>
+                </span>
+                </div>
+            </button>
+            <div class="accordion-content hidden p-4 ">
+                <ul class="space-y-2">
+                    <li class="pl-[32px] pb-[15px]"><a href="" class="block hover:text-[#007681] text-[17px] cursor-pointer text-gray-600">Aktuelle Infos</a></li>
+                    <li class="pl-[32px] pb-[15px]"><a href="" class="block hover:text-[#007681] text-[17px] cursor-pointer text-gray-600">Alles Bad & Körper</a></li>
+
+                    <!-- accordion menu item start -->
+                    <li class="pl-[32px] pb-[15px] block hover:text-[#007681] text-[17px] cursor-pointer font-semibold">
+                      <!-- start -->
+                      <button class="accordion-header w-full flex justify-between items-center    font-semibold text-gray-800 cursor-pointer hover:text-[#007681]">
+                      <div class="textGroup flex  items-center  justify-between w-full   ">
+                        
+                          <div class="flex items-center  truncate gap-2">
+                           
+                            <span class=" font text-[17px] font-bold truncate">Körperpflege</span>
+                          </div>
+  
+                          
+                     
+                        <span class="arrow transition-transform"> <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium frontpage-wr8ge5"
+                          style="width: 17px; height: 17px; transform: rotate(90deg);" 
+                          focusable="false" aria-hidden="true" viewBox="0 0 24 24" 
+                          data-testid="ArrowRightThinIcon">
+                       <path d="M9.146 5.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L14.793 12 9.146 6.354a.5.5 0 0 1 0-.708"></path>
+                     </svg>
+                        </span>
+                        </div>
+                    </button>
+                    <div class="accordion-content hidden p-4 ">
+                        <ul class="space-y-2">
+                          <li class="pl-[25px] pb-[8px] pt-[8px]"><a href="" class="block text-[16px] cursor-pointer text-gray-600 font-thin hover:text-gray-400">Feuchtigkeitscreme für den Körper
+                          </a></li>
+                          <li class="pl-[25px] pb-[8px] pt-[8px]"><a href="" class="block text-[16px] cursor-pointer text-gray-600 font-thin hover:text-gray-400">Hand care
+                          </a></li>
+                          <li class="pl-[25px] pb-[8px] pt-[8px]"><a href="" class="block text-[16px] cursor-pointer text-gray-600 font-thin hover:text-gray-400">Foot care
+                          </a></li>
+                          <li class="pl-[25px] pb-[8px] pt-[8px]"><a href="" class="block text-[16px] cursor-pointer text-gray-600 font-thin hover:text-gray-400">Anti-cellulite & Toning
+                          </a></li>
+                            </ul>
+                            <!-- end -->
+                    </li>
+                    <!-- accordion menu item end -->
+                    
+                     <!-- accordion menu item start -->
+                     <li class="pl-[32px] pb-[15px] block hover:text-[#007681] text-[17px] cursor-pointer font-semibold">
+                      <!-- start -->
+                      <button class="accordion-header w-full flex justify-between items-center    font-semibold text-gray-800 cursor-pointer hover:text-[#007681]">
+                      <div class="textGroup flex  items-center  justify-between w-full   ">
+                        
+                          <div class="flex items-center  truncate gap-2">
+                           
+                            <span class=" font text-[17px] font-bold truncate">Bad und Dusche</span>
+                          </div>
+  
+                          
+                     
+                        <span class="arrow transition-transform"> <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium frontpage-wr8ge5"
+                          style="width: 17px; height: 17px; transform: rotate(90deg);" 
+                          focusable="false" aria-hidden="true" viewBox="0 0 24 24" 
+                          data-testid="ArrowRightThinIcon">
+                       <path d="M9.146 5.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L14.793 12 9.146 6.354a.5.5 0 0 1 0-.708"></path>
+                     </svg>
+                        </span>
+                        </div>
+                    </button>
+                    <div class="accordion-content hidden p-4 ">
+                        <ul class="space-y-2">
+                          <li class="pl-[25px] pb-[8px] pt-[8px]"><a href="" class="block text-[16px] cursor-pointer text-gray-600 font-thin hover:text-gray-400">Body wash
+                          </a></li>
+                          <li class="pl-[25px] pb-[8px] pt-[8px]"><a href="" class="block text-[16px] cursor-pointer text-gray-600 font-thin hover:text-gray-400">Seife
+                          </a></li>
+                          <li class="pl-[25px] pb-[8px] pt-[8px]"><a href="" class="block text-[16px] cursor-pointer text-gray-600 font-thin hover:text-gray-400">Körperpeeling
+                          </a></li>
+                          <li class="pl-[25px] pb-[8px] pt-[8px]"><a href="" class="block text-[16px] cursor-pointer text-gray-600 font-thin hover:text-gray-400">Andere Badeprodukte
+                          </a></li>
+                        
+                            </ul>
+                            <!-- end -->
+                    </li>
+                    <!-- accordion menu item end -->
+
+
+                     <!-- accordion menu item start -->
+                     <li class="pl-[32px] pb-[15px] block hover:text-[#007681] text-[17px] cursor-pointer font-semibold">
+                      <!-- start -->
+                      <button class="accordion-header w-full flex justify-between items-center    font-semibold text-gray-800 cursor-pointer hover:text-[#007681]">
+                      <div class="textGroup flex  items-center  justify-between w-full  ">
+                        
+                          <div class="flex items-center  truncate gap-2">
+                           
+                            <span class=" font text-[17px] font-bold truncate">Bade- und </span>
+                          </div>
+  
+                          
+                     
+                        <span class="arrow transition-transform"> <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium frontpage-wr8ge5"
+                          style="width: 17px; height: 17px; transform: rotate(90deg);" 
+                          focusable="false" aria-hidden="true" viewBox="0 0 24 24" 
+                          data-testid="ArrowRightThinIcon">
+                       <path d="M9.146 5.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L14.793 12 9.146 6.354a.5.5 0 0 1 0-.708"></path>
+                     </svg>
+                        </span>
+                        </div>
+                    </button>
+                    <div class="accordion-content hidden p-4 ">
+                        <ul class="space-y-2">
+                          <li class="pl-[25px] pb-[8px] pt-[8px]"><a href="" class="block text-[16px] cursor-pointer text-gray-600 font-thin hover:text-gray-400">Maniküre und Pediküre
+                          </a></li>
+                          <li class="pl-[25px] pb-[8px] pt-[8px]"><a href="" class="block text-[16px] cursor-pointer text-gray-600 font-thin hover:text-gray-400">Körperschwämme und Sonstiges
+                          </a></li>
+                            </ul>
+                            <!-- end -->
+                    </li>
+                    <!-- accordion menu item end -->
+
+
+
+                    <li class="pl-[32px] pb-[15px]"><a href="" class="block hover:text-[#007681] text-[17px] cursor-pointer font-semibold">Intimpflege</a></li>
+                    <li class="pl-[32px] pb-[15px]"><a href="" class="block hover:text-[#007681] text-[17px] cursor-pointer font-semibold">Mundpflege</a></li>
+                    <li class="pl-[32px] pb-[15px]"><a href="" class="block hover:text-[#007681] text-[17px] cursor-pointer font-semibold">GSonnenschutz </a></li>
+                    <li class="pl-[32px] pb-[15px]"><a href="" class="block hover:text-[#007681] text-[17px] cursor-pointer font-semibold">Hair removal</a></li>
+                    <li class="pl-[32px] pb-[15px]"><a href="" class="block hover:text-[#007681] text-[17px] cursor-pointer font-semibold">Deodorants und</a></li>
+                    <li class="pl-[32px] pb-[15px]"><a href="" class="block hover:text-[#007681] text-[17px] cursor-pointer font-semibold">Marken</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <!-- Item Menu 2.6 -->
+        <div class="mb-1">
+          <button class="accordion-header w-full flex justify-between items-center    font-semibold text-gray-800 cursor-pointer">
+            <div class="textGroup flex  items-center hover:bg-[#FDF6E8] justify-between w-full px-[15px] py-[15px]  border-l-4 border-l-[#F0C264] ">
+            
+                <div class="flex items-center  truncate gap-2">
+                 
+                  <span class=" font text-[17px] font-bold truncate">Haar</span>
+                </div>
+
+                
+           
+              <span class="arrow transition-transform"> <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium frontpage-wr8ge5"
+                style="width: 24px; height: 24px; transform: rotate(90deg);" 
+                focusable="false" aria-hidden="true" viewBox="0 0 24 24" 
+                data-testid="ArrowRightThinIcon">
+             <path d="M9.146 5.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L14.793 12 9.146 6.354a.5.5 0 0 1 0-.708"></path>
+           </svg>
+              </span>
+              </div>
+          </button>
+          <div class="accordion-content hidden p-4 ">
+              <ul class="space-y-2">
+                  <li class="pl-[32px] pb-[15px]"><a href="" class="block hover:text-[#007681] text-[17px] cursor-pointer text-gray-600">Aktuelle Infos</a></li>
+                  <li class="pl-[32px] pb-[15px]"><a href="" class="block hover:text-[#007681] text-[17px] cursor-pointer text-gray-600">Alle Haar</a></li>
+
+                  <li class="pl-[32px] pb-[15px]"><a href="" class="block hover:text-[#007681] text-[17px] cursor-pointer font-semibold">Shampoo</a></li>
+                  <li class="pl-[32px] pb-[15px]"><a href="" class="block hover:text-[#007681] text-[17px] cursor-pointer font-semibold">Conditioner</a></li>
+                  <li class="pl-[32px] pb-[15px]"><a href="" class="block hover:text-[#007681] text-[17px] cursor-pointer font-semibold">Stylingprodukte </a></li>
+
+                  <!-- accordion menu item start -->
+                  <li class="pl-[32px] pb-[15px] block hover:text-[#007681] text-[17px] cursor-pointer font-semibold">
+                    <!-- start -->
+                    <button class="accordion-header w-full flex justify-between items-center    font-semibold text-gray-800 cursor-pointer hover:text-[#007681]">
+                    <div class="textGroup flex  items-center  justify-between w-full   ">
+                      
+                        <div class="flex items-center  truncate gap-2">
+                         
+                          <span class=" font text-[17px] font-bold truncate">Haarkur</span>
+                        </div>
+
+                        
+                   
+                      <span class="arrow transition-transform"> <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium frontpage-wr8ge5"
+                        style="width: 17px; height: 17px; transform: rotate(90deg);" 
+                        focusable="false" aria-hidden="true" viewBox="0 0 24 24" 
+                        data-testid="ArrowRightThinIcon">
+                     <path d="M9.146 5.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L14.793 12 9.146 6.354a.5.5 0 0 1 0-.708"></path>
+                   </svg>
+                      </span>
+                      </div>
+                  </button>
+                  <div class="accordion-content hidden p-4 ">
+                      <ul class="space-y-2">
+                        <li class="pl-[25px] pb-[8px] pt-[8px]"><a href="" class="block text-[16px] cursor-pointer text-gray-600 font-thin hover:text-gray-400">Feuchtigkeitscreme für den Körper
+                        </a></li>
+                        <li class="pl-[25px] pb-[8px] pt-[8px]"><a href="" class="block text-[16px] cursor-pointer text-gray-600 font-thin hover:text-gray-400">Hand care
+                        </a></li>
+                        <li class="pl-[25px] pb-[8px] pt-[8px]"><a href="" class="block text-[16px] cursor-pointer text-gray-600 font-thin hover:text-gray-400">Foot care
+                        </a></li>
+                        <li class="pl-[25px] pb-[8px] pt-[8px]"><a href="" class="block text-[16px] cursor-pointer text-gray-600 font-thin hover:text-gray-400">Anti-cellulite & Toning
+                        </a></li>
+                          </ul>
+                          <!-- end -->
+                  </li>
+                  <!-- accordion menu item end -->
+                  
+                   <!-- accordion menu item start -->
+                   <li class="pl-[32px] pb-[15px] block hover:text-[#007681] text-[17px] cursor-pointer font-semibold">
+                    <!-- start -->
+                    <button class="accordion-header w-full flex justify-between items-center    font-semibold text-gray-800 cursor-pointer hover:text-[#007681]">
+                    <div class="textGroup flex  items-center  justify-between w-full   ">
+                      
+                        <div class="flex items-center  truncate gap-2">
+                         
+                          <span class=" font text-[17px] font-bold truncate">Haartools und Accessoires</span>
+                        </div>
+
+                        
+                   
+                      <span class="arrow transition-transform"> <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium frontpage-wr8ge5"
+                        style="width: 17px; height: 17px; transform: rotate(90deg);" 
+                        focusable="false" aria-hidden="true" viewBox="0 0 24 24" 
+                        data-testid="ArrowRightThinIcon">
+                     <path d="M9.146 5.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L14.793 12 9.146 6.354a.5.5 0 0 1 0-.708"></path>
+                   </svg>
+                      </span>
+                      </div>
+                  </button>
+                  <div class="accordion-content hidden p-4 ">
+                      <ul class="space-y-2">
+                        <li class="pl-[25px] pb-[8px] pt-[8px]"><a href="" class="block text-[16px] cursor-pointer text-gray-600 font-thin hover:text-gray-400">Body wash
+                        </a></li>
+                        <li class="pl-[25px] pb-[8px] pt-[8px]"><a href="" class="block text-[16px] cursor-pointer text-gray-600 font-thin hover:text-gray-400">Seife
+                        </a></li>
+                        <li class="pl-[25px] pb-[8px] pt-[8px]"><a href="" class="block text-[16px] cursor-pointer text-gray-600 font-thin hover:text-gray-400">Körperpeeling
+                        </a></li>
+                        <li class="pl-[25px] pb-[8px] pt-[8px]"><a href="" class="block text-[16px] cursor-pointer text-gray-600 font-thin hover:text-gray-400">Andere Badeprodukte
+                        </a></li>
+                      
+                          </ul>
+                          <!-- end -->
+                  </li>
+                  <!-- accordion menu item end -->
+
+
+                   <!-- accordion menu item start -->
+                   <li class="pl-[32px] pb-[15px] block hover:text-[#007681] text-[17px] cursor-pointer font-semibold">
+                    <!-- start -->
+                    <button class="accordion-header w-full flex justify-between items-center    font-semibold text-gray-800 cursor-pointer hover:text-[#007681]">
+                    <div class="textGroup flex  items-center  justify-between w-full  ">
+                      
+                        <div class="flex items-center  truncate gap-2">
+                         
+                          <span class=" font text-[17px] font-bold truncate">Marken</span>
+                        </div>
+
+                        
+                   
+                      <span class="arrow transition-transform"> <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium frontpage-wr8ge5"
+                        style="width: 17px; height: 17px; transform: rotate(90deg);" 
+                        focusable="false" aria-hidden="true" viewBox="0 0 24 24" 
+                        data-testid="ArrowRightThinIcon">
+                     <path d="M9.146 5.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L14.793 12 9.146 6.354a.5.5 0 0 1 0-.708"></path>
+                   </svg>
+                      </span>
+                      </div>
+                  </button>
+                  <div class="accordion-content hidden p-4 ">
+                      <ul class="space-y-2">
+                        <li class="pl-[25px] pb-[8px] pt-[8px]"><a href="" class="block text-[16px] cursor-pointer text-gray-600 font-thin hover:text-gray-400">Maniküre und Pediküre
+                        </a></li>
+                        <li class="pl-[25px] pb-[8px] pt-[8px]"><a href="" class="block text-[16px] cursor-pointer text-gray-600 font-thin hover:text-gray-400">Körperschwämme und Sonstiges
+                        </a></li>
+                          </ul>
+                          <!-- end -->
+                  </li>
+                  <!-- accordion menu item end -->
+
+
+
+                  
+              </ul>
+          </div>
+      </div>
+
+
+      <!-- Item Menu 2.7 -->
+      <div class="mb-1">
+        <button class="accordion-header w-full flex justify-between items-center    font-semibold text-gray-800 cursor-pointer">
+          <div class="textGroup flex  items-center hover:bg-[#FFECEA] justify-between w-full px-[15px] py-[15px]  border-l-4 border-l-[#FF8072] ">
+            
+              <div class="flex items-center  truncate gap-2">
+               
+                <span class=" font text-[17px] font-bold truncate">Accessoires</span>
+              </div>
+
+              
+         
+            <span class="arrow transition-transform"> <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium frontpage-wr8ge5"
+              style="width: 24px; height: 24px; transform: rotate(90deg);" 
+              focusable="false" aria-hidden="true" viewBox="0 0 24 24" 
+              data-testid="ArrowRightThinIcon">
+           <path d="M9.146 5.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L14.793 12 9.146 6.354a.5.5 0 0 1 0-.708"></path>
+         </svg>
+            </span>
+            </div>
+        </button>
+        <div class="accordion-content hidden p-4 ">
+            <ul class="space-y-2">
+                <li class="pl-[32px] pb-[15px]"><a href="" class="block hover:text-[#007681] text-[17px] cursor-pointer text-gray-600">Aktuelle Infos</a></li>
+                <li class="pl-[32px] pb-[15px]"><a href="" class="block hover:text-[#007681] text-[17px] cursor-pointer text-gray-600"> Alle Düfte</a></li>
+
+                <!-- accordion menu item start -->
+                <li class="pl-[32px] pb-[15px] block hover:text-[#007681] text-[17px] cursor-pointer font-semibold">
+                  <!-- start -->
+                  <button class="accordion-header w-full flex justify-between items-center    font-semibold text-gray-800 cursor-pointer hover:text-[#007681]">
+                  <div class="textGroup flex  items-center  justify-between w-full   ">
+                    
+                      <div class="flex items-center  truncate gap-2">
+                       
+                        <span class=" font text-[17px] font-bold truncate">Damen</span>
+                      </div>
+
+                      
+                 
+                    <span class="arrow transition-transform"> <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium frontpage-wr8ge5"
+                      style="width: 17px; height: 17px; transform: rotate(90deg);" 
+                      focusable="false" aria-hidden="true" viewBox="0 0 24 24" 
+                      data-testid="ArrowRightThinIcon">
+                   <path d="M9.146 5.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L14.793 12 9.146 6.354a.5.5 0 0 1 0-.708"></path>
+                 </svg>
+                    </span>
+                    </div>
+                </button>
+                <div class="accordion-content hidden p-4 ">
+                    <ul class="space-y-2">
+                      <li class="pl-[25px] pb-[8px] pt-[8px]"><a href="" class="block text-[16px] cursor-pointer text-gray-600 font-thin hover:text-gray-400">Düfte
+                      </a></li>
+                      <li class="pl-[25px] pb-[8px] pt-[8px]"><a href="" class="block text-[16px] cursor-pointer text-gray-600 font-thin hover:text-gray-400">Körperspray und Deodorant
+
+                      </a></li>
+                      <li class="pl-[25px] pb-[8px] pt-[8px]"><a href="" class="block text-[16px] cursor-pointer text-gray-600 font-thin hover:text-gray-400">Geschenkset und Reisespray
+                      </a></li>
+                        </ul>
+                        <!-- end -->
+                </li>
+                <!-- accordion menu item end -->
+                
+                <!-- accordion menu item start -->
+                <li class="pl-[32px] pb-[15px] block hover:text-[#007681] text-[17px] cursor-pointer font-semibold">
+                  <!-- start -->
+                  <button class="accordion-header w-full flex justify-between items-center    font-semibold text-gray-800 cursor-pointer hover:text-[#007681]">
+                  <div class="textGroup flex  items-center  justify-between w-full   ">
+                    
+                      <div class="flex items-center  truncate gap-2">
+                       
+                        <span class=" font text-[17px] font-bold truncate">Damen</span>
+                      </div>
+
+                      
+                 
+                    <span class="arrow transition-transform"> <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium frontpage-wr8ge5"
+                      style="width: 17px; height: 17px; transform: rotate(90deg);" 
+                      focusable="false" aria-hidden="true" viewBox="0 0 24 24" 
+                      data-testid="ArrowRightThinIcon">
+                   <path d="M9.146 5.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L14.793 12 9.146 6.354a.5.5 0 0 1 0-.708"></path>
+                 </svg>
+                    </span>
+                    </div>
+                </button>
+                <div class="accordion-content hidden p-4 ">
+                    <ul class="space-y-2">
+                      <li class="pl-[25px] pb-[8px] pt-[8px]"><a href="" class="block text-[16px] cursor-pointer text-gray-600 font-thin hover:text-gray-400">Düfte
+                      </a></li>
+                      <li class="pl-[25px] pb-[8px] pt-[8px]"><a href="" class="block text-[16px] cursor-pointer text-gray-600 font-thin hover:text-gray-400">Körperspray und Deodorant
+
+                      </a></li>
+                      <li class="pl-[25px] pb-[8px] pt-[8px]"><a href="" class="block text-[16px] cursor-pointer text-gray-600 font-thin hover:text-gray-400">Geschenkset und Reisespray
+                      </a></li>
+                        </ul>
+                        <!-- end -->
+                </li>
+                <!-- accordion menu item end -->
+
+
+                <li class="pl-[32px] pb-[15px]"><a href="" class="block hover:text-[#007681] text-[17px] cursor-pointer font-semibold">Marken</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- Item Menu 2.8 -->
+    <div class="mb-1">
+      <button class="accordion-header w-full flex justify-between items-center    font-semibold text-gray-800 cursor-pointer">
+        <div class="textGroup flex  items-center hover:bg-[#F4F3F2] justify-between w-full px-[15px] py-[15px]  border-l-4 border-l-[#B6ADA5] ">
+          
+            <div class="flex items-center  truncate gap-2">
+             
+              <span class=" font text-[17px] font-bold truncate">Herrenprodukte</span>
+            </div>
+
+            
+       
+          <span class="arrow transition-transform"> <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium frontpage-wr8ge5"
+            style="width: 24px; height: 24px; transform: rotate(90deg);" 
+            focusable="false" aria-hidden="true" viewBox="0 0 24 24" 
+            data-testid="ArrowRightThinIcon">
+         <path d="M9.146 5.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L14.793 12 9.146 6.354a.5.5 0 0 1 0-.708"></path>
+       </svg>
+          </span>
+          </div>
+      </button>
+      <div class="accordion-content hidden p-4 ">
+          <ul class="space-y-2">
+              <li class="pl-[32px] pb-[15px]"><a href="" class="block hover:text-[#007681] text-[17px] cursor-pointer text-gray-600">Aktuelle Infos</a></li>
+              <li class="pl-[32px] pb-[15px]"><a href="" class="block hover:text-[#007681] text-[17px] cursor-pointer text-gray-600"> Alle Düfte</a></li>
+
+              <!-- accordion menu item start -->
+              <li class="pl-[32px] pb-[15px] block hover:text-[#007681] text-[17px] cursor-pointer font-semibold">
+                <!-- start -->
+                <button class="accordion-header w-full flex justify-between items-center    font-semibold text-gray-800 cursor-pointer hover:text-[#007681]">
+                <div class="textGroup flex  items-center  justify-between w-full   ">
+                  
+                    <div class="flex items-center  truncate gap-2">
+                     
+                      <span class=" font text-[17px] font-bold truncate">Damen</span>
+                    </div>
+
+                    
+               
+                  <span class="arrow transition-transform"> <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium frontpage-wr8ge5"
+                    style="width: 17px; height: 17px; transform: rotate(90deg);" 
+                    focusable="false" aria-hidden="true" viewBox="0 0 24 24" 
+                    data-testid="ArrowRightThinIcon">
+                 <path d="M9.146 5.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L14.793 12 9.146 6.354a.5.5 0 0 1 0-.708"></path>
+               </svg>
+                  </span>
+                  </div>
+              </button>
+              <div class="accordion-content hidden p-4 ">
+                  <ul class="space-y-2">
+                    <li class="pl-[25px] pb-[8px] pt-[8px]"><a href="" class="block text-[16px] cursor-pointer text-gray-600 font-thin hover:text-gray-400">Düfte
+                    </a></li>
+                    <li class="pl-[25px] pb-[8px] pt-[8px]"><a href="" class="block text-[16px] cursor-pointer text-gray-600 font-thin hover:text-gray-400">Körperspray und Deodorant
+
+                    </a></li>
+                    <li class="pl-[25px] pb-[8px] pt-[8px]"><a href="" class="block text-[16px] cursor-pointer text-gray-600 font-thin hover:text-gray-400">Geschenkset und Reisespray
+                    </a></li>
+                      </ul>
+                      <!-- end -->
+              </li>
+              <!-- accordion menu item end -->
+              
+              <!-- accordion menu item start -->
+              <li class="pl-[32px] pb-[15px] block hover:text-[#007681] text-[17px] cursor-pointer font-semibold">
+                <!-- start -->
+                <button class="accordion-header w-full flex justify-between items-center    font-semibold text-gray-800 cursor-pointer hover:text-[#007681]">
+                <div class="textGroup flex  items-center  justify-between w-full   ">
+                  
+                    <div class="flex items-center  truncate gap-2">
+                     
+                      <span class=" font text-[17px] font-bold truncate">Damen</span>
+                    </div>
+
+                    
+               
+                  <span class="arrow transition-transform"> <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium frontpage-wr8ge5"
+                    style="width: 17px; height: 17px; transform: rotate(90deg);" 
+                    focusable="false" aria-hidden="true" viewBox="0 0 24 24" 
+                    data-testid="ArrowRightThinIcon">
+                 <path d="M9.146 5.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L14.793 12 9.146 6.354a.5.5 0 0 1 0-.708"></path>
+               </svg>
+                  </span>
+                  </div>
+              </button>
+              <div class="accordion-content hidden p-4 ">
+                  <ul class="space-y-2">
+                    <li class="pl-[25px] pb-[8px] pt-[8px]"><a href="" class="block text-[16px] cursor-pointer text-gray-600 font-thin hover:text-gray-400">Düfte
+                    </a></li>
+                    <li class="pl-[25px] pb-[8px] pt-[8px]"><a href="" class="block text-[16px] cursor-pointer text-gray-600 font-thin hover:text-gray-400">Körperspray und Deodorant
+
+                    </a></li>
+                    <li class="pl-[25px] pb-[8px] pt-[8px]"><a href="" class="block text-[16px] cursor-pointer text-gray-600 font-thin hover:text-gray-400">Geschenkset und Reisespray
+                    </a></li>
+                      </ul>
+                      <!-- end -->
+              </li>
+              <!-- accordion menu item end -->
+
+
+              <li class="pl-[32px] pb-[15px]"><a href="" class="block hover:text-[#007681] text-[17px] cursor-pointer font-semibold">Marken</a></li>
+          </ul>
+      </div>
+  </div>
+
+
+  <!-- Item Menu 2.9 -->
+  <div class="mb-1">
+    <button class="accordion-header w-full flex justify-between items-center    font-semibold text-gray-800 cursor-pointer">
+      <div class="textGroup flex  items-center hover:bg-[#F4F3F2] justify-between w-full px-[15px] py-[15px]  border-l-4 border-l-[#B6ADA5] ">
+        
+          <div class="flex items-center  truncate gap-2">
+           
+            <span class=" font text-[17px] font-bold truncate">Kinder und Babys</span>
+          </div>
+
+          
+     
+        <span class="arrow transition-transform"> <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium frontpage-wr8ge5"
+          style="width: 24px; height: 24px; transform: rotate(90deg);" 
+          focusable="false" aria-hidden="true" viewBox="0 0 24 24" 
+          data-testid="ArrowRightThinIcon">
+       <path d="M9.146 5.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L14.793 12 9.146 6.354a.5.5 0 0 1 0-.708"></path>
+     </svg>
+        </span>
+        </div>
+    </button>
+    <div class="accordion-content hidden p-4 ">
+        <ul class="space-y-2">
+            <li class="pl-[32px] pb-[15px]"><a href="" class="block hover:text-[#007681] text-[17px] cursor-pointer text-gray-600">Aktuelle Infos</a></li>
+            <li class="pl-[32px] pb-[15px]"><a href="" class="block hover:text-[#007681] text-[17px] cursor-pointer text-gray-600"> Alle Düfte</a></li>
+
+            <!-- accordion menu item start -->
+            <li class="pl-[32px] pb-[15px] block hover:text-[#007681] text-[17px] cursor-pointer font-semibold">
+              <!-- start -->
+              <button class="accordion-header w-full flex justify-between items-center    font-semibold text-gray-800 cursor-pointer hover:text-[#007681]">
+              <div class="textGroup flex  items-center  justify-between w-full   ">
+                
+                  <div class="flex items-center  truncate gap-2">
+                   
+                    <span class=" font text-[17px] font-bold truncate">Damen</span>
+                  </div>
+
+                  
+             
+                <span class="arrow transition-transform"> <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium frontpage-wr8ge5"
+                  style="width: 17px; height: 17px; transform: rotate(90deg);" 
+                  focusable="false" aria-hidden="true" viewBox="0 0 24 24" 
+                  data-testid="ArrowRightThinIcon">
+               <path d="M9.146 5.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L14.793 12 9.146 6.354a.5.5 0 0 1 0-.708"></path>
+             </svg>
+                </span>
+                </div>
+            </button>
+            <div class="accordion-content hidden p-4 ">
+                <ul class="space-y-2">
+                  <li class="pl-[25px] pb-[8px] pt-[8px]"><a href="" class="block text-[16px] cursor-pointer text-gray-600 font-thin hover:text-gray-400">Düfte
+                  </a></li>
+                  <li class="pl-[25px] pb-[8px] pt-[8px]"><a href="" class="block text-[16px] cursor-pointer text-gray-600 font-thin hover:text-gray-400">Körperspray und Deodorant
+
+                  </a></li>
+                  <li class="pl-[25px] pb-[8px] pt-[8px]"><a href="" class="block text-[16px] cursor-pointer text-gray-600 font-thin hover:text-gray-400">Geschenkset und Reisespray
+                  </a></li>
+                    </ul>
+                    <!-- end -->
+            </li>
+            <!-- accordion menu item end -->
+            
+            <!-- accordion menu item start -->
+            <li class="pl-[32px] pb-[15px] block hover:text-[#007681] text-[17px] cursor-pointer font-semibold">
+              <!-- start -->
+              <button class="accordion-header w-full flex justify-between items-center    font-semibold text-gray-800 cursor-pointer hover:text-[#007681]">
+              <div class="textGroup flex  items-center  justify-between w-full   ">
+                
+                  <div class="flex items-center  truncate gap-2">
+                   
+                    <span class=" font text-[17px] font-bold truncate">Damen</span>
+                  </div>
+
+                  
+             
+                <span class="arrow transition-transform"> <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium frontpage-wr8ge5"
+                  style="width: 17px; height: 17px; transform: rotate(90deg);" 
+                  focusable="false" aria-hidden="true" viewBox="0 0 24 24" 
+                  data-testid="ArrowRightThinIcon">
+               <path d="M9.146 5.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L14.793 12 9.146 6.354a.5.5 0 0 1 0-.708"></path>
+             </svg>
+                </span>
+                </div>
+            </button>
+            <div class="accordion-content hidden p-4 ">
+                <ul class="space-y-2">
+                  <li class="pl-[25px] pb-[8px] pt-[8px]"><a href="" class="block text-[16px] cursor-pointer text-gray-600 font-thin hover:text-gray-400">Düfte
+                  </a></li>
+                  <li class="pl-[25px] pb-[8px] pt-[8px]"><a href="" class="block text-[16px] cursor-pointer text-gray-600 font-thin hover:text-gray-400">Körperspray und Deodorant
+
+                  </a></li>
+                  <li class="pl-[25px] pb-[8px] pt-[8px]"><a href="" class="block text-[16px] cursor-pointer text-gray-600 font-thin hover:text-gray-400">Geschenkset und Reisespray
+                  </a></li>
+                    </ul>
+                    <!-- end -->
+            </li>
+            <!-- accordion menu item end -->
+
+
+            <li class="pl-[32px] pb-[15px]"><a href="" class="block hover:text-[#007681] text-[17px] cursor-pointer font-semibold">Marken</a></li>
+        </ul>
+    </div>
+</div>
+
+
+<!-- colorful Menu end -->
+
+<!-- gray menu start -->
+
+<div class="varietySec  font-bold"><span class="text-[17px] text-[#555555]">Novelties</span></div>
+
+<div class="varietySec font-bold"><span class="text-[17px] text-[#555555]">Ikonen</span></div>
+
+<div class="varietySec font-bold"><span class="text-[17px] text-[#555555]">Bestsellers</span></div>
+
+<div class="varietySec font-bold"><span class="text-[17px] text-[#555555]">Probenshop</span></div>
+
+<div class="varietySec font-bold"><span class="text-[17px] text-[#555555]">Outlet</span></div>
+
+
+
+<!-- gray menu end -->
+
+<!-- last menu start -->
+<div class="varietyThird font-bold"><span class="text-[17px] text-[#555555] hover:text-gray-400">Wer wir sind</span></div>
+
+<div class="varietyThird font-bold"><span class="text-[17px] text-[#555555] hover:text-gray-400">Produktphilosophie</span></div>
+
+<div class="varietyThird font-bold border-b"><span class="text-[17px] text-[#555555] hover:text-gray-400">Nachhaltigkeit</span></div>
+
+<div class="varietyThird font-bold border-b flex items-center">
+  <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1cw4hi4" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="BubbleHelpIcon"><path d="M17.991 16.617q.117-.232.25-.49c.58-1.119 1.335-2.579 1.335-4.241C19.576 7.544 16.103 4 11.788 4S4 7.544 4 11.886c0 4.341 3.473 7.885 7.788 7.885a7.7 7.7 0 0 0 3.192-.69c.637.43 1.273.713 1.93.84.846.166 1.641.056 2.409-.202a1 1 0 0 0-.073-1.917c-.732-.186-1.093-.454-1.235-.644-.092-.124-.14-.268-.02-.541m-1.039 2.29c-.59-.143-1.202-.46-1.875-.996a6.7 6.7 0 0 1-3.29.86C8.04 18.772 5 15.69 5 11.887S8.039 5 11.788 5s6.788 3.083 6.788 6.886c0 1.398-.626 2.616-1.208 3.75q-.144.279-.281.553c-.31.682-.182 1.304.32 1.789.352.342.891.615 1.593.793-.696.235-1.358.304-2.048.137"></path></svg>
+  <span class="text-[17px] text-[#555555] hover:text-gray-400">Kundenservice</span></div>
+<!-- last menu end-->
+
+
+
+        
+            </div>
+        
+         
+            </div>
          </div>
+
+       
 
     </div>
 
@@ -890,7 +2230,7 @@ style="width: 24px; height:24px;" focusable="false" aria-hidden="true" viewBox="
 </div>
     </div>
     
-      <div class="searchbar bg-[#f0f0f0] h-[44px] rounded-full items-center px-4 hidden md:flex md:w-[42%] xl:w-1/2">
+      <div class="searchbar bg-[#f0f0f0] h-[44px] rounded-full items-center px-4 hidden md:flex md:w-[43%] xl:w-1/2">
         <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium frontpage-wr8ge5" style="width: 24px; height:24px;" fill="#777777" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="Presentation-top-area-search"><path d="M14.874 15.582a6 6 0 1 1 .707-.707l3.273 3.271a.5.5 0 0 1-.708.708zM16 11a5 5 0 1 0-10 0 5 5 0 0 0 10 0"></path></svg>
         <input
           type="text"
@@ -899,42 +2239,44 @@ style="width: 24px; height:24px;" focusable="false" aria-hidden="true" viewBox="
         />
       </div>
 
-    <a  class="text-[14px] hidden md:block"  href="">WERDE MEMBER</a>
+<div class="flex items-center gap-[40px]">
+  <a  class="text-[14px] hidden md:block"  href="">WERDE MEMBER</a>
 
-    <a  class="text-[14px] hidden md:block"  href="">ANMELDEN</a>
+  <a  class="text-[14px] hidden md:block"  href="">ANMELDEN</a>
 
-   <div class="flex items-center">
-    <div class=" md:hidden">
-      <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit frontpage-1cw4hi4" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="UserIcon" width="30px" height="30px">
-        <path d="M15.5 7.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0m-1 0a2.5 2.5 0 1 0-5 0 2.5 2.5 0 0 0 5 0m.948 12.248C14.34 19.972 13 20 12 20s-2.34-.028-3.448-.252c-.548-.11-1.131-.287-1.601-.595C6.452 18.825 6 18.282 6 17.5c0-2.065 2.09-4.5 6-4.5s6 2.435 6 4.5c0 .782-.452 1.325-.95 1.653-.47.308-1.054.484-1.602.595M17 17.5c0-1.38-1.5-3.5-5-3.5s-5 2.12-5 3.5 3 1.5 5 1.5 5-.12 5-1.5"></path>
-      </svg>
-    </div>
-
-    <div class="Basket group h-[120px] w-[50px] flex justify-center items-center cursor-pointer">
-      <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit products-app-emotion-1cw4hi4 " style="width: 30.23px; height: 30.23px;"  focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="AddToBagIcon">
-          <path d="M6.434 9H4.5a1.5 1.5 0 0 0-1.486 1.703l1.227 9A1.5 1.5 0 0 0 5.728 21h12.254a1.5 1.5 0 0 0 1.486-1.297l1.227-9A1.5 1.5 0 0 0 19.21 9h-1.933c-.087-2.548-.848-4.078-1.933-4.96C14.208 3.118 12.826 3 11.855 3c-.975 0-2.355.126-3.49 1.051C7.282 4.936 6.521 6.464 6.434 9m1 0c.086-2.329.778-3.533 1.564-4.174.858-.7 1.942-.826 2.857-.826.917 0 2 .12 2.857.817.785.637 1.477 1.84 1.563 4.183zm8.868 1 .053 1.448a.5.5 0 0 0 1-.018c0-.528-.013-.987-.037-1.43h1.891a.5.5 0 0 1 .495.568l-1.227 9a.5.5 0 0 1-.495.432H5.728a.5.5 0 0 1-.496-.432l-1.227-9A.5.5 0 0 1 4.5 10h1.905q-.001.372.01.756.009.333.01.674a.5.5 0 1 0 1 0c0-.285-.006-.535-.012-.766-.005-.236-.01-.452-.008-.664z"></path>
-        </svg>
-        <!-- <div class=" absolute top-[98px] right-[0] h-full bg-black bg-opacity-50 transition-transform duration-300 w-full md:w-screen z-50 overflow-hidden border-[#f5f5f5] hidden group-hover:block"> -->
-          <div class="category bg-white w-[400px] h-screen py-[10px] absolute right-0 px-[30px] top-[98px] z-50 hidden group-hover:block">
-            <div class="flex flex-col items-center justify-center text-center relative top-[200px]">
-              <h3 class="text-[18px] font-semibold">Warenkorb leeren</h3>
-              <p>- Dein Warenkorb sieht ziemlich leer aus -</p>
-
-           
-            </div>
-           
-              
-              
-              <!-- Button at the bottom -->
-              <button class="bg-[#93C5A8] text-white py-3 px-2 transform transition-transform duration-300 hover:scale-105 absolute bottom-10 w-[356px] rounded-full text-[12px]">
-                ZUM WARENKORB
-              </button>
-            
-            
-          
-        </div>
-  
+ <div class="flex items-center">
+  <div class=" md:hidden">
+    <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit frontpage-1cw4hi4" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="UserIcon" width="30px" height="30px">
+      <path d="M15.5 7.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0m-1 0a2.5 2.5 0 1 0-5 0 2.5 2.5 0 0 0 5 0m.948 12.248C14.34 19.972 13 20 12 20s-2.34-.028-3.448-.252c-.548-.11-1.131-.287-1.601-.595C6.452 18.825 6 18.282 6 17.5c0-2.065 2.09-4.5 6-4.5s6 2.435 6 4.5c0 .782-.452 1.325-.95 1.653-.47.308-1.054.484-1.602.595M17 17.5c0-1.38-1.5-3.5-5-3.5s-5 2.12-5 3.5 3 1.5 5 1.5 5-.12 5-1.5"></path>
+    </svg>
   </div>
+
+  <div class="Basket group h-[120px] w-[50px] flex justify-center items-center cursor-pointer">
+    <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit products-app-emotion-1cw4hi4 " style="width: 30.23px; height: 30.23px;"  focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="AddToBagIcon">
+        <path d="M6.434 9H4.5a1.5 1.5 0 0 0-1.486 1.703l1.227 9A1.5 1.5 0 0 0 5.728 21h12.254a1.5 1.5 0 0 0 1.486-1.297l1.227-9A1.5 1.5 0 0 0 19.21 9h-1.933c-.087-2.548-.848-4.078-1.933-4.96C14.208 3.118 12.826 3 11.855 3c-.975 0-2.355.126-3.49 1.051C7.282 4.936 6.521 6.464 6.434 9m1 0c.086-2.329.778-3.533 1.564-4.174.858-.7 1.942-.826 2.857-.826.917 0 2 .12 2.857.817.785.637 1.477 1.84 1.563 4.183zm8.868 1 .053 1.448a.5.5 0 0 0 1-.018c0-.528-.013-.987-.037-1.43h1.891a.5.5 0 0 1 .495.568l-1.227 9a.5.5 0 0 1-.495.432H5.728a.5.5 0 0 1-.496-.432l-1.227-9A.5.5 0 0 1 4.5 10h1.905q-.001.372.01.756.009.333.01.674a.5.5 0 1 0 1 0c0-.285-.006-.535-.012-.766-.005-.236-.01-.452-.008-.664z"></path>
+      </svg>
+      <!-- <div class=" absolute top-[98px] right-[0] h-full bg-black bg-opacity-50 transition-transform duration-300 w-full md:w-screen z-50 overflow-hidden border-[#f5f5f5] hidden group-hover:block"> -->
+        <div class="category bg-white w-[400px] h-screen py-[10px] absolute right-0 px-[30px] top-[98px] z-50 hidden group-hover:block">
+          <div class="flex flex-col items-center justify-center text-center relative top-[200px]">
+            <h3 class="text-[18px] font-semibold">Warenkorb leeren</h3>
+            <p>- Dein Warenkorb sieht ziemlich leer aus -</p>
+
+         
+          </div>
+         
+            
+            
+            <!-- Button at the bottom -->
+            <button class="bg-[#93C5A8] text-white py-3 px-2 transform transition-transform duration-300 hover:scale-105 absolute bottom-10 w-[356px] rounded-full text-[12px]">
+              ZUM WARENKORB
+            </button>
+          
+          
+        
+      </div>
+
+</div>
+</div>
    </div>
     <!-- bottom header end -->
    </header>
@@ -1022,7 +2364,7 @@ style="width: 24px; height:24px;" focusable="false" aria-hidden="true" viewBox="
           <div class="max-w-[1346px] mx-auto sm:px-[30px] px-[15px]">
             <div class="title relative w-full pt-[50px] flex justify-center items-center pb-6">
               <h3 class="text-[40px] font-bold  mx-auto text-center">Neues</h3>
-              <button class="py-3 px-6 border border-black bg-transparent rounded-[25px] text-[14px] hover:bg-[#F7F7F7] absolute right-0">
+              <button class="py-3 px-6 border border-black bg-transparent rounded-[25px] text-[14px] hover:bg-[#F7F7F7] absolute right-0 hidden sm:block">
                 ALLE ANZEIGEN
               </button>
             </div>
@@ -1038,7 +2380,7 @@ style="width: 24px; height:24px;" focusable="false" aria-hidden="true" viewBox="
             gap-[10px]">
             
             <!-- Larger Rectangle -->
-            <div class="col-span-2 row-span-1 sm:col-auto sm:row-auto bg-gray-300 h-[380px] w-full xl:max-w-[544px] cursor-pointer mr-[10px] rounded-md overflow-hidden relative">
+            <div class="col-span-2 row-span-1 sm:col-auto sm:row-auto bg-gray-300 h-[380px] max-w-[360px] xl:max-w-[544px] mx-auto cursor-pointer sm:mr-[10px] rounded-md overflow-hidden relative">
               <img src="./public/images/product1B.webp" alt="" class="object-cover w-full h-full">
               
               
@@ -1137,11 +2479,15 @@ style="width: 24px; height:24px;" focusable="false" aria-hidden="true" viewBox="
             
           </div>
 
+         <div class="flex justify-center items-center">
+          <button class="py-3 px-6 border border-black bg-transparent rounded-[25px] text-[14px] hover:bg-[#F7F7F7]  block sm:hidden">
+            ALLE ANZEIGEN
+          </button>
+         </div>
+
           </div>
     <br>
-  <!-- above sm size -->
-
-
+  <!-- first row end -->
 
 
 
@@ -1158,18 +2504,21 @@ style="width: 24px; height:24px;" focusable="false" aria-hidden="true" viewBox="
 
 
 <!-- second Row -->
+  <div class="max-w-[1346px] mx-auto sm:px-[30px] px-[15px]">
+
 <div class="title relative w-full pt-[50px] flex justify-center items-center pb-6">
   <h3 class="text-[40px] font-bold  mx-auto text-center">Beste Angebote
     </h3>
-  <button class="py-3 px-6 border border-black bg-transparent rounded-[25px] text-[14px] hover:bg-[#F7F7F7] absolute left-0">
+  <button class="py-3 px-6 border border-black bg-transparent rounded-[25px] text-[14px] hover:bg-[#F7F7F7] absolute left-0 hidden sm:block">
     ANGEBOT ANZEIGEN
   </button>
 </div>
 
- <!-- above sm size -->
+ <!-- the grid part -->
  <div class="
- hidden
- sm:grid
+ grid
+ grid-cols-2
+ grid-rows-[auto_auto]
  sm:grid-cols-[repeat(2,1fr)_300px]
  md:grid-cols-[repeat(3,1fr)_300px]
  xl:grid-cols-[repeat(4,1fr)_300px]
@@ -1178,7 +2527,7 @@ style="width: 24px; height:24px;" focusable="false" aria-hidden="true" viewBox="
 
 
 <!-- Smaller Rectangles -->
-<div class="bg-white h-[380px] md:max-w-[234px] overflow-hidden cursor-pointer">
+<div class="bg-white h-[380px] md:max-w-[266px] overflow-hidden cursor-pointer sm:order-first order-last">
  <!-- Photo part -->
  <div class="w-full h-auto relative overflow-hidden rounded-md">
    <img src="./public/images/productImage24.webp" class="transition-transform duration-500 ease-in-out hover:scale-110 relative block w-full h-auto" alt="">
@@ -1206,7 +2555,7 @@ style="width: 24px; height:24px;" focusable="false" aria-hidden="true" viewBox="
  </div>      
 </div>
 
-<div class="bg-white h-[380px] md:max-w-[234px] overflow-hidden cursor-pointer">
+<div class="bg-white h-[380px] md:max-w-[266px] overflow-hidden cursor-pointer sm:order-first order-last">
   <!-- Photo part -->
   <div class="w-full h-auto relative overflow-hidden rounded-md">
     <img src="./public/images/productImage23.webp" class="transition-transform duration-500 ease-in-out hover:scale-110 relative block w-full h-auto" alt="">
@@ -1234,7 +2583,7 @@ style="width: 24px; height:24px;" focusable="false" aria-hidden="true" viewBox="
   </div>      
  </div>
 
-<div class="bg-white h-[380px] md:max-w-[234px] overflow-hidden cursor-pointer hidden xl:block">
+<div class="bg-white h-[380px] md:max-w-[266px] overflow-hidden cursor-pointer sm:hidden xl:block sm:order-first order-last">
  <!-- Photo part -->
  <div class="w-full h-auto relative overflow-hidden rounded-md">
    <img src="./public/images/productImage22.webp" class="transition-transform duration-500 ease-in-out hover:scale-110 relative block w-full h-auto" alt="">
@@ -1261,7 +2610,7 @@ style="width: 24px; height:24px;" focusable="false" aria-hidden="true" viewBox="
    <p class="line-through text-[#555]">75,00 €</p>
  </div>      
 </div>
-<div class="bg-white h-[380px] max-w-[234px] hidden md:block overflow-hidden cursor-pointer">
+<div class="bg-white h-[380px] max-w-[266px] sm:hidden md:block overflow-hidden cursor-pointer sm:order-first order-last">
   <!-- Photo part -->
   <div class="w-full h-auto relative overflow-hidden rounded-md">
    <img src="./public/images/productImage21.webp" class="transition-transform duration-500 ease-in-out hover:scale-110 relative block w-full h-auto" alt="">
@@ -1290,48 +2639,51 @@ style="width: 24px; height:24px;" focusable="false" aria-hidden="true" viewBox="
 </div>
 
 <!-- Larger Rectangle -->
-<div class="bg-gray-300 h-[380px]  xl:w-[300px] cursor-pointer mr-[10px] rounded overflow-hidden">
-  <img src="./public/images/ProductB2.webp" alt="" class="object-cover w-full h-full">
+<div class="bg-gray-300  sm:w-[300px] cursor-pointer  rounded overflow-hidden col-span-2 row-span-1 sm:col-auto sm:row-auto max-w-[300px] mx-auto flex justify-center items-center order-first sm:order-last h-[453px] relative group">
+  <img src="./public/images/ProductB2.webp" alt="" class="object-cover w-full h-full  m-0">
+  <div class="absolute bottom-[40px] left-0 right-0 flex flex-col justify-center px-[40px] items-center ">
+    <h3 class="text-[29px] text-white text-center font-bold md:text-nowrap xl:text-wrap group-hover:text-[#237C66] mb-2">Die besten Angebote</h3>
+    <!-- Button -->
+    <button class="py-3 px-6 bg-black rounded-[25px] text-[14px] hover:bg-gray-500  sm:w-auto text-white w-auto">
+      ENTDECKE ECATALOGUE
+    </button>
+  </div>
  </div>
 </div>
 
-<!-- below sm size -->
-<div class="grid grid-cols-1 w-full sm:hidden gap-4">
-  <!-- Centering First FR -->
-  <div class="self-center mx-auto bg-gray-300 w-[300px] h-[215px] ">
-    
-  </div>
-
-  <!-- Second and Third FR -->
-  <div class="grid grid-cols-2 gap-4 col-span-1 bg-gray-400">
-    <div class="bg-gray-500 h-[267px]"></div>
-    <div class="bg-gray-500 h-[267px]"></div>
-  </div>
-  <div class="grid grid-cols-2 gap-4 col-span-1 bg-gray-400 ">
-    <div class="bg-gray-500 h-[267px]"></div>
-    <div class="bg-gray-500 h-[267px]"></div>
-  </div>
+<div class="flex justify-center items-center">
+  <button class="py-3 px-6 border border-black bg-transparent rounded-[25px] text-[14px] hover:bg-[#F7F7F7] sm:hidden">
+    ANGEBOT ANZEIGEN
+  </button>
 </div>
+
+</div>
+
+<!-- second Row end -->
 
 
 <!-- third Row -->
- <div class="flex justify-center gap-[5px] pt-[50px]">
+
+<div class="max-w-[1346px] mx-auto px-[30px]">
+
+ <div class="flex justify-center gap-[5px] pt-[50px] ">
   <h3 class="text-[40px] font-bold  mx-auto text-center ">Ikonen unserer Zeit
 
   </h3>
  </div>
-<div class="title relative w-full flex justify-center items-center pb-6 pt-3">
-  <p class="text-[14px] w-[45%] mx-auto text-center text-[#333333]">Ikonen unserer Zeit Entdecke unsere legendären Produkte – ikonische Essentials, denen du vertraust und die du immer wieder verwendest. Entdecke die bewährten Favoriten, die unsere Kunden am meisten lieben.
+<div class="title relative w-full flex justify-center items-center pb-6 pt-3 ">
+  <p class="text-[14px] xl:w-[600px] md:w-[500px] sm:w-[350px] mx-auto text-center text-[#333333] sm:truncate md:overflow-visible sm:overflow-hidden whitespace-normal overflow-visible  md:whitespace-normal sm:whitespace-nowrap w-full sm:text-wrap">Ikonen unserer Zeit Entdecke unsere legendären Produkte – ikonische Essentials, denen du vertraust und die du immer wieder verwendest. Entdecke die bewährten Favoriten, die unsere Kunden am meisten lieben.
   </p>
-  <button class="py-3 px-6 border border-black bg-transparent rounded-[25px] text-[14px] hover:bg-[#F7F7F7] absolute right-0">
+  <button class="py-3 px-6 border border-black bg-transparent rounded-[25px] text-[14px] hover:bg-[#F7F7F7] absolute right-0 hidden sm:block">
     ALLE ANZEIGEN
   </button>
 </div>
 
- <!-- above sm size -->
+ <!-- the grid part -->
  <div class="
- hidden
- sm:grid
+ grid
+ grid-cols-2
+ grid-rows-[auto_auto]
  sm:grid-cols-[repeat(3,1fr)]
  md:grid-cols-[repeat(4,1fr)]
  xl:grid-cols-[300px_repeat(4,_1fr)]
@@ -1339,12 +2691,12 @@ style="width: 24px; height:24px;" focusable="false" aria-hidden="true" viewBox="
 
 
 <!-- Larger Rectangle -->
-<div class="bg-gray-300  xl:max-w-[300px] cursor-pointer mr-[10px] rounded overflow-hidden">
+<div class="bg-gray-300  sm:w-[300px] cursor-pointer  rounded overflow-hidden col-span-2 row-span-1 sm:col-auto sm:row-auto max-w-[300px] mx-auto ">
   <img src="./public/images/contentImage.webp" alt="" class="object-cover w-full h-full overflow-hidden">
  </div>
 
 <!-- Smaller Rectangles -->
-<div class="bg-white h-[380px] md:max-w-[234px] overflow-hidden cursor-pointer">
+<div class="bg-white h-[380px] xl:max-w-[234px] max-w-[273px] overflow-hidden cursor-pointer md:max-w-[273px]">
  <!-- Photo part -->
  <div class="w-full h-auto relative overflow-hidden rounded-md">
    <img src="./public/images/productImage31.webp" class="transition-transform duration-500 ease-in-out hover:scale-110 relative block w-full h-auto" alt="">
@@ -1372,7 +2724,7 @@ style="width: 24px; height:24px;" focusable="false" aria-hidden="true" viewBox="
  </div>      
 </div>
 
-<div class="bg-white h-[380px] md:max-w-[234px] overflow-hidden cursor-pointer">
+<div class="bg-white h-[380px] xl:max-w-[234px] max-w-[273px] overflow-hidden cursor-pointer md:max-w-[273px]">
   <!-- Photo part -->
   <div class="w-full h-auto relative overflow-hidden rounded-md">
     <img src="./public/images/productImage32.webp" class="transition-transform duration-500 ease-in-out hover:scale-110 relative block w-full h-auto" alt="">
@@ -1400,7 +2752,7 @@ style="width: 24px; height:24px;" focusable="false" aria-hidden="true" viewBox="
   </div>      
  </div>
 
-<div class="bg-white h-[380px] md:max-w-[234px] overflow-hidden cursor-pointer hidden xl:block">
+<div class="bg-white h-[380px] xl:max-w-[234px] max-w-[273px] overflow-hidden cursor-pointer md:max-w-[273px] sm:hidden md:block">
  <!-- Photo part -->
  <div class="w-full h-auto relative overflow-hidden rounded-md">
    <img src="./public/images/productImage33.webp" class="transition-transform duration-500 ease-in-out hover:scale-110 relative block w-full h-auto" alt="">
@@ -1427,7 +2779,7 @@ style="width: 24px; height:24px;" focusable="false" aria-hidden="true" viewBox="
    <p class="line-through text-[#555]">75,00 €</p>
  </div>      
 </div>
-<div class="bg-white h-[380px] max-w-[234px] hidden md:block overflow-hidden cursor-pointer">
+<div class="bg-white h-[380px] xl:max-w-[234px] max-w-[273px] overflow-hidden cursor-pointer md:max-w-[273px] sm:hidden xl:block">
   <!-- Photo part -->
   <div class="w-full h-auto relative overflow-hidden rounded-md">
    <img src="./public/images/productImage34.webp" class="transition-transform duration-500 ease-in-out hover:scale-110 relative block w-full h-auto" alt="">
@@ -1458,36 +2810,28 @@ style="width: 24px; height:24px;" focusable="false" aria-hidden="true" viewBox="
 
 </div>
 
-<!-- below sm size -->
-<div class="grid grid-cols-1 w-full sm:hidden gap-4">
-  <!-- Centering First FR -->
-  <div class="self-center mx-auto bg-gray-300 w-[300px] h-[215px] ">
-    
-  </div>
-
-  <!-- Second and Third FR -->
-  <div class="grid grid-cols-2 gap-4 col-span-1 bg-gray-400">
-    <div class="bg-gray-500 h-[267px]"></div>
-    <div class="bg-gray-500 h-[267px]"></div>
-  </div>
-  <div class="grid grid-cols-2 gap-4 col-span-1 bg-gray-400 ">
-    <div class="bg-gray-500 h-[267px]"></div>
-    <div class="bg-gray-500 h-[267px]"></div>
-  </div>
+<div class="flex justify-center items-center">
+  <button class="py-3 px-6 border border-black bg-transparent rounded-[25px] text-[14px] hover:bg-[#F7F7F7] sm:hidden">
+    ALLE ANZEIGEN
+  </button>
 </div>
 
-  </div>
+</div>
         
   
 <!-- weekly recoomendation start -->
-  <div class="w-full flex justify-center items-center overflow-hidden h-[402px] mt-[60px]">
+ <div class="max-w-[1286px] mx-auto">
+  <div class="MyDiv w-full flex justify-center items-center overflow-hidden h-[457px] mt-[60px] rounded">
     
-    <div class="h-full w-1/2">
-      <img src="./public/images/smile.webp" alt="" class="h-full object-cover w-full">
+    <div class="MyPic max-h-[457px] w-[643px] relative">
+      <img src="./public/images/smile.webp" alt="" class="h-[457px] object-cover w-full">
+      <div class="absolute bottom-[40px] left-0 right-0 flex flex-col justify-center px-[40px] items-center ">
+        <h3 class="text-[30px] text-white text-center font-bold md:text-nowrap xl:text-wrap font-sans">Highlights der Woche</h3>
+        </div>
     </div>
     
    
-    <div class="bg-[#F5F5F5] w-1/2  px-[80px] py-[72px] relative flex flex-col items-start gap-[20px]">
+    <div class="MyText bg-[#F5F5F5] w-1/2  px-[80px] py-[30px] relative flex flex-col gap-[20px] xl:items-start items-center xl:text-left text-center h-[457px] justify-center">
       <h3 class="text-[40px] font-bold ">DIE BESTEN ANGEBOTE DER WOCHE</h3>
       <p class="text-[14px]">Ein Teil des Oriflame-Teams zu sein, hat zahlreiche Vorteile! Zum Beispiel haben wir die besten Online-Angebote, die jede Woche wechseln. Melde dich an und schau alle 7 Tage nach neuen Angeboten, die dich zum Strahlen bringen.</p>
       
@@ -1499,6 +2843,7 @@ style="width: 24px; height:24px;" focusable="false" aria-hidden="true" viewBox="
 
     
   </div>
+</div>
 <!-- weekly recoomendation end -->
        
 <!-- SECOND SWIPER -->
@@ -1518,8 +2863,8 @@ style="width: 24px; height:24px;" focusable="false" aria-hidden="true" viewBox="
 
   <div class="swiper mySwiperSecond">
     <div class="swiper-wrapper">
-      <div class="swiper-slide max-w-[250px] m-0">
-        <div class="w-full max-w-[250px] max-h-[250px]   aspect-square rounded overflow-hidden relative cursor-pointer">
+      <div class="swiper-slide xl:max-w-[250px] m-0 min-w-[280px] xl:min-w-[200px] xl:h-auto h-[280px]">
+        <div class="w-full max-w-[250px] max-h-[250px]   aspect-square rounded min-w-[280px] xl:min-w-[200px] min-h-[280px] xl:min-h-[200px]  overflow-hidden relative cursor-pointer">
           <img src="./public/images/vid1.jpg" alt="" class="w-full h-full object-cover object-top">
           
           <!-- Circle -->
@@ -1533,8 +2878,8 @@ style="width: 24px; height:24px;" focusable="false" aria-hidden="true" viewBox="
         </div>
       </div>
        <!-- second slider -->
-      <div class="swiper-slide flex flex-col gap-[30px] max-w-[250px]">
-        <div class="w-[250px] h-[250px] rounded overflow-hidden relative cursor-pointer"><img src="./public/images/vid2.jpg" alt="" class="w-full h-full object-cover object-top">
+      <div class="swiper-slide flex flex-col gap-[30px] max-w-[250px] min-w-[280px] xl:min-w-[200px] xl:h-auto h-[280px]">
+        <div class="w-full max-w-[250px] max-h-[250px]   aspect-square rounded min-w-[280px] xl:min-w-[200px] min-h-[280px] xl:min-h-[200px]    overflow-hidden relative cursor-pointer"><img src="./public/images/vid2.jpg" alt="" class="w-full h-full object-cover object-top">
           <div class="w-[50px] h-[50px] bg-gray-600 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full flex items-center justify-center">
             <!-- Triangle -->
             <div class="w-0 h-0 border-t-[10px] border-t-transparent border-b-[10px] border-b-transparent border-l-[15px] border-l-white transform translate-x-[2px] rounded"></div>
@@ -1543,7 +2888,21 @@ style="width: 24px; height:24px;" focusable="false" aria-hidden="true" viewBox="
           <div class="absolute inset-0 bg-black opacity-0 hover:opacity-30 "></div>
         </div>
   
-        <div class="w-[250px] h-[250px] rounded overflow-hidden relative cursor-pointer"><img src="./public/images/vid3.jpg" alt="" class="w-full h-full object-cover object-top">
+        <div class="w-full max-w-[250px] max-h-[250px]   aspect-square rounded overflow-hidden relative cursor-pointer hidden xl:block"><img src="./public/images/vid3.jpg" alt="" class="w-full h-full object-cover object-top">
+          <div class="w-[50px] h-[50px] bg-gray-600 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full flex items-center justify-center">
+            <!-- Triangle -->
+            <div class="w-0 h-0 border-t-[10px] border-t-transparent border-b-[10px] border-b-transparent border-l-[15px] border-l-white transform translate-x-[2px] rounded"></div>
+          </div>
+          <!-- Hover Background -->
+          <div class="absolute inset-0 bg-black opacity-0 hover:opacity-30 ">
+           
+          </div>
+        </div>
+      </div>
+
+      <!-- hidden third slider -->
+      <div class="swiper-slide  flex-col gap-[30px] max-w-[250px] min-w-[280px] xl:min-w-[200px] xl:!hidden  h-[280px]">
+        <div class="w-full max-w-[250px] max-h-[250px]   aspect-square rounded min-w-[280px] xl:min-w-[200px] min-h-[280px] xl:min-h-[200px]   overflow-hidden relative cursor-pointer xl:hidden"><img src="./public/images/vid3.jpg" alt="" class="w-full h-full object-cover object-top">
           <div class="w-[50px] h-[50px] bg-gray-600 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full flex items-center justify-center">
             <!-- Triangle -->
             <div class="w-0 h-0 border-t-[10px] border-t-transparent border-b-[10px] border-b-transparent border-l-[15px] border-l-white transform translate-x-[2px] rounded"></div>
@@ -1554,8 +2913,8 @@ style="width: 24px; height:24px;" focusable="false" aria-hidden="true" viewBox="
       </div>
   
      <!-- third slider -->
-      <div class="swiper-slide relative max-w-[250px]">
-        <div class="w-[250px] h-[250px] rounded overflow-hidden absolute top-[40px]  cursor-pointer"><img src="./public/images/vid4.jpg" alt="" class="w-full h-full object-cover object-top">
+      <div class="swiper-slide relative max-w-[250px] min-w-[280px] xl:min-w-[200px] xl:h-auto h-[280px] overflow-hidden">
+        <div class="w-full max-w-[250px] max-h-[250px]   aspect-square rounded overflow-hidden xl:absolute top-[40px]  cursor-pointer min-w-[280px] xl:min-w-[200px] min-h-[280px] xl:min-h-[200px] "><img src="./public/images/vid4.jpg" alt="" class="w-full h-full object-cover object-top">
          <!-- Circle -->
          <div class="w-[50px] h-[50px] bg-gray-600 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full flex items-center justify-center">
           <!-- Triangle -->
@@ -1569,8 +2928,8 @@ style="width: 24px; height:24px;" focusable="false" aria-hidden="true" viewBox="
   
   
      <!-- fourth slider -->
-      <div class="swiper-slide max-w-[250px]">
-        <div class="w-[250px] h-[250px] rounded overflow-hidden absolute bottom-[30px] cursor-pointer"><img src="./public/images/vid5.jpg" alt="" class="w-full h-full object-cover object-top">
+      <div class="swiper-slide max-w-[250px] min-w-[280px] xl:min-w-[200px]">
+        <div class="w-full max-w-[250px] max-h-[250px]   aspect-square rounded overflow-hidden xl:absolute bottom-[30px] cursor-pointer min-w-[280px] xl:min-w-[200px] min-h-[280px] xl:min-h-[200px] "><img src="./public/images/vid5.jpg" alt="" class="w-full h-full object-cover object-top">
          <!-- Circle -->
          <div class="w-[50px] h-[50px] bg-gray-600 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full flex items-center justify-center">
           <!-- Triangle -->
@@ -1583,8 +2942,8 @@ style="width: 24px; height:24px;" focusable="false" aria-hidden="true" viewBox="
       </div>
   
      <!-- fifth slider -->
-     <div class="swiper-slide relative max-w-[250px]">
-      <div class="w-[250px] h-[250px] rounded overflow-hidden absolute top-[130px]  cursor-pointer"><img src="./public/images/vid6.jpg" alt="" class="w-full h-full object-cover object-top">
+     <div class="swiper-slide relative max-w-[250px] min-w-[280px] xl:min-w-[200px]">
+      <div class="w-full max-w-[250px] max-h-[250px]   aspect-square rounded overflow-hidden xl:absolute top-[130px]  cursor-pointer  min-w-[280px] xl:min-w-[200px] min-h-[280px] xl:min-h-[200px] "><img src="./public/images/vid6.jpg" alt="" class="w-full h-full object-cover object-top">
        <!-- Circle -->
        <div class="w-[50px] h-[50px] bg-gray-600 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full flex items-center justify-center">
         <!-- Triangle -->
@@ -1599,8 +2958,8 @@ style="width: 24px; height:24px;" focusable="false" aria-hidden="true" viewBox="
   
   
      <!-- sixth slider -->
-     <div class="swiper-slide flex flex-col gap-[30px] max-w-[250px]">
-      <div class="w-[250px] h-[250px] rounded overflow-hidden relative cursor-pointer"><img src="./public/images/vid7.jpg" alt="" class="w-full h-full object-cover object-top">
+     <div class="swiper-slide flex flex-col gap-[30px] max-w-[250px] min-w-[280px] xl:min-w-[200px]">
+      <div class="w-full max-w-[250px] max-h-[250px]   aspect-square rounded overflow-hidden relative cursor-pointer min-w-[280px] xl:min-w-[200px] min-h-[280px] xl:min-h-[200px] "><img src="./public/images/vid7.jpg" alt="" class="w-full h-full object-cover object-top">
         <div class="w-[50px] h-[50px] bg-gray-600 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full flex items-center justify-center">
           <!-- Triangle -->
           <div class="w-0 h-0 border-t-[10px] border-t-transparent border-b-[10px] border-b-transparent border-l-[15px] border-l-white transform translate-x-[2px] rounded"></div>
@@ -1609,7 +2968,20 @@ style="width: 24px; height:24px;" focusable="false" aria-hidden="true" viewBox="
         <div class="absolute inset-0 bg-black opacity-0 hover:opacity-30 "></div>
       </div>
   
-      <div class="w-[250px] h-[250px] rounded overflow-hidden relative cursor-pointer"><img src="./public/images/vid8.jpg" alt="" class="w-full h-full object-cover object-top">
+      <div class="w-full max-w-[250px] max-h-[250px]   aspect-square rounded overflow-hidden relative cursor-pointer hidden xl:block"><img src="./public/images/vid8.jpg" alt="" class="w-full h-full object-cover object-top">
+        <div class="w-[50px] h-[50px] bg-gray-600 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full flex items-center justify-center">
+          <!-- Triangle -->
+          <div class="w-0 h-0 border-t-[10px] border-t-transparent border-b-[10px] border-b-transparent border-l-[15px] border-l-white transform translate-x-[2px] rounded"></div>
+        </div>
+        <!-- Hover Background -->
+        <div class="absolute inset-0 bg-black opacity-0 hover:opacity-30 "></div>
+      </div>
+    </div>
+
+    <!-- hidden sixth slider -->
+    <div class="swiper-slide  flex-col gap-[30px] max-w-[250px] min-w-[280px] xl:min-w-[200px] xl:!hidden">
+  
+      <div class="w-full max-w-[250px] max-h-[250px]   aspect-square rounded overflow-hidden relative cursor-pointer xl:hidden min-w-[280px] xl:min-w-[200px] min-h-[280px] xl:min-h-[200px]"><img src="./public/images/vid8.jpg" alt="" class="w-full h-full object-cover object-top">
         <div class="w-[50px] h-[50px] bg-gray-600 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full flex items-center justify-center">
           <!-- Triangle -->
           <div class="w-0 h-0 border-t-[10px] border-t-transparent border-b-[10px] border-b-transparent border-l-[15px] border-l-white transform translate-x-[2px] rounded"></div>
@@ -1622,8 +2994,8 @@ style="width: 24px; height:24px;" focusable="false" aria-hidden="true" viewBox="
   
   
      <!-- seventh slider -->
-     <div class="swiper-slide relative max-w-[250px]">
-      <div class="w-[250px] h-[250px] rounded overflow-hidden absolute top-[40px]  cursor-pointer"><img src="./public/images/vid9.jpg" alt="" class="w-full h-full object-cover object-top">
+     <div class="swiper-slide relative max-w-[250px] min-w-[280px] xl:min-w-[200px]">
+      <div class="w-full max-w-[250px] max-h-[250px]   aspect-square rounded overflow-hidden xl:absolute top-[40px]  cursor-pointer min-w-[280px] xl:min-w-[200px] min-h-[280px] xl:min-h-[200px]"><img src="./public/images/vid9.jpg" alt="" class="w-full h-full object-cover object-top">
        <!-- Circle -->
        <div class="w-[50px] h-[50px] bg-gray-600 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full flex items-center justify-center">
         <!-- Triangle -->
@@ -1638,8 +3010,8 @@ style="width: 24px; height:24px;" focusable="false" aria-hidden="true" viewBox="
   
   
      <!-- eighth slider -->
-     <div class="swiper-slide max-w-[250px]">
-      <div class="w-[250px] h-[250px] rounded overflow-hidden absolute bottom-[30px] cursor-pointer"><img src="./public/images/vid10.jpg" alt="" class="w-full h-full object-cover object-top">
+     <div class="swiper-slide max-w-[250px] min-w-[280px] xl:min-w-[200px]">
+      <div class="w-full max-w-[250px] max-h-[250px]   aspect-square rounded overflow-hidden xl:absolute bottom-[30px] cursor-pointer min-w-[280px] xl:min-w-[200px] min-h-[280px] xl:min-h-[200px]"><img src="./public/images/vid10.jpg" alt="" class="w-full h-full object-cover object-top">
        <!-- Circle -->
        <div class="w-[50px] h-[50px] bg-gray-600 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full flex items-center justify-center">
         <!-- Triangle -->
@@ -1654,8 +3026,8 @@ style="width: 24px; height:24px;" focusable="false" aria-hidden="true" viewBox="
   
   
      <!-- ninth slider -->
-     <div class="swiper-slide max-w-[250px]">
-      <div class="w-[250px] h-[250px] rounded overflow-hidden relative cursor-pointer">
+     <div class="swiper-slide max-w-[250px] min-w-[280px] xl:min-w-[200px]">
+      <div class="w-full max-w-[250px] max-h-[250px]   aspect-square rounded overflow-hidden relative cursor-pointer min-w-[280px] xl:min-w-[200px] min-h-[280px] xl:min-h-[200px]">
         <img src="./public/images/vid11.jpg" alt="" class="w-full h-full object-cover object-top">
         <!-- Circle -->
         <div class="w-[50px] h-[50px] bg-gray-600 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full flex items-center justify-center">
@@ -1672,8 +3044,8 @@ style="width: 24px; height:24px;" focusable="false" aria-hidden="true" viewBox="
      
      
      <!-- tenth slider -->
-     <div class="swiper-slide flex flex-col gap-[30px] max-w-[250px]">
-      <div class="w-[250px] h-[250px] rounded overflow-hidden relative cursor-pointer"><img src="./public/images/vid12.jpg" alt="" class="w-full h-full object-cover object-top">
+     <div class="swiper-slide flex flex-col gap-[30px] max-w-[250px] min-w-[280px] xl:min-w-[200px]">
+      <div class="w-full max-w-[250px] max-h-[250px]   aspect-square rounded overflow-hidden relative cursor-pointer min-w-[280px] xl:min-w-[200px] min-h-[280px] xl:min-h-[200px]"><img src="./public/images/vid12.jpg" alt="" class="w-full h-full object-cover object-top">
         <div class="w-[50px] h-[50px] bg-gray-600 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full flex items-center justify-center">
           <!-- Triangle -->
           <div class="w-0 h-0 border-t-[10px] border-t-transparent border-b-[10px] border-b-transparent border-l-[15px] border-l-white transform translate-x-[2px] rounded"></div>
@@ -1682,7 +3054,7 @@ style="width: 24px; height:24px;" focusable="false" aria-hidden="true" viewBox="
         <div class="absolute inset-0 bg-black opacity-0 hover:opacity-30 "></div>
       </div>
   
-      <div class="w-[250px] h-[250px] rounded overflow-hidden relative cursor-pointer"><img src="./public/images/vid13.jpg" alt="" class="w-full h-full object-cover object-top">
+      <div class="w-full max-w-[250px] max-h-[250px]   aspect-square rounded overflow-hidden relative cursor-pointer hidden xl:block"><img src="./public/images/vid13.jpg" alt="" class="w-full h-full object-cover object-top">
         <div class="w-[50px] h-[50px] bg-gray-600 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full flex items-center justify-center">
           <!-- Triangle -->
           <div class="w-0 h-0 border-t-[10px] border-t-transparent border-b-[10px] border-b-transparent border-l-[15px] border-l-white transform translate-x-[2px] rounded"></div>
@@ -1691,11 +3063,28 @@ style="width: 24px; height:24px;" focusable="false" aria-hidden="true" viewBox="
         <div class="absolute inset-0 bg-black opacity-0 hover:opacity-30 "></div>
       </div>
     </div>
+
+
+    <!-- hidden tenth slider -->
+    <div class="swiper-slide  flex-col gap-[30px] max-w-[250px] min-w-[280px] xl:min-w-[200px] xl:!hidden">
+  
+      <div class="w-full max-w-[250px] max-h-[250px]   aspect-square rounded overflow-hidden relative cursor-pointer xl:hidden min-w-[280px] xl:min-w-[200px] min-h-[280px] xl:min-h-[200px]"><img src="./public/images/vid13.jpg" alt="" class="w-full h-full object-cover object-top">
+        <div class="w-[50px] h-[50px] bg-gray-600 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full flex items-center justify-center">
+          <!-- Triangle -->
+          <div class="w-0 h-0 border-t-[10px] border-t-transparent border-b-[10px] border-b-transparent border-l-[15px] border-l-white transform translate-x-[2px] rounded"></div>
+        </div>
+        <!-- Hover Background -->
+        <div class="absolute inset-0 bg-black opacity-0 hover:opacity-30 "></div>
+      </div>
+    </div>
+
+
+
     
   
      <!-- eleventh slider -->
-     <div class="swiper-slide relative max-w-[250px]">
-      <div class="w-[250px] h-[250px] rounded overflow-hidden absolute top-[40px]  cursor-pointer"><img src="./public/images/vid14.jpg" alt="" class="w-full h-full object-cover object-top">
+     <div class="swiper-slide relative max-w-[250px] min-w-[280px] xl:min-w-[200px]">
+      <div class="w-full max-w-[250px] max-h-[250px]   aspect-square rounded overflow-hidden absolute xl:top-[40px]  cursor-pointer min-w-[280px] xl:min-w-[200px] min-h-[280px] xl:min-h-[200px]"><img src="./public/images/vid14.jpg" alt="" class="w-full h-full object-cover object-top">
        <!-- Circle -->
        <div class="w-[50px] h-[50px] bg-gray-600 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full flex items-center justify-center">
         <!-- Triangle -->
@@ -1715,137 +3104,151 @@ style="width: 24px; height:24px;" focusable="false" aria-hidden="true" viewBox="
 </div>
 
 <!-- SECOND SWIPER END -->
+ <!-- hidden button -->
+  <div class="flex justify-center items-center">
+     <button class="py-3 px-6 border border-black bg-transparent rounded-[25px] text-[14px] hover:bg-[#F7F7F7] mt-[30px] m-auto z-20 xl:hidden">
+  ALLE ANZEIGEN
+</button>
+  </div>
 
-
-<!-- HEALTHCARE START -->
-<div class="flex justify-center gap-[5px] pt-[120px]">
-  <h3 class="text-[40px] font-bold  mx-auto text-center ">Dein Wohl liegt uns am Herzen
-
-  </h3>
- </div>
-<div class="title relative w-full flex justify-center items-center pb-6 pt-3">
-  <p class="text-[14px] w-[45%] mx-auto text-center text-[#333333]">Unsere Wellesophy Produkte wurden entwickelt, um deinen Erfolg jeden Tag zu unterstützen. Sie unterstützen deine Gesundheit mit wichtigen Nährstoffen und sorgen dafür, dass du gut aussiehst und dich wohl fühlst. Entdecke jetzt die besten Angebote.
-  </p>
-  <button class="py-3 px-6 border border-black bg-transparent rounded-[25px] text-[14px] hover:bg-[#F7F7F7] absolute right-0">
-    JETZT SHOPPEN
-  </button>
-</div>
 
 <!-- fourth Row -->
+<!-- HEALTHCARE START -->
+
+<div class="max-w-[1346px] mx-auto px-[30px]">
+
+  <div class="flex justify-center gap-[5px] pt-[50px] ">
+   <h3 class="text-[40px] font-bold  mx-auto text-center ">Feinste Pflege von innen
+ 
+   </h3>
+  </div>
+ <div class="title relative w-full flex justify-center items-center pb-6 pt-3 ">
+   <p class="text-[14px] xl:w-[600px] md:w-[500px] sm:w-[350px] mx-auto text-center text-[#333333] sm:truncate md:overflow-visible sm:overflow-hidden whitespace-normal overflow-visible  md:whitespace-normal sm:whitespace-nowrap w-full sm:text-wrap">
+    Erweitere dein Wohlbefinden mit Wellosophy auf ein solides Fundament. Tägliche Nahrungsergänzungen, die deine Kraft und Schönheit unterstützen und dir jeden Morgen ein gutes Gefühl geben.
+   </p>
+   <button class="py-3 px-6 border border-black bg-transparent rounded-[25px] text-[14px] hover:bg-[#F7F7F7] absolute right-0 hidden sm:block">
+    Entdecke Wellosophy
+   </button>
+ </div>
 
 
- <!-- above sm size -->
- <div class="
- hidden
- sm:grid
- sm:grid-cols-[repeat(3,1fr)]
- md:grid-cols-[2fr_repeat(3,1fr)]
- xl:grid-cols-[544px_repeat(3,_1fr)] 
- gap-[10px]">
+
+<!-- the grid part -->
+<div class="
+grid 
+grid-cols-2 
+grid-rows-[auto_auto] 
+sm:grid-cols-[repeat(3,1fr)] 
+md:grid-cols-[2fr_repeat(3,1fr)] 
+xl:grid-cols-[544px_repeat(3,_1fr)] 
+gap-[10px]">
 
 <!-- Larger Rectangle -->
-<div class="bg-gray-300 h-[380px] w-full xl:max-w-[544px] cursor-pointer mr-[10px] rounded overflow-hidden">
- <img src="./public/images/ProductB4.webp" alt="" class="object-cover w-full h-full ">
+<div class="col-span-2 row-span-1 sm:col-auto sm:row-auto bg-gray-300  max-w-[360px] h-[215px] sm:h-[380px] xl:max-w-[544px] mx-auto cursor-pointer sm:mr-[10px] rounded-md overflow-hidden relative">
+  <img src="./public/images/ProductB4.webp" alt="" class="object-cover w-full h-full">
+  
+  
+  <div class="absolute bottom-[40px] left-0 right-0 flex justify-center px-[40px]">
+    <!-- Button -->
+    <button class="py-3 px-6 bg-black bg-opacity-40 rounded-[25px] text-[14px] hover:bg-white hover:bg-opacity-40 sm:w-auto text-white w-auto">
+      ENTDECKE ECATALOGUE
+    </button>
+  </div>
 </div>
 
 <!-- Smaller Rectangles -->
-<div class="bg-white h-[380px] md:max-w-[234px] overflow-hidden cursor-pointer">
- <!-- Photo part -->
- <div class="w-full h-auto relative overflow-hidden rounded-md">
-   <img src="./public/images/productImage41.webp" class="transition-transform duration-500 ease-in-out hover:scale-110 relative block w-full h-auto" alt="">
-   <span class="absolute bg-[#63666A] text-white text-[14px] top-3 left-3 px-[10px] py-[5px] rounded-md text-nowrap">NEUES PRODUKT</span>
-   <button class="w-[45px] h-[45px] bg-white flex items-center justify-center rounded-full shadow-[0px_3px_4px_0px_rgba(0,0,66,0.08),0px_1px_8px_0px_rgba(0,0,66,0.08)] absolute bottom-6 right-2">
-     <svg 
-       class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit frontpage-1cw4hi4" 
-       focusable="false" 
-       aria-hidden="true" 
-       viewBox="0 0 24 24" 
-       data-testid="QuickBuyOutlinedIcon" 
-       width="27" 
-       height="27" 
-       fill="black">
-       <path d="M6.434 9H4.5a1.5 1.5 0 0 0-1.486 1.703l1.227 9A1.5 1.5 0 0 0 5.728 21h12.254a1.5 1.5 0 0 0 1.486-1.297l1.227-9A1.5 1.5 0 0 0 19.21 9h-1.933c-.087-2.548-.848-4.078-1.933-4.96C14.208 3.118 12.826 3 11.855 3c-.975 0-2.355.126-3.49 1.051C7.282 4.936 6.521 6.464 6.434 9m1 0c.086-2.329.778-3.533 1.564-4.174.858-.7 1.942-.826 2.857-.826.917 0 2 .12 2.857.817.785.637 1.477 1.84 1.563 4.183zm8.868 1 .053 1.448a.5.5 0 0 0 1-.018c0-.528-.013-.987-.037-1.43h1.891a.5.5 0 0 1 .495.568l-1.227 9a.5.5 0 0 1-.495.432H5.728a.5.5 0 0 1-.496-.432l-1.227-9A.5.5 0 0 1 4.5 10h1.905q-.001.372.01.756.009.333.01.674a.5.5 0 1 0 1 0c0-.285-.006-.535-.012-.766-.005-.236-.01-.452-.008-.664z"></path>
-     </svg>
-   </button>
- </div>
- <!-- Written part -->
- <span class="uppercase tracking-[2px] text-[10.5px] text-[#333333]">Giordani Gold</span>
- <p class="text-[14px] text-[#333333] mt-[10px]">Giordani Gold Essenza Supreme Parfum</p>
- <div class="flex gap-[10px] text-[14px] mt-[15px]">
-   <p class="text-[#685bc7]">56,49 €</p>
-   <p class="line-through text-[#555]">75,00 €</p>
- </div>      
-</div>
-
-<div class="bg-white h-[380px] md:max-w-[234px] overflow-hidden cursor-pointer">
- <!-- Photo part -->
- <div class="w-full h-auto relative overflow-hidden rounded-md">
-   <img src="./public/images/productImage42.webp" class="transition-transform duration-500 ease-in-out hover:scale-110 relative block w-full h-auto" alt="">
-   <span class="absolute bg-[#63666A] text-white text-[14px] top-3 left-3 px-[10px] py-[5px] rounded-md text-nowrap">NEUES PRODUKT</span>
-   <button class="w-[45px] h-[45px] bg-white flex items-center justify-center rounded-full shadow-[0px_3px_4px_0px_rgba(0,0,66,0.08),0px_1px_8px_0px_rgba(0,0,66,0.08)] absolute bottom-6 right-2">
-     <svg 
-       class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit frontpage-1cw4hi4" 
-       focusable="false" 
-       aria-hidden="true" 
-       viewBox="0 0 24 24" 
-       data-testid="QuickBuyOutlinedIcon" 
-       width="27" 
-       height="27" 
-       fill="black">
-       <path d="M6.434 9H4.5a1.5 1.5 0 0 0-1.486 1.703l1.227 9A1.5 1.5 0 0 0 5.728 21h12.254a1.5 1.5 0 0 0 1.486-1.297l1.227-9A1.5 1.5 0 0 0 19.21 9h-1.933c-.087-2.548-.848-4.078-1.933-4.96C14.208 3.118 12.826 3 11.855 3c-.975 0-2.355.126-3.49 1.051C7.282 4.936 6.521 6.464 6.434 9m1 0c.086-2.329.778-3.533 1.564-4.174.858-.7 1.942-.826 2.857-.826.917 0 2 .12 2.857.817.785.637 1.477 1.84 1.563 4.183zm8.868 1 .053 1.448a.5.5 0 0 0 1-.018c0-.528-.013-.987-.037-1.43h1.891a.5.5 0 0 1 .495.568l-1.227 9a.5.5 0 0 1-.495.432H5.728a.5.5 0 0 1-.496-.432l-1.227-9A.5.5 0 0 1 4.5 10h1.905q-.001.372.01.756.009.333.01.674a.5.5 0 1 0 1 0c0-.285-.006-.535-.012-.766-.005-.236-.01-.452-.008-.664z"></path>
-     </svg>
-   </button>
- </div>
- <!-- Written part -->
- <span class="uppercase tracking-[2px] text-[10.5px] text-[#333333]">Giordani Gold</span>
- <p class="text-[14px] text-[#333333] mt-[10px]">Giordani Gold Essenza Supreme Parfum</p>
- <div class="flex gap-[10px] text-[14px] mt-[15px]">
-   <p class="text-[#685bc7]">56,49 €</p>
-   <p class="line-through text-[#555]">75,00 €</p>
- </div>      
-</div>
-<div class="bg-white h-[380px] max-w-[234px] hidden md:block overflow-hidden cursor-pointer">
-  <!-- Photo part -->
+<div class="bg-white h-[380px] overflow-hidden cursor-pointer">
   <div class="w-full h-auto relative overflow-hidden rounded-md">
-   <img src="./public/images/productImage43.webp" class="transition-transform duration-500 ease-in-out hover:scale-110 relative block w-full h-auto" alt="">
-   <span class="absolute bg-[#63666A] text-white text-[14px] top-3 left-3 px-[10px] py-[5px] rounded-md text-nowrap">NEUES PRODUKT</span>
-   <button class="w-[45px] h-[45px] bg-white flex items-center justify-center rounded-full shadow-[0px_3px_4px_0px_rgba(0,0,66,0.08),0px_1px_8px_0px_rgba(0,0,66,0.08)] absolute bottom-6 right-2">
-     <svg 
-       class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit frontpage-1cw4hi4" 
-       focusable="false" 
-       aria-hidden="true" 
-       viewBox="0 0 24 24" 
-       data-testid="QuickBuyOutlinedIcon" 
-       width="27" 
-       height="27" 
-       fill="black">
-       <path d="M6.434 9H4.5a1.5 1.5 0 0 0-1.486 1.703l1.227 9A1.5 1.5 0 0 0 5.728 21h12.254a1.5 1.5 0 0 0 1.486-1.297l1.227-9A1.5 1.5 0 0 0 19.21 9h-1.933c-.087-2.548-.848-4.078-1.933-4.96C14.208 3.118 12.826 3 11.855 3c-.975 0-2.355.126-3.49 1.051C7.282 4.936 6.521 6.464 6.434 9m1 0c.086-2.329.778-3.533 1.564-4.174.858-.7 1.942-.826 2.857-.826.917 0 2 .12 2.857.817.785.637 1.477 1.84 1.563 4.183zm8.868 1 .053 1.448a.5.5 0 0 0 1-.018c0-.528-.013-.987-.037-1.43h1.891a.5.5 0 0 1 .495.568l-1.227 9a.5.5 0 0 1-.495.432H5.728a.5.5 0 0 1-.496-.432l-1.227-9A.5.5 0 0 1 4.5 10h1.905q-.001.372.01.756.009.333.01.674a.5.5 0 1 0 1 0c0-.285-.006-.535-.012-.766-.005-.236-.01-.452-.008-.664z"></path>
-     </svg>
+    <img src="./public/images/productImage41.webp" class="transition-transform duration-500 ease-in-out hover:scale-110 relative block w-full h-auto" alt="">
+    <span class="absolute bg-[#63666A] text-white text-[14px] top-3 left-3 px-[10px] py-[5px] rounded-md text-nowrap">NEUES PRODUKT</span>
+    <button class="w-[45px] h-[45px] bg-white flex items-center justify-center rounded-full shadow-[0px_3px_4px_0px_rgba(0,0,66,0.08),0px_1px_8px_0px_rgba(0,0,66,0.08)] absolute bottom-6 right-2">
+      <svg 
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit frontpage-1cw4hi4" 
+        focusable="false" 
+        aria-hidden="true" 
+        viewBox="0 0 24 24" 
+        data-testid="QuickBuyOutlinedIcon" 
+        width="27" 
+        height="27" 
+        fill="black">
+        <path d="M6.434 9H4.5a1.5 1.5 0 0 0-1.486 1.703l1.227 9A1.5 1.5 0 0 0 5.728 21h12.254a1.5 1.5 0 0 0 1.486-1.297l1.227-9A1.5 1.5 0 0 0 19.21 9h-1.933c-.087-2.548-.848-4.078-1.933-4.96C14.208 3.118 12.826 3 11.855 3c-.975 0-2.355.126-3.49 1.051C7.282 4.936 6.521 6.464 6.434 9m1 0c.086-2.329.778-3.533 1.564-4.174.858-.7 1.942-.826 2.857-.826.917 0 2 .12 2.857.817.785.637 1.477 1.84 1.563 4.183zm8.868 1 .053 1.448a.5.5 0 0 0 1-.018c0-.528-.013-.987-.037-1.43h1.891a.5.5 0 0 1 .495.568l-1.227 9a.5.5 0 0 1-.495.432H5.728a.5.5 0 0 1-.496-.432l-1.227-9A.5.5 0 0 1 4.5 10h1.905q-.001.372.01.756.009.333.01.674a.5.5 0 1 0 1 0c0-.285-.006-.535-.012-.766-.005-.236-.01-.452-.008-.664z"></path>
+      </svg>
+    </button>
+  </div>
+  <!-- Written part -->
+  <span class="uppercase tracking-[2px] text-[10.5px] text-[#333333]">Giordani Gold</span>
+  <p class="text-[14px] text-[#333333] mt-[10px]">Giordani Gold Essenza Supreme Parfum</p>
+  <div class="flex gap-[10px] text-[14px] mt-[15px]">
+    <p class="text-[#685bc7]">56,49 €</p>
+    <p class="line-through text-[#555]">75,00 €</p>
+  </div>      
+  
+</div>
+
+<div class="bg-white h-[380px] overflow-hidden cursor-pointer">
+  <div class="w-full h-auto relative overflow-hidden rounded-md">
+    <img src="./public/images/productImage42.webp" class="transition-transform duration-500 ease-in-out hover:scale-110 relative block w-full h-auto" alt="">
+    <span class="absolute bg-[#63666A] text-white text-[14px] top-3 left-3 px-[10px] py-[5px] rounded-md text-nowrap">NEUES PRODUKT</span>
+    <button class="w-[45px] h-[45px] bg-white flex items-center justify-center rounded-full shadow-[0px_3px_4px_0px_rgba(0,0,66,0.08),0px_1px_8px_0px_rgba(0,0,66,0.08)] absolute bottom-6 right-2">
+      <svg 
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit frontpage-1cw4hi4" 
+        focusable="false" 
+        aria-hidden="true" 
+        viewBox="0 0 24 24" 
+        data-testid="QuickBuyOutlinedIcon" 
+        width="27" 
+        height="27" 
+        fill="black">
+        <path d="M6.434 9H4.5a1.5 1.5 0 0 0-1.486 1.703l1.227 9A1.5 1.5 0 0 0 5.728 21h12.254a1.5 1.5 0 0 0 1.486-1.297l1.227-9A1.5 1.5 0 0 0 19.21 9h-1.933c-.087-2.548-.848-4.078-1.933-4.96C14.208 3.118 12.826 3 11.855 3c-.975 0-2.355.126-3.49 1.051C7.282 4.936 6.521 6.464 6.434 9m1 0c.086-2.329.778-3.533 1.564-4.174.858-.7 1.942-.826 2.857-.826.917 0 2 .12 2.857.817.785.637 1.477 1.84 1.563 4.183zm8.868 1 .053 1.448a.5.5 0 0 0 1-.018c0-.528-.013-.987-.037-1.43h1.891a.5.5 0 0 1 .495.568l-1.227 9a.5.5 0 0 1-.495.432H5.728a.5.5 0 0 1-.496-.432l-1.227-9A.5.5 0 0 1 4.5 10h1.905q-.001.372.01.756.009.333.01.674a.5.5 0 1 0 1 0c0-.285-.006-.535-.012-.766-.005-.236-.01-.452-.008-.664z"></path>
+      </svg>
+    </button>
+  </div>
+  <!-- Written part -->
+  <span class="uppercase tracking-[2px] text-[10.5px] text-[#333333]">THE ONE</span>
+  <p class="text-[14px] text-[#333333] mt-[10px]">THE ONE Pump & Plump Mascara</p>
+  <div class="flex gap-[10px] text-[14px] mt-[15px]">
+    <p class="text-[#685bc7]">9,99 €</p>
+    <p class="line-through text-[#555]">17,00 €</p>
+  </div>      
+</div>
+
+<!-- Hidden Below `sm` -->
+<div class="hidden md:block bg-white h-[380px] overflow-hidden cursor-pointer">
+  <div class="w-full h-auto relative overflow-hidden rounded-md">
+    <img src="./public/images/productImage43.webp" class="transition-transform duration-500 ease-in-out hover:scale-110 relative block w-full h-auto" alt="">
+    <span class="absolute bg-[#63666A] text-white text-[14px] top-3 left-3 px-[10px] py-[5px] rounded-md text-nowrap">NEUES PRODUKT</span>
+    <button class="w-[45px] h-[45px] bg-white flex items-center justify-center rounded-full shadow-[0px_3px_4px_0px_rgba(0,0,66,0.08),0px_1px_8px_0px_rgba(0,0,66,0.08)] absolute bottom-6 right-2">
+      <svg 
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit frontpage-1cw4hi4" 
+        focusable="false" 
+        aria-hidden="true" 
+        viewBox="0 0 24 24" 
+        data-testid="QuickBuyOutlinedIcon" 
+        width="27" 
+        height="27" 
+        fill="black">
+        <path d="M6.434 9H4.5a1.5 1.5 0 0 0-1.486 1.703l1.227 9A1.5 1.5 0 0 0 5.728 21h12.254a1.5 1.5 0 0 0 1.486-1.297l1.227-9A1.5 1.5 0 0 0 19.21 9h-1.933c-.087-2.548-.848-4.078-1.933-4.96C14.208 3.118 12.826 3 11.855 3c-.975 0-2.355.126-3.49 1.051C7.282 4.936 6.521 6.464 6.434 9m1 0c.086-2.329.778-3.533 1.564-4.174.858-.7 1.942-.826 2.857-.826.917 0 2 .12 2.857.817.785.637 1.477 1.84 1.563 4.183zm8.868 1 .053 1.448a.5.5 0 0 0 1-.018c0-.528-.013-.987-.037-1.43h1.891a.5.5 0 0 1 .495.568l-1.227 9a.5.5 0 0 1-.495.432H5.728a.5.5 0 0 1-.496-.432l-1.227-9A.5.5 0 0 1 4.5 10h1.905q-.001.372.01.756.009.333.01.674a.5.5 0 1 0 1 0c0-.285-.006-.535-.012-.766-.005-.236-.01-.452-.008-.664z"></path>
+      </svg>
+    </button>
+  </div>
+  <!-- Written part -->
+  <span class="uppercase tracking-[2px] text-[10.5px] text-[#333333]">THE ONE</span>
+  <p class="text-[14px] text-[#333333] mt-[10px]">THE ONE Colour Unlimited Lidschattenstift</p>
+  <div class="flex gap-[10px] text-[14px] mt-[15px]">
+    <p class="text-[#685bc7]">9,49 €</p>
+    <p class="line-through text-[#555]">16,00 €</p>
+  </div>      
+</div>
+
+
+</div>
+
+<div class="flex justify-center items-center">
+  <button class="py-3 px-6 border border-black bg-transparent rounded-[25px] text-[14px] hover:bg-[#F7F7F7] sm:hidden">
+    Entdecke Wellosophy
    </button>
- </div>
- <!-- Written part -->
- <span class="uppercase tracking-[2px] text-[10.5px] text-[#333333]">Giordani Gold</span>
- <p class="text-[14px] text-[#333333] mt-[10px]">Giordani Gold Essenza Supreme Parfum</p>
- <div class="flex gap-[10px] text-[14px] mt-[15px]">
-   <p class="text-[#685bc7]">56,49 €</p>
-   <p class="line-through text-[#555]">75,00 €</p>
- </div>  
-</div>
 </div>
 
-
-<!-- below sm size -->
-<div class="grid grid-cols-1 w-full sm:hidden">
-<!-- Centering First FR -->
-<div class="self-center mx-auto bg-gray-300 w-[300px] h-[215px] ">
- First FR
-</div>
-
-<!-- Second and Third FR -->
-<div class="grid grid-cols-2 gap-4 col-span-1 bg-gray-400">
- <div class="bg-gray-500 h-[267px]">Second FR</div>
- <div class="bg-gray-500 h-[267px]">Third FR</div>
-</div>
 </div>
 
 
@@ -1911,14 +3314,16 @@ style="width: 24px; height:24px;" focusable="false" aria-hidden="true" viewBox="
 </div>
 <!-- PRIVILAGES END -->
 <br>
+
+
 <!-- HAPPY START -->
-<div class="title relative w-full pt-[110px] flex justify-center items-center pb-[30px]">
+<div class="title relative w-full pt-[110px] flex justify-center items-center pb-[30px] px-[15px]">
   <h3 class="text-[40px] font-bold  mx-auto text-center">Reach your happy place
     </h3>
    
 </div>
-<div class="flex flex-col justify-center items-center pb-6">
-  <p class="text-[14px] w-[45%] mx-auto text-center text-[#333333] pb-[30px]">Wir glauben, dass sich wahres Wohlbefinden für jeden anders anfühlt - und seien wir ehrlich, es bedeutet oft unterschiedliche Sachen in unterschiedlichen Momenten. Manchmal braucht man einen gemütlichen Abend, an dem man seine Lieblingsserie mit einer pflegenden Gesichtsmaske anschaut, während man an anderen Tagen von Freunden umgeben sein und aktiv sein möchte. 
+<div class="flex flex-col justify-center items-center mx-auto pb-6 max-w-[600px]">
+  <p class="text-[14px] w-full mx-auto text-center text-[#333333] pb-[30px] px-[30px]">Wir glauben, dass sich wahres Wohlbefinden für jeden anders anfühlt - und seien wir ehrlich, es bedeutet oft unterschiedliche Sachen in unterschiedlichen Momenten. Manchmal braucht man einen gemütlichen Abend, an dem man seine Lieblingsserie mit einer pflegenden Gesichtsmaske anschaut, während man an anderen Tagen von Freunden umgeben sein und aktiv sein möchte. 
     In Wirklichkeit geht es darum, sich selbstbewusst zu fühlen und das Leben so zu leben, wie du es willst, frei von Urteilen und Erwartungen. 
     
     Wir sind eine Community für Wohlbefinden und Schönheit mit Unternehmergeist - eine unterstützende Gruppe, die bereit ist, deine Reise mit der Schönheit deines Wohlbefindens zu unterstützen. Gemeinsam helfen wir dir, deinen einzigartigen Weg zum Wohlbefinden zu finden - damit du die Fahrt genießen kannst. Denn Glück ist gut für alle!
@@ -1931,12 +3336,12 @@ style="width: 24px; height:24px;" focusable="false" aria-hidden="true" viewBox="
 
  <!-- TOP BRANDS START -->
  <div class="title relative w-full pt-[160px] flex justify-center items-center pb-[20px]">
-  <h3 class="text-[40px] font-bold  mx-auto text-center">Unsere Top-Marken
+  <h3 class=" text-[30px] md:text-[40px] font-bold  mx-auto text-center">Unsere Top-Marken
     </h3>
    
 </div>
-<div class="max-w-[950px] mx-auto">
-  <div class="grid grid-cols-[repeat(2,1fr)] sm:grid-cols-[repeat(4,1fr)] gap-5 place-items-center">
+<div class="max-w-[950px] mx-auto px-[15px]">
+  <div class="grid grid-cols-[repeat(2,1fr)] sm:grid-cols-[repeat(4,1fr)] sm:gap-[50px] place-items-center justify-self-center gap-[20px]">
     <div class="bg-black rounded-full overflow-hidden cursor-pointer aspect-square
     max-w-[160px] max-h-[160px]
     sm:max-w-[200px] sm:max-h-[200px] ">
@@ -1986,46 +3391,189 @@ style="width: 24px; height:24px;" focusable="false" aria-hidden="true" viewBox="
 </div>
 <!-- NEWSLETTER END -->
  <!-- ABOUT US START -->
-<div class="w-full h-[297px] bg-[#F5F5F5] flex justify-center py-[30px] px-[5px] gap-x-[80px]">
-<div class="flex flex-col gap-[15px]">
-  <span class="text-[14px] font-bold">Hilfe / FAQ</span>
-  <p class="text-[14px] cursor-pointer">Kundenservice</p>
-    <p class="text-[14px] cursor-pointer">Reklamationen & Retouren</p>
-    <p class="text-[14px] cursor-pointer">Paketverfolgung</p>
-    <p class="text-[14px] cursor-pointer">Impressum</p>
-</div>
+  <div class="w-full bg-[#F5F5F5]">
 
-<div class="flex flex-col gap-[15px]">
-  <span class="text-[14px] font-bold">ÜBER UNS</span>
-  <p class="text-[14px] cursor-pointer">Wer wir sind</p>
-    <p class="text-[14px] cursor-pointer">Nachhaltigkeit</p>
-    <p class="text-[14px] cursor-pointer">Jobs bei Oriflame</p>
-    <p class="text-[14px] cursor-pointer">EU-Konformitätserklärungen</p>
-    <p class="text-[14px] cursor-pointer">Investor Relations</p>
-    <p class="text-[14px] cursor-pointer">Oriflame.com</p>
-</div>
 
-<div class="flex flex-col gap-[15px]">
-  <span class="text-[14px] font-bold">ENTDECKE</span>
-  <p class="text-[14px] cursor-pointer">Werde Member</p>
-    <p class="text-[14px] cursor-pointer">eKatalog</p>
+<!-- parent below sm size -->
+ <div class="px-[15px] py-[30px] sm:hidden">
+   <!-- below sm size -->
+   <div class="min-h-[48px] sm:hidden">
+    <button class="accordion-header w-full flex justify-between items-center    font-extrabold">
+      <div class=" flex  items-center justify-between w-full  ">
+        
+          <div class=" flex items-center  truncate gap-2">
+           
+            <span class=" text-[14px] font-bold truncate">HILFE/FAQ</span>
+          </div>
 
-</div>
+          
+     
+        <span class="arrow transition-transform"> <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium frontpage-wr8ge5"
+          style="width: 24px; height: 24px; transform: rotate(90deg);" 
+          focusable="false" aria-hidden="true" viewBox="0 0 24 24" 
+          data-testid="ArrowRightThinIcon">
+       <path d="M9.146 5.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L14.793 12 9.146 6.354a.5.5 0 0 1 0-.708"></path>
+     </svg>
+        </span>
+        </div>
+    </button>
+    <div class="accordion-content hidden py-4 ">
+        <ul class="space-y-4">
+            <li class=""><a href="" class="block hover:text-[#007681] text-[14px] cursor-pointer text-gray-600">Kundenservice</a></li>
+            <li class=""><a href="" class="block hover:text-[#007681] text-[14px] cursor-pointer text-gray-600">Reklamationen & Retouren
+            </a></li>
+            <li class=""><a href="" class="block hover:text-[#007681] text-[14px] cursor-pointer text-gray-600">Paketverfolgung
+            </a></li>
+            <li class=""><a href="" class="block hover:text-[#007681] text-[14px] cursor-pointer text-gray-600">Impressum
+            </a></li>
+            </ul>
 
-<div class=" md:flex flex-col gap-[10px] items-center hidden" >
-  <span class="text-[25px] ">Unsere Apps</span>
-  <div class="flex gap-[20px]">
-   <div class="w-[35px] h-[35px] overflow-hidden rounded-full "><img src="./public/images/app1.svg" alt=""></div>
-   <div class="w-[35px] h-[35px] overflow-hidden rounded-full"><img src="./public/images/app2.svg" alt=""></div>
-   <div class="w-[35px] h-[35px] overflow-hidden rounded-full"><img src="./public/images/app3.svg" alt=""></div>
+    </div>
+
   </div>
-  <a href="" class="underline text-[14px] hover:text-[#0E7C5D]">Mehr lesen & herunterladen</a>
+  <!-- below sm size -->
+  <div class="min-h-[48px] sm:hidden">
+    <button class="accordion-header w-full flex justify-between items-center    font-extrabold">
+      <div class=" flex  items-center justify-between w-full  ">
+        
+          <div class=" flex items-center  truncate gap-2">
+           
+            <span class=" text-[14px] font-bold truncate">ÜBER UNS</span>
+          </div>
+
+          
+     
+        <span class="arrow transition-transform"> <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium frontpage-wr8ge5"
+          style="width: 24px; height: 24px; transform: rotate(90deg);" 
+          focusable="false" aria-hidden="true" viewBox="0 0 24 24" 
+          data-testid="ArrowRightThinIcon">
+       <path d="M9.146 5.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L14.793 12 9.146 6.354a.5.5 0 0 1 0-.708"></path>
+     </svg>
+        </span>
+        </div>
+    </button>
+    <div class="accordion-content hidden py-4 ">
+        <ul class="space-y-4">
+            <li class=""><a href="" class="block hover:text-[#007681] text-[14px] cursor-pointer text-gray-600">Wer wir sind</a></li>
+            <li class=""><a href="" class="block hover:text-[#007681] text-[14px] cursor-pointer text-gray-600">Nachhaltigkeit
+            </a></li>
+            <li class=""><a href="" class="block hover:text-[#007681] text-[14px] cursor-pointer text-gray-600">Jobs bei Oriflame
+            </a></li>
+            <li class=""><a href="" class="block hover:text-[#007681] text-[14px] cursor-pointer text-gray-600">EU-Konformitätserklärungen
+            </a></li>
+            <li class=""><a href="" class="block hover:text-[#007681] text-[14px] cursor-pointer text-gray-600">Investor Relations
+            </a></li>
+            <li class=""><a href="" class="block hover:text-[#007681] text-[14px] cursor-pointer text-gray-600">Oriflame.com
+            </a></li>
+            </ul>
+
+    </div>
+
+  </div>
+   <!-- below sm size -->
+   <div class="min-h-[48px] sm:hidden">
+    <button class="accordion-header w-full flex justify-between items-center    font-extrabold">
+      <div class=" flex  items-center justify-between w-full  ">
+        
+          <div class=" flex items-center  truncate gap-2">
+           
+            <span class=" text-[14px] font-bold truncate">ENTDECKE</span>
+          </div>
+
+          
+     
+        <span class="arrow transition-transform"> <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium frontpage-wr8ge5"
+          style="width: 24px; height: 24px; transform: rotate(90deg);" 
+          focusable="false" aria-hidden="true" viewBox="0 0 24 24" 
+          data-testid="ArrowRightThinIcon">
+       <path d="M9.146 5.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L14.793 12 9.146 6.354a.5.5 0 0 1 0-.708"></path>
+     </svg>
+        </span>
+        </div>
+    </button>
+    <div class="accordion-content hidden py-4 ">
+        <ul class="space-y-4">
+            <li class=""><a href="" class="block hover:text-[#007681] text-[14px] cursor-pointer text-gray-600">Werde Member</a></li>
+            <li class=""><a href="" class="block hover:text-[#007681] text-[14px] cursor-pointer text-gray-600">eKatalog
+            </a></li>
+            </ul>
+
+    </div>
+
+  </div>
+ </div>
+
+
+
+
+
+
+    
+  <!-- above sm size -->
+ <div class="mx-auto bg-[#F5F5F5] max-w-[984px] hidden sm:block">
+  <div class="w-full h-[297px] bg-[#F5F5F5] grid px-[15px] py-[30px] 
+  sm:grid-cols-[repeat(3,1fr)]
+  sm:justify-items-center
+  md:grid-cols-[repeat(4,1fr)]
+  justify-items-center
+  gap-[15px] justify-center
+  ">
+   <div class="flex flex-col gap-[15px] ">
+     <span class="text-[14px] font-bold">Hilfe / FAQ</span>
+     <p class="text-[14px] cursor-pointer">Kundenservice</p>
+     <p class="text-[14px] cursor-pointer">Reklamationen & Retouren</p>
+     <p class="text-[14px] cursor-pointer">Paketverfolgung</p>
+     <p class="text-[14px] cursor-pointer">Impressum</p>
+   </div>
+ 
+   <div class="flex flex-col gap-[15px]">
+     <span class="text-[14px] font-bold">ÜBER UNS</span>
+     <p class="text-[14px] cursor-pointer">Wer wir sind</p>
+     <p class="text-[14px] cursor-pointer">Nachhaltigkeit</p>
+     <p class="text-[14px] cursor-pointer">Jobs bei Oriflame</p>
+     <p class="text-[14px] cursor-pointer">EU-Konformitätserklärungen</p>
+     <p class="text-[14px] cursor-pointer">Investor Relations</p>
+     <p class="text-[14px] cursor-pointer">Oriflame.com</p>
+   </div>
+ 
+   <div class="flex flex-col gap-[15px]">
+     <span class="text-[14px] font-bold">ENTDECKE</span>
+     <p class="text-[14px] cursor-pointer">Werde Member</p>
+     <p class="text-[14px] cursor-pointer">eKatalog</p>
+   </div>
+ 
+   <div class=" md:flex flex-col gap-[10px] items-center hidden font-extrabold">
+     <span class="text-[25px]">Unsere Apps</span>
+     <div class="flex gap-[20px]">
+       <div class="w-[35px] h-[35px] overflow-hidden rounded-full">
+         <img src="./public/images/app1.svg" alt="">
+       </div>
+       <div class="w-[35px] h-[35px] overflow-hidden rounded-full">
+         <img src="./public/images/app2.svg" alt="">
+       </div>
+       <div class="w-[35px] h-[35px] overflow-hidden rounded-full">
+         <img src="./public/images/app3.svg" alt="">
+       </div>
+     </div>
+     <a href="" class="underline text-[14px] hover:text-[#0E7C5D]">Mehr lesen & herunterladen</a>
+   </div>
+ </div>
+
+ </div>
 </div>
-</div>
+
+
+
+
+
+
+
+
+
  <!-- ABOUT US END -->
   <!-- FOLLOW US START -->
 <div class="flex text-center flex-col justify-center items-center">
-  <h3 class="font-bold text-[25px] pt-[30px]">Folge uns
+  <h3 class="font-bold text-[20px] pt-[30px]">Folge uns
   </h3>
   <div class="flex gap-[10px]">
     <div class="w-[45px] h-[45px] relative overflow-hidden rounded-full cursor-pointer">
@@ -2038,10 +3586,23 @@ style="width: 24px; height:24px;" focusable="false" aria-hidden="true" viewBox="
     </div>
     </div>
 
-    <p class="text-[14px] w-[45%] mx-auto text-center text-[#333333] pb-[30px] pt-[25px]">Oriflame ist ein marktführendes Kosmetikunternehmen im Direktvertrieb. Wir sind in mehr als 60 Ländern vertreten, in mehr als der Hälfte davon sind wir Marktführer. Oriflame stammt aus Schweden und hat seinen operativen Hauptsitz in der Schweiz. Wir bieten eine große Auswahl an hochwertigen Schönheitsprodukten sowie die einzigartige Möglichkeit, unserem Verkaufsteam beizutreten und ein eigenes Unternehmen zu gründen.
+
+  <!-- the hidden apps start -->
+  <div class=" flex flex-col gap-[10px] items-center md:hidden font-bold" >
+    <span class="text-[20px] ">Unsere Apps</span>
+    <div class="flex gap-[20px]">
+     <div class="w-[35px] h-[35px] overflow-hidden rounded-full "><img src="./public/images/app1.svg" alt=""></div>
+     <div class="w-[35px] h-[35px] overflow-hidden rounded-full"><img src="./public/images/app2.svg" alt=""></div>
+     <div class="w-[35px] h-[35px] overflow-hidden rounded-full"><img src="./public/images/app3.svg" alt=""></div>
+    </div>
+    <a href="" class="underline text-[14px] hover:text-[#0E7C5D]">Mehr lesen & herunterladen</a>
+  </div>
+  <!-- the hidden apps end -->
+
+    <p class="text-[14px] max-w-[600px] mx-auto text-center text-[#333333] pb-[30px] pt-[25px] px-[15px]">Oriflame ist ein marktführendes Kosmetikunternehmen im Direktvertrieb. Wir sind in mehr als 60 Ländern vertreten, in mehr als der Hälfte davon sind wir Marktführer. Oriflame stammt aus Schweden und hat seinen operativen Hauptsitz in der Schweiz. Wir bieten eine große Auswahl an hochwertigen Schönheitsprodukten sowie die einzigartige Möglichkeit, unserem Verkaufsteam beizutreten und ein eigenes Unternehmen zu gründen.
     </p>
-    <p class="text-[14px] w-[45%] mx-auto text-center text-[#333333]  pb-[5px]">Copyright © 2025 Oriflame Cosmetics Global SA. All rights reserved.</p>
-    <div class="flex gap-[10px]">
+    <p class="text-[14px]  mx-auto text-center text-[#333333] sm:text-nowrap  sm:pb-[5px] pb-[15px]">Copyright © 2025 Oriflame Cosmetics Global SA. All rights reserved.</p>
+    <div class="sm:flex-row sm:gap-[10px] flex-col flex gap-[20px]">
       <a href="" class="underline text-[14px] hover:text-[#0E7C5D]">Bedingungen und Konditionen für Member</a>
       <a href="" class="underline text-[14px] hover:text-[#0E7C5D]">
         Bedingungen und Konditionen für Brand Partner</a>
@@ -2159,6 +3720,7 @@ style="width: 24px; height:24px;" focusable="false" aria-hidden="true" viewBox="
   <script>
     var swiper = new Swiper(".mySwiperSecond", {
       slidesPerView: 5,
+      loop: true,
       spaceBetween: 30,
       navigation: {
         nextEl: ".swiper-button-next",
@@ -2210,6 +3772,25 @@ style="width: 24px; height:24px;" focusable="false" aria-hidden="true" viewBox="
     },
   });
 </script>
+
+<script>
+ document.querySelectorAll(".accordion-header").forEach(button => {
+    button.addEventListener("click", (event) => {
+        event.stopPropagation(); // Prevents the click from closing the menu
+        
+        const content = button.nextElementSibling;
+        const arrow = button.querySelector(".arrow");
+
+        // Toggle the accordion content
+        content.classList.toggle("hidden");
+
+        // Rotate the arrow
+        arrow.classList.toggle("rotate-180");
+    });
+});
+</script>
+
+
 
   </body>
 </html>
