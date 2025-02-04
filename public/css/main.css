@@ -6373,9 +6373,18 @@ details.collapse summary::-webkit-details-marker {
   display: block;
 }
 
+.group:hover .group-hover\:bg-\[\#CDA79C\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(205 167 156 / var(--tw-bg-opacity, 1));
+}
+
 .group:hover .group-hover\:text-\[\#237C66\] {
   --tw-text-opacity: 1;
   color: rgb(35 124 102 / var(--tw-text-opacity, 1));
+}
+
+.group:hover .group-hover\:opacity-30 {
+  opacity: 0.3;
 }
 
 @media (min-width: 600px) {
