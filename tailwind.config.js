@@ -5,6 +5,9 @@ export default {
     "./public/**/*.{js,css}",
     "./src/**/*.{js,jsx,ts,tsx}"
   ],
+  daisyui: {
+    themes: ["light", "dark"],
+  },
   theme: {
     extend: {
       screens: {
@@ -15,6 +18,8 @@ export default {
       }
     },
   },
-  plugins: [],
+  plugins: [
+    require('daisyui'),
+  ],
 }
 

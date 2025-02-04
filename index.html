@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
@@ -31,7 +31,7 @@
         <div class="more w-[20px] h-[1px] rounded bg-[#666666]"></div>
 
          <!-- Menu start injaaaaaaaaaaaaaaa--> 
-         <div class="Menu  hidden absolute top-[98px] left-[0] h-screen bg-black bg-opacity-50 transition-transform duration-300 w-[315px] md:w-screen z-50 overflow-hidden border-[#f5f5f5]"> 
+         <div class="Menu  hidden absolute top-[98px] left-[0] h-screen bg-black bg-opacity-50 transition-transform duration-300  w-screen z-50 overflow-hidden border-[#f5f5f5]"> 
             
 
          <!-- changed color -->
@@ -52,9 +52,15 @@
             style="width: 24px; height:24px;" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="ArrowRightThinIcon"><path d="M9.146 5.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L14.793 12 9.146 6.354a.5.5 0 0 1 0-.708"></path></svg>
         
             <!-- first submenu start point-->
-            <div class="SubMenu w-[450px] bg-white h-full  absolute top-0 left-[280px] flex flex-col items-center gap-5 group-hover:z-20"> 
+            <div class="SubMenu w-[450px] bg-white h-full  absolute top-0 left-[280px] flex flex-col items-center gap-5 cursor-auto"> 
              
-              <div class="mainPic mt-[60px] flex justify-center">
+              <div class="mainPic rounded-sm overflow-hidden relative mt-[60px] flex justify-center cursor-pointer
+              before:w-full before:h-full before:absolute before:bg-black before:top-0 before:left-0  before:opacity-0 hover:before:opacity-20 before:transition-all before:duration-300
+              after:content-['ANZEIGEN'] after:absolute after:bottom-[10px] after:left-1/2 after:-translate-x-1/2 
+              after:bg-black after:text-white after:px-4 after:py-2 after:font-bold after:rounded-full after:opacity-0 hover:after:opacity-100 
+              after:transition-opacity after:duration-300 after:pointer-events-none">
+              
+              
                 <img class="w-[160px] h-[226px]" src="./public/images/liebe.jpeg" alt="">
               </div>
 
@@ -89,44 +95,87 @@
          <div class=" h-full hidden bg-white absolute w-[calc(100%-280px)] top-0 left-[280px]  group-hover:block py-[30px] px-[60px] cursor-auto">
           <div class="flex ml-[60px] gap-[30px] mt-[30px]">
             <!-- Picture 1 -->
-            <div class="photo flex flex-col items-center relative  ">
+            <div class="photo flex flex-col items-center relative  
+            rounded-sm overflow-hidden cursor-pointer
+              before:w-full before:h-[226px] before:absolute before:bg-black before:top-0 before:left-0 before:opacity-0 
+              hover:before:opacity-20 before:transition-all before:duration-300
+              after:content-['ANZEIGEN'] after:absolute after:bottom-[40px] after:left-1/2 after:-translate-x-1/2 
+              after:bg-black after:text-white after:px-4 after:py-2 after:font-bold after:rounded-full after:opacity-0 
+              hover:after:opacity-100 after:transition-opacity after:duration-300
+            ">
               
               <img src="./public/images/menu1.webp" alt="Image 1" class="w-[160px] h-[226px] object-cover rounded-xl ">
              
-              <p class="text-[17px] text-[#333333] mt-2">Caption 1</p>
+              <p class="text-[17px] text-[#333333] mt-2 font-extrabold">Beauty Hub</p>
             </div>
             <!-- Picture 2 -->
-            <div class="flex flex-col items-center">
+            <div class="photo flex flex-col items-center relative  
+            rounded-sm overflow-hidden cursor-pointer
+              before:w-full before:h-[226px] before:absolute before:bg-black before:top-0 before:left-0 before:opacity-0 
+              hover:before:opacity-20 before:transition-all before:duration-300
+              after:content-['ANZEIGEN'] after:absolute after:bottom-[40px] after:left-1/2 after:-translate-x-1/2 
+              after:bg-black after:text-white after:px-4 after:py-2 after:font-bold after:rounded-full after:opacity-0 
+              hover:after:opacity-100 after:transition-opacity after:duration-300
+            ">
               <img src="./public/images/menu2.webp" alt="Image 2" class="w-[160px] h-[226px] object-cover rounded-xl">
-              <p class="text-[17px] text-[#333333] mt-2">Caption 2</p>
+              <p class="text-[17px] text-[#333333] mt-2 font-extrabold">Inhaltsstoff-Bibliothek</p>
             </div>
             <!-- Picture 3 -->
-            <div class="flex flex-col items-center">
+            <div class="photo flex flex-col items-center relative  
+            rounded-sm overflow-hidden cursor-pointer
+              before:w-full before:h-[226px] before:absolute before:bg-black before:top-0 before:left-0 before:opacity-0 
+              hover:before:opacity-20 before:transition-all before:duration-300
+              after:content-['ANZEIGEN'] after:absolute after:bottom-[40px] after:left-1/2 after:-translate-x-1/2 
+              after:bg-black after:text-white after:px-4 after:py-2 after:font-bold after:rounded-full after:opacity-0 
+              hover:after:opacity-100 after:transition-opacity after:duration-300
+            ">
               <img src="./public/images/menu3.webp" alt="Image 3" class="w-[160px] h-[226px] object-cover rounded-xl">
-              <p class="text-[17px] text-[#333333] mt-2">Caption 3</p>
+              <p class="text-[17px] text-[#333333] mt-2 font-extrabold">Novage+</p>
             </div>
             <!-- Picture 4 -->
-            <div class="flex flex-col items-center">
+            <div class="photo flex flex-col items-center relative  
+            rounded-sm overflow-hidden cursor-pointer
+              before:w-full before:h-[226px] before:absolute before:bg-black before:top-0 before:left-0 before:opacity-0 
+              hover:before:opacity-20 before:transition-all before:duration-300
+              after:content-['ANZEIGEN'] after:absolute after:bottom-[40px] after:left-1/2 after:-translate-x-1/2 
+              after:bg-black after:text-white after:px-4 after:py-2 after:font-bold after:rounded-full after:opacity-0 
+              hover:after:opacity-100 after:transition-opacity after:duration-300
+            ">
               <img src="./public/images/menu4.webp" alt="Image 4" class="w-[160px] h-[226px] object-cover rounded-xl">
-              <p class="text-[17px] text-[#333333] mt-2">Caption 4</p>
+              <p class="text-[17px] text-[#333333] mt-2">Ikonen</p>
             </div>
             <!-- Picture 5 -->
-            <div class="flex flex-col items-center">
+            <div class="photo flex flex-col items-center relative  
+            rounded-sm overflow-hidden cursor-pointer
+              before:w-full before:h-[226px] before:absolute before:bg-black before:top-0 before:left-0 before:opacity-0 
+              hover:before:opacity-20 before:transition-all before:duration-300
+              after:content-['ANZEIGEN'] after:absolute after:bottom-[40px] after:left-1/2 after:-translate-x-1/2 
+              after:bg-black after:text-white after:px-4 after:py-2 after:font-bold after:rounded-full after:opacity-0 
+              hover:after:opacity-100 after:transition-opacity after:duration-300
+            ">
               <img src="./public/images/menu5.webp" alt="Image 5" class="w-[160px] h-[226px] object-cover rounded-xl">
-              <p class="text-[17px] text-[#333333] mt-2">Caption 5</p>
+              <p class="text-[17px] text-[#333333] mt-2">Foundation Finder</p>
             </div>
           </div>
           
           <!-- second line -->
-          <div class="flex ml-[60px] mt-[30px]">
+          <div class="flex ml-[60px] mt-[30px]
+          
+          relative  
+            rounded-sm overflow-hidden cursor-pointer
+               before:h-[226px] before:w-[160px] before:absolute before:bg-black before:top-0 before:left-0 before:opacity-0 
+              hover:before:opacity-40 before:transition-all before:duration-300
+              after:content-['ANZEIGEN'] after:absolute after:bottom-[40px] 
+              after:bg-black after:text-white after:px-4 after:py-2 after:font-bold after:rounded-full after:opacity-0 
+              hover:after:opacity-100 after:transition-opacity after:duration-300 after:left-7
+            
+          ">
              <!-- Picture 6 -->
              <div class="photo flex flex-col items-center relative  ">
               
               <img src="./public/images/menu6.webp" alt="Image 1" class="w-[160px] h-[226px] object-cover rounded-xl ">
-              <!-- <button class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-[17px] opacity-0 group2-hover:opacity-100 transition duration-300">
-  ANZEIGEN
-              </button> -->
-              <p class="text-[17px] text-[#333333] mt-2">Caption 1</p>
+            
+              <p class="text-[17px] text-[#333333] mt-2">#OriflameTalks</p>
             </div>
           </div>
          </div>
@@ -152,33 +201,68 @@
            <!-- third submenu start-->
            <div class=" h-full hidden bg-white absolute w-[calc(100%-280px)] top-0 left-[280px]  group-hover:block py-[30px] px-[60px] cursor-auto">
             <div class="flex ml-[60px] gap-[30px] mt-[30px]">
-              <!-- Picture 1 -->
-              <div class="photo flex flex-col items-center relative  ">
-                
-                <img src="./public/images/menu1.webp" alt="Image 1" class="w-[160px] h-[226px] object-cover rounded-xl ">
+               <!-- Picture 1 -->
+            <div class="photo flex flex-col items-center relative  
+            rounded-sm overflow-hidden cursor-pointer
+              before:w-full before:h-[226px] before:absolute before:bg-black before:top-0 before:left-0 before:opacity-0 
+              hover:before:opacity-20 before:transition-all before:duration-300
+              after:content-['ANZEIGEN'] after:absolute after:bottom-[40px] after:left-1/2 after:-translate-x-1/2 
+              after:bg-black after:text-white after:px-4 after:py-2 after:font-bold after:rounded-full after:opacity-0 
+              hover:after:opacity-100 after:transition-opacity after:duration-300
+            ">
               
-                <p class="text-[17px] text-[#333333] mt-2">Caption 1</p>
-              </div>
-              <!-- Picture 2 -->
-              <div class="flex flex-col items-center">
-                <img src="./public/images/menu2.webp" alt="Image 2" class="w-[160px] h-[226px] object-cover rounded-xl">
-                <p class="text-[17px] text-[#333333] mt-2">Caption 2</p>
-              </div>
-              <!-- Picture 3 -->
-              <div class="flex flex-col items-center">
-                <img src="./public/images/menu3.webp" alt="Image 3" class="w-[160px] h-[226px] object-cover rounded-xl">
-                <p class="text-[17px] text-[#333333] mt-2">Caption 3</p>
-              </div>
-              <!-- Picture 4 -->
-              <div class="flex flex-col items-center">
-                <img src="./public/images/menu4.webp" alt="Image 4" class="w-[160px] h-[226px] object-cover rounded-xl">
-                <p class="text-[17px] text-[#333333] mt-2">Caption 4</p>
-              </div>
-              <!-- Picture 5 -->
-              <div class="flex flex-col items-center">
-                <img src="./public/images/menu5.webp" alt="Image 5" class="w-[160px] h-[226px] object-cover rounded-xl">
-                <p class="text-[17px] text-[#333333] mt-2">Caption 5</p>
-              </div>
+              <img src="./public/images/menu1.webp" alt="Image 1" class="w-[160px] h-[226px] object-cover rounded-xl ">
+             
+              <p class="text-[17px] text-[#333333] mt-2 font-extrabold">Beauty Hub</p>
+            </div>
+            <!-- Picture 2 -->
+            <div class="photo flex flex-col items-center relative  
+            rounded-sm overflow-hidden cursor-pointer
+              before:w-full before:h-[226px] before:absolute before:bg-black before:top-0 before:left-0 before:opacity-0 
+              hover:before:opacity-20 before:transition-all before:duration-300
+              after:content-['ANZEIGEN'] after:absolute after:bottom-[40px] after:left-1/2 after:-translate-x-1/2 
+              after:bg-black after:text-white after:px-4 after:py-2 after:font-bold after:rounded-full after:opacity-0 
+              hover:after:opacity-100 after:transition-opacity after:duration-300
+            ">
+              <img src="./public/images/menu2.webp" alt="Image 2" class="w-[160px] h-[226px] object-cover rounded-xl">
+              <p class="text-[17px] text-[#333333] mt-2 font-extrabold">Inhaltsstoff-Bibliothek</p>
+            </div>
+            <!-- Picture 3 -->
+            <div class="photo flex flex-col items-center relative  
+            rounded-sm overflow-hidden cursor-pointer
+              before:w-full before:h-[226px] before:absolute before:bg-black before:top-0 before:left-0 before:opacity-0 
+              hover:before:opacity-20 before:transition-all before:duration-300
+              after:content-['ANZEIGEN'] after:absolute after:bottom-[40px] after:left-1/2 after:-translate-x-1/2 
+              after:bg-black after:text-white after:px-4 after:py-2 after:font-bold after:rounded-full after:opacity-0 
+              hover:after:opacity-100 after:transition-opacity after:duration-300
+            ">
+              <img src="./public/images/menu3.webp" alt="Image 3" class="w-[160px] h-[226px] object-cover rounded-xl">
+              <p class="text-[17px] text-[#333333] mt-2 font-extrabold">Novage+</p>
+            </div>
+            <!-- Picture 4 -->
+            <div class="photo flex flex-col items-center relative  
+            rounded-sm overflow-hidden cursor-pointer
+              before:w-full before:h-[226px] before:absolute before:bg-black before:top-0 before:left-0 before:opacity-0 
+              hover:before:opacity-20 before:transition-all before:duration-300
+              after:content-['ANZEIGEN'] after:absolute after:bottom-[40px] after:left-1/2 after:-translate-x-1/2 
+              after:bg-black after:text-white after:px-4 after:py-2 after:font-bold after:rounded-full after:opacity-0 
+              hover:after:opacity-100 after:transition-opacity after:duration-300
+            ">
+              <img src="./public/images/menu4.webp" alt="Image 4" class="w-[160px] h-[226px] object-cover rounded-xl">
+              <p class="text-[17px] text-[#333333] mt-2">Ikonen</p>
+            </div>
+            <!-- Picture 5 -->
+            <div class="photo flex flex-col items-center relative  
+            rounded-sm overflow-hidden cursor-pointer
+              before:w-full before:h-[226px] before:absolute before:bg-black before:top-0 before:left-0 before:opacity-0 
+              hover:before:opacity-20 before:transition-all before:duration-300
+              after:content-['ANZEIGEN'] after:absolute after:bottom-[40px] after:left-1/2 after:-translate-x-1/2 
+              after:bg-black after:text-white after:px-4 after:py-2 after:font-bold after:rounded-full after:opacity-0 
+              hover:after:opacity-100 after:transition-opacity after:duration-300
+            ">
+              <img src="./public/images/menu5.webp" alt="Image 5" class="w-[160px] h-[226px] object-cover rounded-xl">
+              <p class="text-[17px] text-[#333333] mt-2">Foundation Finder</p>
+            </div>
             </div>
             
           
@@ -2224,7 +2308,7 @@ style="width: 24px; height:24px;" focusable="false" aria-hidden="true" viewBox="
 
 
 
-    <div class="logo">
+    <div class="logo cursor-pointer">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 139 31" width="118" height="26.31" data-id="common" class="frontpage-bfihcq"><path d="M57.98 28.94l-1.595-4.904h-.98L53.81 28.94l-1.593-4.91h-1.23l2.206 6.62h.98l1.716-4.66 1.59 4.66h.98l2.2-6.62h-1.22zM1.334 26.857h33.35v.98H1.334v-.98zm41.318-24.89h2.207v14.59h-2.21V1.967zm10.544 14.59h2.207v-6.13h7.602V8.343h-7.61V3.93h8.46V1.966h-10.66zM8.324 16.8c4.66 0 8.46-3.8 8.46-8.46 0-4.534-3.8-6.62-6.62-6.62-5.518 0-5.886 5.396-5.886 5.396h.13s.98-3.923 4.78-3.923c3.07 0 5.4 2.084 5.4 5.027 0 3.43-2.82 6.25-6.25 6.25-3.31 0-6.372-2.45-6.372-6.87 0-3.44 1.84-6.26 5.027-7.48V0C2.947.61.003 4.17.003 8.33c-.122 4.66 3.68 8.46 8.338 8.46zm36.78 10.056c-1.225-.245-1.593-.49-1.593-.98s.37-.737 1.11-.737c.62 0 1.23.24 1.72.61l.617-.85c-.613-.49-1.47-.86-2.33-.86-1.35 0-2.207.74-2.207 1.96s.73 1.6 2.2 1.96c1.22.25 1.47.49 1.47.98s-.49.86-1.1.86c-.86 0-1.47-.37-2.09-.86l-.74.86c.735.74 1.716 1.11 2.696 1.11 1.35 0 2.33-.73 2.33-1.96 0-1.35-.738-1.84-2.086-2.08zm-9.317-10.3l-4.414-5.884c2.207-.61 3.678-2.2 3.678-4.29 0-2.69-2.2-4.53-5.39-4.53h-6.38v14.59h2.2v-5.4h3.55l4.05 5.4 2.7.126zm-10.3-7.48V3.93h4.047c2.084 0 3.31.86 3.31 2.453s-1.35 2.575-3.31 2.575h-4.047zm40.706 18.76h3.31v-1.102h-3.31V25.14h3.678v-1.103h-4.78v6.498h4.78v-.98H66.2zM91.817 1.844l-6.62 14.713h2.33l1.715-3.8h7.11l1.595 3.8h2.452L93.78 1.844h-1.964zm-1.838 8.95l2.69-6.252 2.69 6.26h-5.4zm18.14-5.026l4.66 6.866.24.368.24-.36 4.536-6.86v10.79h2.207v-14.6h-2.084l-4.904 7.356-4.906-7.356h-2.08v14.59h2.085zm0 21.088h30.89v.98h-30.89v-.98zm22.19-12.383v-4.29h7.6V8.098h-7.6v-4.17h8.58v-1.96h-10.78v14.59h10.79V14.47zM98.93 28.57l-3.557-4.534H94.27v6.498h1.226v-4.536l3.55 4.536h.98v-6.498h-1.1zM72.936 1.968h-2.084v14.59h10.054v-2.084h-7.97zm13.12 25.87h3.31v-1.103h-3.31V25.14h3.677v-1.103H84.95v6.498h4.905v-.98h-3.81zm-9.197-3.8H74.4v6.497h2.453c2.083 0 3.432-1.47 3.432-3.31.122-1.717-1.35-3.188-3.434-3.188zm0 5.516h-1.35V25.14h1.35c1.35 0 2.2.98 2.2 2.206.12 1.226-.86 2.207-2.21 2.207z"></path>
 </svg>
 </div>
@@ -2240,9 +2324,62 @@ style="width: 24px; height:24px;" focusable="false" aria-hidden="true" viewBox="
       </div>
 
 <div class="flex items-center gap-[40px]">
-  <a  class="text-[14px] hidden md:block"  href="">WERDE MEMBER</a>
+  <p id="openMenu" class="text-[14px] hidden md:block cursor-pointer hover:text-gray-500"  href="">WERDE MEMBER</p>
 
-  <a  class="text-[14px] hidden md:block"  href="">ANMELDEN</a>
+
+<!-- the top menu, full width -->
+<div id="clickedMenu" class="fixed top-[98px] left-0 w-full h-[376px] bg-white 
+shadow-lg  hidden place-items-center z-50 transition-all duration-300 ">
+
+<div class=" justify-items-center w-full max-w-screen-2xl 
+grid 
+grid-rows-[auto_auto] 
+grid-cols-[repeat(2,1fr)]
+gap-[6px]
+px-[20px]
+
+
+">
+  
+  <!-- Column 1  -->
+  <div class="relative w-full h-[325px] flex justify-center items-center">
+    <img src="./public/images/topMenu.webp" alt="" class="w-full h-full object-cover">
+    <button class="absolute  bg-transparent text-white   hover:bg-[#CDA79C] transition
+   border-2 border-white rounded-full max-w-[295px] min-w-[125px] px-[30px] py-2 text-center whitespace-nowrap text-[20px] bottom-20 z-10">
+      Markenpartner
+    </button>
+    <!-- hover bg -->
+    <div class="absolute inset-0 bg-black opacity-0 hover:opacity-30 cursor-pointer">
+    
+    </div>
+  </div>
+
+  <!-- Column 2  -->
+  <div class="relative w-full h-[325px] flex justify-center items-center">
+    <img src="./public/images/topmenu2.webp" alt="" class="w-full h-full object-cover">
+    <button class="absolute  bg-transparent text-white   hover:bg-[#CDA79C] transition
+   border-2 border-white rounded-full max-w-[295px] min-w-[125px] px-[30px] py-2 text-center whitespace-nowrap text-[20px] bottom-20 z-10">
+      VIP-Kunde/kundin
+    </button>
+    <!-- hover bg -->
+  <div class="absolute inset-0 bg-black opacity-0 hover:opacity-30 cursor-pointer">
+    
+  </div>
+  </div>
+
+  
+
+</div>
+
+<div class="flex justify-center items-center cursor-pointer pt-3 ">
+  <p class="text-center underline hover:text-gray-500">
+    Ich weiß es noch nicht
+    
+  </p>
+</div>
+</div>
+
+  <a  class="text-[14px] hidden md:block hover:text-gray-500"  href="">ANMELDEN</a>
 
  <div class="flex items-center">
   <div class=" md:hidden">
@@ -2255,7 +2392,7 @@ style="width: 24px; height:24px;" focusable="false" aria-hidden="true" viewBox="
     <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit products-app-emotion-1cw4hi4 " style="width: 30.23px; height: 30.23px;"  focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="AddToBagIcon">
         <path d="M6.434 9H4.5a1.5 1.5 0 0 0-1.486 1.703l1.227 9A1.5 1.5 0 0 0 5.728 21h12.254a1.5 1.5 0 0 0 1.486-1.297l1.227-9A1.5 1.5 0 0 0 19.21 9h-1.933c-.087-2.548-.848-4.078-1.933-4.96C14.208 3.118 12.826 3 11.855 3c-.975 0-2.355.126-3.49 1.051C7.282 4.936 6.521 6.464 6.434 9m1 0c.086-2.329.778-3.533 1.564-4.174.858-.7 1.942-.826 2.857-.826.917 0 2 .12 2.857.817.785.637 1.477 1.84 1.563 4.183zm8.868 1 .053 1.448a.5.5 0 0 0 1-.018c0-.528-.013-.987-.037-1.43h1.891a.5.5 0 0 1 .495.568l-1.227 9a.5.5 0 0 1-.495.432H5.728a.5.5 0 0 1-.496-.432l-1.227-9A.5.5 0 0 1 4.5 10h1.905q-.001.372.01.756.009.333.01.674a.5.5 0 1 0 1 0c0-.285-.006-.535-.012-.766-.005-.236-.01-.452-.008-.664z"></path>
       </svg>
-      <!-- <div class=" absolute top-[98px] right-[0] h-full bg-black bg-opacity-50 transition-transform duration-300 w-full md:w-screen z-50 overflow-hidden border-[#f5f5f5] hidden group-hover:block"> -->
+     
         <div class="category bg-white w-[400px] h-screen py-[10px] absolute right-0 px-[30px] top-[98px] z-50 hidden group-hover:block">
           <div class="flex flex-col items-center justify-center text-center relative top-[200px]">
             <h3 class="text-[18px] font-semibold">Warenkorb leeren</h3>
@@ -2309,7 +2446,9 @@ style="width: 24px; height:24px;" focusable="false" aria-hidden="true" viewBox="
                 <div class="absolute bg-transparent w-full md:h-full md:w-1/2 md:right-0 flex flex-col items-center md:pr-[50px] justify-center gap-3  bottom-[72px] md:bottom-auto">
                   
                   <p class=" text-white text-[14px] text-center">BETTER TOGETHER</p>
-                <h3 class=" text-[30px] md:text-[50.5px] text-[white] font-bold ">Geschenke zum Valentinstag</h3>
+                <h3 class=" text-[30px] md:text-[50.5px] text-[white] font-bold ">Geschenke zum 
+                  <br class="md:block hidden">
+                  Valentinstag</h3>
               <button class=" bg-[#0000004D] py-[12px] px-[38px] rounded-full text-white text-[15px] hover:bg-[#BCD0E4] hover:text-[#333] transition duration-300 ease-in-out text-nowrap">SHOP HIER</button>
 
                 </div>
@@ -2325,7 +2464,9 @@ style="width: 24px; height:24px;" focusable="false" aria-hidden="true" viewBox="
                 <div class="absolute bg-transparent w-full md:h-full md:w-1/2 md:right-0 flex flex-col items-center md:pr-[50px] justify-center gap-3  bottom-[72px] md:bottom-auto">
                   
                   <p class=" text-white text-[14px] text-center">SPREAD THE LOVE: NUR BIS 1/2</p>
-                <h3 class=" text-[30px] md:text-[50.5px] text-[white] font-bold ">Giordani Gold Beauty bis zu -50%</h3>
+                <h3 class=" text-[30px] md:text-[50.5px] text-[white] font-bold ">Giordani Gold Beauty
+                  <br class="md:block hidden">
+                  bis zu -50%</h3>
                 <button class="bg-[#0000004D] py-[12px] px-[30px] rounded-full text-white text-[15px] hover:bg-[#AC775F] hover:text-[#333] transition duration-300 ease-in-out">
                   SHOP JETZT
                 </button>
@@ -2672,7 +2813,7 @@ style="width: 24px; height:24px;" focusable="false" aria-hidden="true" viewBox="
   </h3>
  </div>
 <div class="title relative w-full flex justify-center items-center pb-6 pt-3 ">
-  <p class="text-[14px] xl:w-[600px] md:w-[500px] sm:w-[350px] mx-auto text-center text-[#333333] sm:truncate md:overflow-visible sm:overflow-hidden whitespace-normal overflow-visible  md:whitespace-normal sm:whitespace-nowrap w-full sm:text-wrap">Ikonen unserer Zeit Entdecke unsere legendären Produkte – ikonische Essentials, denen du vertraust und die du immer wieder verwendest. Entdecke die bewährten Favoriten, die unsere Kunden am meisten lieben.
+  <p class="text-[14px] xl:w-[600px] md:w-[500px] sm:w-[350px] mx-auto text-center  sm:truncate md:overflow-visible sm:overflow-hidden whitespace-normal overflow-visible  md:whitespace-normal sm:whitespace-nowrap w-full sm:text-wrap">Ikonen unserer Zeit Entdecke unsere legendären Produkte – ikonische Essentials, denen du vertraust und die du immer wieder verwendest. Entdecke die bewährten Favoriten, die unsere Kunden am meisten lieben.
   </p>
   <button class="py-3 px-6 border border-black bg-transparent rounded-[25px] text-[14px] hover:bg-[#F7F7F7] absolute right-0 hidden sm:block">
     ALLE ANZEIGEN
@@ -2864,7 +3005,7 @@ style="width: 24px; height:24px;" focusable="false" aria-hidden="true" viewBox="
   <div class="swiper mySwiperSecond">
     <div class="swiper-wrapper">
       <div class="swiper-slide xl:max-w-[250px] m-0 min-w-[280px] xl:min-w-[200px] xl:h-auto h-[280px]">
-        <div class="w-full max-w-[250px] max-h-[250px]   aspect-square rounded min-w-[280px] xl:min-w-[200px] min-h-[280px] xl:min-h-[200px]  overflow-hidden relative cursor-pointer">
+        <div class="w-full max-w-[250px] max-h-[250px]   aspect-square rounded min-w-[280px] xl:min-w-[200px] min-h-[280px] xl:min-h-[200px]  overflow-hidden relative cursor-pointer ">
           <img src="./public/images/vid1.jpg" alt="" class="w-full h-full object-cover object-top">
           
           <!-- Circle -->
@@ -2874,7 +3015,9 @@ style="width: 24px; height:24px;" focusable="false" aria-hidden="true" viewBox="
           </div>
           
           <!-- Hover Background -->
-          <div class="absolute inset-0 bg-black opacity-0 hover:opacity-30"></div>
+          <div class="absolute inset-0 bg-black opacity-0 hover:opacity-30 ">
+            <p class="text-white absolute bottom-3 left-12">@militsa_markova</p>
+          </div>
         </div>
       </div>
        <!-- second slider -->
@@ -2885,7 +3028,9 @@ style="width: 24px; height:24px;" focusable="false" aria-hidden="true" viewBox="
             <div class="w-0 h-0 border-t-[10px] border-t-transparent border-b-[10px] border-b-transparent border-l-[15px] border-l-white transform translate-x-[2px] rounded"></div>
           </div>
           <!-- Hover Background -->
-          <div class="absolute inset-0 bg-black opacity-0 hover:opacity-30 "></div>
+          <div class="absolute inset-0 bg-black opacity-0 hover:opacity-30 ">
+            <p class="text-white absolute bottom-3 left-20">@anasolaori</p>
+          </div>
         </div>
   
         <div class="w-full max-w-[250px] max-h-[250px]   aspect-square rounded overflow-hidden relative cursor-pointer hidden xl:block"><img src="./public/images/vid3.jpg" alt="" class="w-full h-full object-cover object-top">
@@ -2895,7 +3040,7 @@ style="width: 24px; height:24px;" focusable="false" aria-hidden="true" viewBox="
           </div>
           <!-- Hover Background -->
           <div class="absolute inset-0 bg-black opacity-0 hover:opacity-30 ">
-           
+            <p class="text-white absolute bottom-3 left-14">@dream.and.art</p>
           </div>
         </div>
       </div>
@@ -2908,7 +3053,9 @@ style="width: 24px; height:24px;" focusable="false" aria-hidden="true" viewBox="
             <div class="w-0 h-0 border-t-[10px] border-t-transparent border-b-[10px] border-b-transparent border-l-[15px] border-l-white transform translate-x-[2px] rounded"></div>
           </div>
           <!-- Hover Background -->
-          <div class="absolute inset-0 bg-black opacity-0 hover:opacity-30 "></div>
+          <div class="absolute inset-0 bg-black opacity-0 hover:opacity-30 ">
+            <p class="text-white absolute bottom-3 left-14">@dream.and.art</p>
+          </div>
         </div>
       </div>
   
@@ -2922,6 +3069,7 @@ style="width: 24px; height:24px;" focusable="false" aria-hidden="true" viewBox="
         </div>
         <!-- Hover Background -->
         <div class="absolute inset-0 bg-black opacity-0 hover:opacity-30">
+          <p class="text-white absolute bottom-3 left-14">@gheorghe.ana00</p>
         </div>
         </div>
       </div>
@@ -2937,6 +3085,7 @@ style="width: 24px; height:24px;" focusable="false" aria-hidden="true" viewBox="
         </div>
         <!-- Hover Background -->
         <div class="absolute inset-0 bg-black opacity-0 hover:opacity-30 transition-opacity">
+          <p class="text-white absolute bottom-10 left-8">@_glamwithpriyanka</p>
         </div>
         </div>
       </div>
@@ -2951,6 +3100,7 @@ style="width: 24px; height:24px;" focusable="false" aria-hidden="true" viewBox="
       </div>
       <!-- Hover Background -->
       <div class="absolute inset-0 bg-black opacity-0 hover:opacity-30">
+        <p class="text-white absolute bottom-10 left-8">@_glamwithpriyanka</p>
       </div>
       </div>
     </div>
@@ -2965,7 +3115,9 @@ style="width: 24px; height:24px;" focusable="false" aria-hidden="true" viewBox="
           <div class="w-0 h-0 border-t-[10px] border-t-transparent border-b-[10px] border-b-transparent border-l-[15px] border-l-white transform translate-x-[2px] rounded"></div>
         </div>
         <!-- Hover Background -->
-        <div class="absolute inset-0 bg-black opacity-0 hover:opacity-30 "></div>
+        <div class="absolute inset-0 bg-black opacity-0 hover:opacity-30 ">
+          <p class="text-white absolute bottom-10 left-8">@_glamwithpriyanka</p>
+        </div>
       </div>
   
       <div class="w-full max-w-[250px] max-h-[250px]   aspect-square rounded overflow-hidden relative cursor-pointer hidden xl:block"><img src="./public/images/vid8.jpg" alt="" class="w-full h-full object-cover object-top">
@@ -2974,7 +3126,9 @@ style="width: 24px; height:24px;" focusable="false" aria-hidden="true" viewBox="
           <div class="w-0 h-0 border-t-[10px] border-t-transparent border-b-[10px] border-b-transparent border-l-[15px] border-l-white transform translate-x-[2px] rounded"></div>
         </div>
         <!-- Hover Background -->
-        <div class="absolute inset-0 bg-black opacity-0 hover:opacity-30 "></div>
+        <div class="absolute inset-0 bg-black opacity-0 hover:opacity-30 ">
+          <p class="text-white absolute bottom-10 left-8">@_glamwithpriyanka</p>
+        </div>
       </div>
     </div>
 
@@ -2987,7 +3141,9 @@ style="width: 24px; height:24px;" focusable="false" aria-hidden="true" viewBox="
           <div class="w-0 h-0 border-t-[10px] border-t-transparent border-b-[10px] border-b-transparent border-l-[15px] border-l-white transform translate-x-[2px] rounded"></div>
         </div>
         <!-- Hover Background -->
-        <div class="absolute inset-0 bg-black opacity-0 hover:opacity-30 "></div>
+        <div class="absolute inset-0 bg-black opacity-0 hover:opacity-30 ">
+          <p class="text-white absolute bottom-10 left-8">@_glamwithpriyanka</p>
+        </div>
       </div>
     </div>
   
@@ -3003,6 +3159,7 @@ style="width: 24px; height:24px;" focusable="false" aria-hidden="true" viewBox="
       </div>
       <!-- Hover Background -->
       <div class="absolute inset-0 bg-black opacity-0 hover:opacity-30">
+        <p class="text-white absolute bottom-3 left-8">@_glamwithpriyanka</p>
       </div>
       </div>
     </div>
@@ -3019,6 +3176,7 @@ style="width: 24px; height:24px;" focusable="false" aria-hidden="true" viewBox="
       </div>
       <!-- Hover Background -->
       <div class="absolute inset-0 bg-black opacity-0 hover:opacity-30 transition-opacity">
+        <p class="text-white absolute bottom-10 left-8">@_glamwithpriyanka</p>
       </div>
       </div>
     </div>
@@ -3036,6 +3194,7 @@ style="width: 24px; height:24px;" focusable="false" aria-hidden="true" viewBox="
         </div>
         <!-- Hover Background -->
         <div class="absolute inset-0 bg-black opacity-0 hover:opacity-30 ">
+          <p class="text-white absolute bottom-10 left-8">@_glamwithpriyanka</p>
         </div>
        
        
@@ -3051,7 +3210,9 @@ style="width: 24px; height:24px;" focusable="false" aria-hidden="true" viewBox="
           <div class="w-0 h-0 border-t-[10px] border-t-transparent border-b-[10px] border-b-transparent border-l-[15px] border-l-white transform translate-x-[2px] rounded"></div>
         </div>
         <!-- Hover Background -->
-        <div class="absolute inset-0 bg-black opacity-0 hover:opacity-30 "></div>
+        <div class="absolute inset-0 bg-black opacity-0 hover:opacity-30 ">
+          <p class="text-white absolute bottom-10 left-8">@_glamwithpriyanka</p>
+        </div>
       </div>
   
       <div class="w-full max-w-[250px] max-h-[250px]   aspect-square rounded overflow-hidden relative cursor-pointer hidden xl:block"><img src="./public/images/vid13.jpg" alt="" class="w-full h-full object-cover object-top">
@@ -3060,7 +3221,9 @@ style="width: 24px; height:24px;" focusable="false" aria-hidden="true" viewBox="
           <div class="w-0 h-0 border-t-[10px] border-t-transparent border-b-[10px] border-b-transparent border-l-[15px] border-l-white transform translate-x-[2px] rounded"></div>
         </div>
         <!-- Hover Background -->
-        <div class="absolute inset-0 bg-black opacity-0 hover:opacity-30 "></div>
+        <div class="absolute inset-0 bg-black opacity-0 hover:opacity-30 ">
+          <p class="text-white absolute bottom-10 left-8">@_glamwithpriyanka</p>
+        </div>
       </div>
     </div>
 
@@ -3074,7 +3237,9 @@ style="width: 24px; height:24px;" focusable="false" aria-hidden="true" viewBox="
           <div class="w-0 h-0 border-t-[10px] border-t-transparent border-b-[10px] border-b-transparent border-l-[15px] border-l-white transform translate-x-[2px] rounded"></div>
         </div>
         <!-- Hover Background -->
-        <div class="absolute inset-0 bg-black opacity-0 hover:opacity-30 "></div>
+        <div class="absolute inset-0 bg-black opacity-0 hover:opacity-30 ">
+          <p class="text-white absolute bottom-10 left-8">@_glamwithpriyanka</p>
+        </div>
       </div>
     </div>
 
@@ -3092,6 +3257,7 @@ style="width: 24px; height:24px;" focusable="false" aria-hidden="true" viewBox="
       </div>
       <!-- Hover Background -->
       <div class="absolute inset-0 bg-black opacity-0 hover:opacity-30">
+        <p class="text-white absolute bottom-10 left-8">@_glamwithpriyanka</p>
       </div>
       </div>
     </div>
@@ -3123,7 +3289,7 @@ style="width: 24px; height:24px;" focusable="false" aria-hidden="true" viewBox="
    </h3>
   </div>
  <div class="title relative w-full flex justify-center items-center pb-6 pt-3 ">
-   <p class="text-[14px] xl:w-[600px] md:w-[500px] sm:w-[350px] mx-auto text-center text-[#333333] sm:truncate md:overflow-visible sm:overflow-hidden whitespace-normal overflow-visible  md:whitespace-normal sm:whitespace-nowrap w-full sm:text-wrap">
+   <p class="text-[14px] xl:w-[600px] md:w-[500px] sm:w-[350px] mx-auto text-center  sm:truncate md:overflow-visible sm:overflow-hidden whitespace-normal overflow-visible  md:whitespace-normal sm:whitespace-nowrap w-full sm:text-wrap">
     Erweitere dein Wohlbefinden mit Wellosophy auf ein solides Fundament. Tägliche Nahrungsergänzungen, die deine Kraft und Schönheit unterstützen und dir jeden Morgen ein gutes Gefühl geben.
    </p>
    <button class="py-3 px-6 border border-black bg-transparent rounded-[25px] text-[14px] hover:bg-[#F7F7F7] absolute right-0 hidden sm:block">
@@ -3306,14 +3472,18 @@ gap-[10px]">
   </div>
 
   <div class="title  w-full flex justify-center items-center px-[15px] pt-[30px]">
-    <button class="py-3 px-6 w-full sm:w-auto border border-black bg-transparent rounded-[25px] text-[14px] hover:bg-[#F7F7F7]">
+    <button  class=" py-3 px-6 w-full sm:w-auto border border-black bg-transparent rounded-[25px] text-[14px] hover:bg-[#F7F7F7]">
       WERDE MEMBER
     </button>
+
+ 
      
   </div>
 </div>
 <!-- PRIVILAGES END -->
 <br>
+
+
 
 
 <!-- HAPPY START -->
@@ -3323,7 +3493,7 @@ gap-[10px]">
    
 </div>
 <div class="flex flex-col justify-center items-center mx-auto pb-6 max-w-[600px]">
-  <p class="text-[14px] w-full mx-auto text-center text-[#333333] pb-[30px] px-[30px]">Wir glauben, dass sich wahres Wohlbefinden für jeden anders anfühlt - und seien wir ehrlich, es bedeutet oft unterschiedliche Sachen in unterschiedlichen Momenten. Manchmal braucht man einen gemütlichen Abend, an dem man seine Lieblingsserie mit einer pflegenden Gesichtsmaske anschaut, während man an anderen Tagen von Freunden umgeben sein und aktiv sein möchte. 
+  <p class="text-[14px] w-full mx-auto text-center pb-[30px] px-[30px]">Wir glauben, dass sich wahres Wohlbefinden für jeden anders anfühlt - und seien wir ehrlich, es bedeutet oft unterschiedliche Sachen in unterschiedlichen Momenten. Manchmal braucht man einen gemütlichen Abend, an dem man seine Lieblingsserie mit einer pflegenden Gesichtsmaske anschaut, während man an anderen Tagen von Freunden umgeben sein und aktiv sein möchte. 
     In Wirklichkeit geht es darum, sich selbstbewusst zu fühlen und das Leben so zu leben, wie du es willst, frei von Urteilen und Erwartungen. 
     
     Wir sind eine Community für Wohlbefinden und Schönheit mit Unternehmergeist - eine unterstützende Gruppe, die bereit ist, deine Reise mit der Schönheit deines Wohlbefindens zu unterstützen. Gemeinsam helfen wir dir, deinen einzigartigen Weg zum Wohlbefinden zu finden - damit du die Fahrt genießen kannst. Denn Glück ist gut für alle!
@@ -3578,11 +3748,11 @@ gap-[10px]">
   <div class="flex gap-[10px]">
     <div class="w-[45px] h-[45px] relative overflow-hidden rounded-full cursor-pointer">
       <img src="./public/images/social1.svg" alt="" class="overflow-hidden object-cover w-full h-full">
-      <div class="absolute inset-0 w-[45px] h-[45px] bg-black opacity-0 hover:opacity-30 rounded-full"></div>
+      <div class="absolute inset-0 w-[31px] h-[31px] bg-black opacity-0 hover:opacity-30 rounded-full m-auto"></div>
     </div>
     <div class="w-[45px] h-[45px] relative overflow-hidden rounded-full cursor-pointer">
       <img src="./public/images/social2.svg" alt="" class="overflow-hidden object-cover w-full h-full">
-      <div class="absolute inset-0 w-[45px] h-[45px] bg-black opacity-0 hover:opacity-30 rounded-full"></div>
+      <div class="absolute inset-0 w-[31px] h-[31px] bg-black opacity-0 hover:opacity-30 rounded-full m-auto"></div>
     </div>
     </div>
 
@@ -3599,7 +3769,7 @@ gap-[10px]">
   </div>
   <!-- the hidden apps end -->
 
-    <p class="text-[14px] max-w-[600px] mx-auto text-center text-[#333333] pb-[30px] pt-[25px] px-[15px]">Oriflame ist ein marktführendes Kosmetikunternehmen im Direktvertrieb. Wir sind in mehr als 60 Ländern vertreten, in mehr als der Hälfte davon sind wir Marktführer. Oriflame stammt aus Schweden und hat seinen operativen Hauptsitz in der Schweiz. Wir bieten eine große Auswahl an hochwertigen Schönheitsprodukten sowie die einzigartige Möglichkeit, unserem Verkaufsteam beizutreten und ein eigenes Unternehmen zu gründen.
+    <p class="text-[14px] max-w-[600px] mx-auto text-center  pb-[30px] pt-[25px] px-[15px]">Oriflame ist ein marktführendes Kosmetikunternehmen im Direktvertrieb. Wir sind in mehr als 60 Ländern vertreten, in mehr als der Hälfte davon sind wir Marktführer. Oriflame stammt aus Schweden und hat seinen operativen Hauptsitz in der Schweiz. Wir bieten eine große Auswahl an hochwertigen Schönheitsprodukten sowie die einzigartige Möglichkeit, unserem Verkaufsteam beizutreten und ein eigenes Unternehmen zu gründen.
     </p>
     <p class="text-[14px]  mx-auto text-center text-[#333333] sm:text-nowrap  sm:pb-[5px] pb-[15px]">Copyright © 2025 Oriflame Cosmetics Global SA. All rights reserved.</p>
     <div class="sm:flex-row sm:gap-[10px] flex-col flex gap-[20px]">
@@ -3646,7 +3816,7 @@ gap-[10px]">
 
    
     <div class="w-[307px] h-auto bg-[#ECECEC] p-[12px] rounded-xl ">
-      <p class="text-[15px]">
+      <p class="text-[15px] ">
         Hallo 👋, ich bin der Chatbot von Oriflame Deutschland. <br>
         Bitte wählen Sie eine der folgenden Optionen.
       </p>
@@ -3690,11 +3860,52 @@ gap-[10px]">
 
 
    <!-- CHAT WITH US END -->
+
+ 
+
+
+   <!-- dark mode button -->
+   <label class="swap swap-rotate fixed bottom-10 left-10 z-[70]">
+    <!-- this hidden checkbox controls the state -->
+    <input type="checkbox" class="theme-controller" value="dark" />
+  
+    <!-- sun icon -->
+    <svg
+      class="swap-off h-10 w-10 fill-current"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24">
+      <path
+        d="M5.64,17l-.71.71a1,1,0,0,0,0,1.41,1,1,0,0,0,1.41,0l.71-.71A1,1,0,0,0,5.64,17ZM5,12a1,1,0,0,0-1-1H3a1,1,0,0,0,0,2H4A1,1,0,0,0,5,12Zm7-7a1,1,0,0,0,1-1V3a1,1,0,0,0-2,0V4A1,1,0,0,0,12,5ZM5.64,7.05a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.41l-.71-.71A1,1,0,0,0,4.93,6.34Zm12,.29a1,1,0,0,0,.7-.29l.71-.71a1,1,0,1,0-1.41-1.41L17,5.64a1,1,0,0,0,0,1.41A1,1,0,0,0,17.66,7.34ZM21,11H20a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2Zm-9,8a1,1,0,0,0-1,1v1a1,1,0,0,0,2,0V20A1,1,0,0,0,12,19ZM18.36,17A1,1,0,0,0,17,18.36l.71.71a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41ZM12,6.5A5.5,5.5,0,1,0,17.5,12,5.51,5.51,0,0,0,12,6.5Zm0,9A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z" />
+    </svg>
+  
+    <!-- moon icon -->
+    <svg
+      class="swap-on h-10 w-10 fill-current"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24">
+      <path
+        d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z" />
+    </svg>
+  </label>
      </main>
  <!-- main end -->
   </div>
   
   <!-- end project -->
+
+  <!-- dark mode -->
+   <script>
+    let btn=document.querySelector(".Cdark")
+    let data=document.querySelector("html")
+    btn.addEventListener("click",function(){
+    data.classList.toggle("dark")
+    })
+
+
+
+   </script>
+
+
    <!-- swiper js -->
    <script src="./swiper/swiper-bundle.min.js"></script>
    <script>
@@ -3790,7 +4001,13 @@ gap-[10px]">
 });
 </script>
 
-
+<!-- the clicked menu button -->
+ <script>
+  document.getElementById("openMenu").addEventListener("click", function() {
+  const menu = document.getElementById("clickedMenu");
+  menu.classList.toggle("hidden");
+});
+ </script>
 
   </body>
 </html>
